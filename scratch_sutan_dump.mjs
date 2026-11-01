@@ -1,0 +1,12 @@
+﻿import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('https://sutan.dev', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(3000);
+const text = await page.evaluate(() => document.body.innerText);
+const imgs = await page.evaluate(() => [...document.images].map(i => ({ src: i.currentSrc || i.src, alt: i.alt })));
+console.log('--- TEXT ---');
+console.log(text.slice(0, 6000));
+console.log('--- IMAGES ---');
+console.log(JSON.stringify(imgs, null, 1));
+await browser.close();

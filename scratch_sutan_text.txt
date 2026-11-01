@@ -1,0 +1,298 @@
+Skip to main content
+37
+%
+Sutannn13
+SA.
+Home
+Home
+About
+About
+Experience
+Experience
+Projects
+Projects
+Skills
+Skills
+Certificates
+Certificates
+Publications
+Publications
+GitHub
+GitHub
+Contact
+Contact
+Live Activity
+Live Activity
+Available for intern
+Sutan Arlie Johan - Full-Stack Engineer Intern
+S
+U
+T
+A
+N
+A
+.
+J
+.
+Fu_
+Full-Stack Engineer Intern
+Full-Stack Engineer Intern
+Depok, Indonesia
+View My Work
+Download CV
+SCROLL
+Sutan Arlie Johan 
+Sutan Arlie Johan 
+Sutan Arlie Johan 
+Sutan Arlie Johan 
+Sutan Arlie Johan 
+Sutan Arlie Johan 
+Backend Developer 
+Backend Developer 
+Backend Developer 
+Backend Developer 
+Backend Developer 
+Backend Developer 
+Laravel · PHP · MySQL 
+Laravel · PHP · MySQL 
+Laravel · PHP · MySQL 
+Laravel · PHP · MySQL 
+Laravel · PHP · MySQL 
+Laravel · PHP · MySQL 
+@sutanarlie
+Available
+Contact Me
+Sutan Arlie Johan
+
+Full-Stack Engineer Intern
+
+About
+Sutan
+S
+u
+t
+a
+n
+
+Information Technology student (semester 6) at UBSI Depok, currently interning as a Full-Stack Engineer at Connextion Tech. I build REST APIs with Laravel, design relational databases with MySQL & Supabase, and ship tested, documented code. My work includes a HKI-certified smart waste management app (Trash Point, Juara 2 UBSI Jabar) and multiple real-client e-commerce platforms. I also hold MTCNA and Cisco networking certifications, and I am a published academic contributor in JITK.
+
+Laravel
+PHP
+MySQL
+REST API
+Laravel Reverb
+Midtrans
+Git
+JOURNEY
+Experience
+
+My professional and organizational journey so far
+
+Feb 2026 — Present
+Full-Stack Engineer Intern
+Connextion Tech — AFK Project
+Indonesia (Remote)
+
+Currently entrusted by the founder to pivot and lead the end-to-end development of an internal participant database management system for Let's AFK (by Connextion), a rapidly growing offline community in Jakarta.
+
+End-to-End Development: Built a unified internal web dashboard from scratch handling both Frontend interfaces and Backend logic to manage community events, participants, and registrations.
+Database Architecture: Designed and implemented a robust relational database schema using Supabase (PostgreSQL) to centralize scattered data from dozens of Google Sheets.
+Data Migration & Structuring: Migrated and cleaned historical event data, ensuring accurate deduplication of participants via unique identifiers.
+System Design: Developed dynamic JSON-based schemas to flexibly store event-specific questionnaire answers without cluttering the main database tables.
+Aug 2025 — Sept 2025
+Peneliti & Pengembang Aplikasi
+Universitas Bina Sarana Informatika, Project Base
+Depok, Indonesia
+
+Co-developed a gamified mobile application for educating early childhood about preventing child sexual abuse (CSA). Contributed to academic publication on UX evaluation and facilitated community-based Digital Marketing training.
+
+Co-developed a gamified mobile education app for child sexual abuse (CSA) prevention targeting early childhood users.
+Conducted User Acceptance Testing (UAT) by collecting qualitative feedback from teachers and parents for application feasibility analysis.
+Co-authored a research paper published in Jurnal Ilmu Pengetahuan dan Teknologi Komputer (JITK) on user experience evaluation of educational applications.
+Facilitated community-based Digital Marketing training to help participants develop visual content creation skills.
+Registered as inventor/copyright holder under Direktorat Jenderal Kekayaan Intelektual (HKI Indonesia) for the developed application.
+Jun 2025 — Jul 2025
+Project Manager & Lead Developer
+IT Bootcamp — Universitas Bina Sarana Informatika
+Depok, Indonesia
+
+Led a 9-person team in a fullstack web development bootcamp, building "Trash Point" — a web-based education and waste management app.
+
+Coordinated full project lifecycle: ideation, design, task delegation, and final jury presentation
+Achieved 2nd place out of dozens of competing teams at UBSI Jawa Barat
+Project registered and awarded HKI Intellectual Property Certificate
+Built with Laravel, MySQL, Tailwind CSS, and JavaScript
+PORTFOLIO
+Selected Projects
+🏆 Juara 2 — UBSI Jawa Barat
+FEATURED
+REAL PROJECT
+Web App
+Trash Point
+
+Smart waste management system innovation developed during an IT bootcamp. Awarded 2nd Place at UBSI West Java, featuring location tracking for waste drop-offs, an analytics dashboard, and a point-based reward system.
+
+Laravel
+PHP
+MySQL
+Tailwind CSS
+JavaScript
+READ MORE
+FEATURED
+REAL PROJECT
+E-Commerce
+Website Toko Listrik Arip
+
+E-commerce platform for an electrical supply store with multi-role authentication (Admin/User), product CRUD, shopping cart, checkout flow, and an LLM-based AI Assistant that helps customers find the right products.
+
+Laravel
+PHP
+Blade
+Tailwind CSS
+Alpine.js
+JavaScript
+Source
+READ MORE
+FEATURED
+REAL PROJECT
+Web App
+E-Commerce Platform for Fresh Fish Transactions
+
+E-commerce platform for fresh fish transactions, complete with real-time buyer-seller chat, Midtrans payment integration, automated PDF reporting, low-stock alerts, and an admin dashboard to monitor sales in real-time.
+
+Laravel
+PHP
+MySQL
+Tailwind CSS
+Midtrans
+JavaScript
+Source
+READ MORE
+FEATURED
+ORGANIZATION WEBSITE
+Organization Website
+Website HMTI BSI Margonda
+
+Official website for the Information Technology Student Association (HMTI) at UBSI Margonda campus — featuring member management, transparent treasury (Kas/Finance) with automated reporting, and real-time internal broadcasting powered by Laravel Reverb.
+
+Laravel
+PHP
+Blade
+MySQL
+Tailwind CSS
+Laravel Reverb
+Vite
+Source
+READ MORE
+FEATURED
+DUMMY PROJECT
+AI Learning Platform
+Skill Path AI
+
+Prototype AI platform designed to generate personalized learning roadmaps based on users' career goals, interests, and current skill levels.
+
+TypeScript
+JavaScript
+PostgreSQL
+CSS
+Source
+READ MORE
+EXPERTISE
+Skills & Technologies
+
+Drag or scroll the tech bar to explore my stack
+
+ACHIEVEMENTS
+Certificates & Awards
+
+Click the folder below to explore my credentials and awards in more detail.
+
+View All
+View All
+View All
+RESEARCH
+Publications
+
+Peer-reviewed academic research I have contributed to
+
+JITK (Jurnal Ilmu Pengetahuan dan Teknologi Komputer)
+SINTA 2
+2026
+Evaluation of the Effectiveness and User Experience of the SALI Education Application Using UEQ
+
+Irnawati, O., Solecha, K., Arifin, Y.T., & Johan, S.A.
+
+Vol. 11, No. 3, pp. 661–668
+
+Read Paper
+OPEN SOURCE
+GitHub Contributions
+
+Activity from @Sutannn13 over the past year
+
+GITHUB STATS
+
+Repositories
+30
+Total Stars
+23
+Total Forks
+2
+Followers
+14
+
+TOP LANGUAGES
+
+TypeScript
+54%
+JavaScript
+15%
+CSS
+12%
+Blade
+8%
+HTML
+4%
+Python
+4%
+Contribution Activity
+Nov
+Dec
+Jan
+Feb
+Mar
+Apr
+May
+Jun
+Jul
+Aug
+Sep
+Oct
+515 contributions in the last year
+Less
+More
+🐍
+My Contribution Graph
+See what I'm currently building
+
+Live activity, recent commits, and active repositories from GitHub
+
+View Live Activity
+GET IN TOUCH
+Let's Work Together
+
+I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!
+
+Email
+
+sutanarliejohan@gmail.com
+
+Location
+
+Jl. Kav. Polri 2 No.14B, Cilangkap, Kec. Tapos, Kota Depok, Jawa Barat 16458
+Name
+Email
+Message
+Send Message
+
+© 2026 Sutan Arlie Johan Portfolio

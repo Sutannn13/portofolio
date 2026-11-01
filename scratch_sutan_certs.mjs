@@ -1,0 +1,11 @@
+﻿import { chromium } from 'playwright';
+import fs from 'node:fs';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('https://sutan.dev', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(3000);
+const text = await page.evaluate(() => document.body.innerText);
+fs.writeFileSync('scratch_sutan_text.txt', text);
+const idx = text.indexOf('Certificates & Awards');
+console.log(text.slice(idx, idx + 5000));
+await browser.close();

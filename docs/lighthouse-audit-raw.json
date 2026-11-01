@@ -1,0 +1,263 @@
+{
+  "timestamp": "2026-10-30T11:05:38.383Z",
+  "local": {
+    "name": "Local Next.js Replica",
+    "url": "http://localhost:3099/",
+    "navDurationMs": 1308,
+    "timing": {
+      "ttfb": 8,
+      "domInteractive": 62,
+      "domComplete": 439,
+      "fcp": 284
+    },
+    "accessibility": {
+      "totalImages": 33,
+      "imagesWithAlt": 33,
+      "totalButtons": 12,
+      "buttonsWithAccessibleName": 12,
+      "totalLinks": 20,
+      "linksWithAccessibleName": 19,
+      "headingsCount": 21,
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Visualise Your Mind in Motion"
+        },
+        {
+          "tag": "h2",
+          "text": "Award Winning Work"
+        },
+        {
+          "tag": "h3",
+          "text": "Auré Studio"
+        },
+        {
+          "tag": "h3",
+          "text": "Veloce"
+        },
+        {
+          "tag": "h3",
+          "text": "Grain Studio"
+        },
+        {
+          "tag": "h3",
+          "text": "Aether"
+        },
+        {
+          "tag": "h2",
+          "text": "Why Work With Me?"
+        },
+        {
+          "tag": "h3",
+          "text": "Rapid Project Delivery"
+        },
+        {
+          "tag": "h3",
+          "text": "Precision & Aesthetics"
+        },
+        {
+          "tag": "h3",
+          "text": "Future-Proofed Designs"
+        },
+        {
+          "tag": "h2",
+          "text": "Design That Speaksto Your Audience"
+        },
+        {
+          "tag": "h3",
+          "text": "Brand Identity"
+        },
+        {
+          "tag": "h3",
+          "text": "Web & UI/UX Design"
+        },
+        {
+          "tag": "h3",
+          "text": "Design Systems"
+        },
+        {
+          "tag": "h3",
+          "text": "Motion & Animation"
+        },
+        {
+          "tag": "h3",
+          "text": "Brand Strategy"
+        },
+        {
+          "tag": "h2",
+          "text": "Awards and IndustryRecognition"
+        },
+        {
+          "tag": "h3",
+          "text": "Trusted by Founders and Creatives, Built for Ambit"
+        },
+        {
+          "tag": "h2",
+          "text": "Don't Take It from Us, Take It from Our Clients"
+        },
+        {
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "tag": "h6",
+          "text": "Reach Out"
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "footer": 1,
+        "mainOrSections": 8
+      }
+    },
+    "domNodeCount": 1032,
+    "hasHtmlLang": true,
+    "htmlLang": "en",
+    "hasViewportMeta": true,
+    "cdpMetrics": {
+      "JSHeapUsedSize": "6 MB",
+      "LayoutDuration": "219 ms",
+      "RecalcStyleDuration": "83 ms",
+      "ScriptDuration": "234 ms",
+      "TaskDuration": "967 ms"
+    }
+  },
+  "target": {
+    "name": "Target Production Site",
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+    "navDurationMs": 5059,
+    "timing": {
+      "ttfb": 1022,
+      "domInteractive": 3871,
+      "domComplete": 4320,
+      "fcp": 3824
+    },
+    "accessibility": {
+      "totalImages": 41,
+      "imagesWithAlt": 41,
+      "totalButtons": 7,
+      "buttonsWithAccessibleName": 7,
+      "totalLinks": 16,
+      "linksWithAccessibleName": 15,
+      "headingsCount": 25,
+      "headings": [
+        {
+          "tag": "h1",
+          "text": "Visualise Your Mind in Motion"
+        },
+        {
+          "tag": "h2",
+          "text": "Award Winning Work"
+        },
+        {
+          "tag": "h3",
+          "text": "Auré Studio"
+        },
+        {
+          "tag": "h3",
+          "text": "Veloce"
+        },
+        {
+          "tag": "h3",
+          "text": "Grain Studio"
+        },
+        {
+          "tag": "h3",
+          "text": "Aether"
+        },
+        {
+          "tag": "h2",
+          "text": "Why Work With Me?"
+        },
+        {
+          "tag": "h3",
+          "text": "Rapid Project Delivery"
+        },
+        {
+          "tag": "h3",
+          "text": "Precision & Aesthetics"
+        },
+        {
+          "tag": "h3",
+          "text": "Future-Proofed Designs"
+        },
+        {
+          "tag": "h2",
+          "text": "Design That Speaksto Your Audience"
+        },
+        {
+          "tag": "h3",
+          "text": "Brand Identity"
+        },
+        {
+          "tag": "h3",
+          "text": "Web Development"
+        },
+        {
+          "tag": "h3",
+          "text": "UI/UX Design"
+        },
+        {
+          "tag": "h3",
+          "text": "Motion & Animation"
+        },
+        {
+          "tag": "h3",
+          "text": "Brand Strategy"
+        },
+        {
+          "tag": "h2",
+          "text": "Awards and IndustryRecognition"
+        },
+        {
+          "tag": "h3",
+          "text": "Honorable Mention"
+        },
+        {
+          "tag": "h3",
+          "text": "Site of the Day"
+        },
+        {
+          "tag": "h3",
+          "text": "The Webby Awards"
+        },
+        {
+          "tag": "h3",
+          "text": "FWA"
+        },
+        {
+          "tag": "h3",
+          "text": "Trusted by Founders and Creatives, Built for Ambit"
+        },
+        {
+          "tag": "h2",
+          "text": "Don't Take It from Us, Take It from Our Clients"
+        },
+        {
+          "tag": "h2",
+          "text": "Frequently Asked Questions"
+        },
+        {
+          "tag": "h6",
+          "text": "Reach Out"
+        }
+      ],
+      "landmarks": {
+        "header": 1,
+        "footer": 1,
+        "mainOrSections": 8
+      }
+    },
+    "domNodeCount": 585,
+    "hasHtmlLang": true,
+    "htmlLang": "en",
+    "hasViewportMeta": true,
+    "cdpMetrics": {
+      "JSHeapUsedSize": "5 MB",
+      "LayoutDuration": "186 ms",
+      "RecalcStyleDuration": "39 ms",
+      "ScriptDuration": "223 ms",
+      "TaskDuration": "839 ms"
+    }
+  }
+}

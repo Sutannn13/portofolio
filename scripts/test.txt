@@ -1,0 +1,289 @@
+import asyncio
+import os
+from playwright.async_api import async_playwright
+
+os.makedirs('public/experiences', exist_ok=True)
+
+kemenag_svg_content = ""
+if os.path.exists('public/experiences/kemenag-logo.svg'):
+    with open('public/experiences/kemenag-logo.svg', 'r', encoding='utf-8') as f:
+        kemenag_svg_content = f.read()
+
+# Card 1: Connextion Tech HTML
+connextion_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { width: 1200px; height: 750px; background: #08090f; color: #fff; display: flex; align-items: center; justify-content: center; padding: 40px; }
+  .card {
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 85% 15%, rgba(120, 80, 255, 0.18), transparent 45%),
+                radial-gradient(circle at 15% 85%, rgba(56, 189, 248, 0.15), transparent 40%),
+                #0d0e17;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 28px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .brand-logo {
+    width: 52px; height: 52px; border-radius: 14px;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; font-weight: 800; color: #fff;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+  }
+  .brand-text h3 { font-size: 22px; font-weight: 700; letter-spacing: -0.5px; }
+  .brand-text p { font-size: 14px; color: #94a3b8; font-family: monospace; letter-spacing: 1px; }
+  .badge {
+    padding: 8px 18px; border-radius: 100px;
+    background: rgba(99, 102, 241, 0.15); border: 1px solid rgba(99, 102, 241, 0.35);
+    color: #a5b4fc; font-size: 13px; font-family: monospace; font-weight: 600;
+  }
+  .mid { margin-top: 10px; }
+  .role-title { font-size: 44px; font-weight: 700; letter-spacing: -1px; color: #ffffff; line-height: 1.15; }
+  .project-name { font-size: 22px; color: #38bdf8; margin-top: 10px; font-weight: 500; }
+  .desc { font-size: 17px; color: #cbd5e1; max-width: 900px; line-height: 1.6; margin-top: 16px; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+  .tags { display: flex; gap: 12px; }
+  .tag {
+    padding: 7px 16px; border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #e2e8f0; font-size: 14px; font-family: monospace;
+  }
+  .location { font-size: 14px; color: #64748b; font-family: monospace; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand">
+        <div class="brand-logo">C</div>
+        <div class="brand-text">
+          <h3>Connextion Tech</h3>
+          <p>AFK PROJECT · COMMUNITY PLATFORM</p>
+        </div>
+      </div>
+      <div class="badge">FEB 2026 — PRESENT</div>
+    </div>
+    <div class="mid">
+      <h1 class="role-title">Full-Stack Engineer Intern</h1>
+      <h2 class="project-name">Participant Database Management System & Internal Dashboard</h2>
+      <p class="desc">Leading the end-to-end development of an internal participant management system for Let's AFK community in Jakarta, architecting relational database schema with Supabase (PostgreSQL), and centralizing data operations.</p>
+    </div>
+    <div class="bottom">
+      <div class="tags">
+        <span class="tag">Supabase · PostgreSQL</span>
+        <span class="tag">REST API</span>
+        <span class="tag">Next.js / Frontend</span>
+        <span class="tag">Dynamic Schemas</span>
+      </div>
+      <div class="location">INDONESIA (REMOTE)</div>
+    </div>
+  </div>
+</body>
+</html>
+"""
+
+# Card 2: Kemenag Kota Depok HTML
+kemenag_html = f"""
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * {{ box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }}
+  body {{ width: 1200px; height: 750px; background: #050d08; color: #fff; display: flex; align-items: center; justify-content: center; padding: 40px; }}
+  .card {{
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 15% 20%, rgba(34, 197, 94, 0.14), transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(234, 179, 8, 0.12), transparent 45%),
+                #07140b;
+    border: 1px solid rgba(34, 197, 94, 0.25);
+    border-radius: 28px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }}
+  .top {{ display: flex; justify-content: space-between; align-items: center; }}
+  .brand {{ display: flex; align-items: center; gap: 20px; }}
+  .logo-box {{ width: 68px; height: 68px; display: flex; align-items: center; justify-content: center; }}
+  .logo-box svg {{ width: 100%; height: 100%; filter: drop-shadow(0 4px 15px rgba(34, 197, 94, 0.3)); }}
+  .brand-text h3 {{ font-size: 20px; font-weight: 700; color: #f1f5f9; letter-spacing: 0.5px; }}
+  .brand-text p {{ font-size: 13.5px; color: #86efac; font-family: monospace; letter-spacing: 0.8px; margin-top: 2px; }}
+  .badge {{
+    padding: 8px 18px; border-radius: 100px;
+    background: rgba(34, 197, 94, 0.15); border: 1px solid rgba(34, 197, 94, 0.35);
+    color: #86efac; font-size: 13px; font-family: monospace; font-weight: 600;
+  }}
+  .mid {{ margin-top: 10px; }}
+  .role-title {{ font-size: 44px; font-weight: 700; letter-spacing: -1px; color: #ffffff; line-height: 1.15; }}
+  .instansi-sub {{ font-size: 22px; color: #fde047; margin-top: 10px; font-weight: 500; }}
+  .desc {{ font-size: 17px; color: #dcfce7; max-width: 900px; line-height: 1.6; margin-top: 16px; opacity: 0.9; }}
+  .bottom {{ display: flex; justify-content: space-between; align-items: flex-end; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.08); }}
+  .tags {{ display: flex; gap: 12px; }}
+  .tag {{
+    padding: 7px 16px; border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(34, 197, 94, 0.2);
+    color: #e2e8f0; font-size: 14px; font-family: monospace;
+  }}
+  .location {{ font-size: 14px; color: #86efac; font-family: monospace; }}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand">
+        <div class="logo-box">{kemenag_svg_content}</div>
+        <div class="brand-text">
+          <h3>KEMENTERIAN AGAMA REPUBLIK INDONESIA</h3>
+          <p>KANTOR KEMENTERIAN AGAMA KOTA DEPOK</p>
+        </div>
+      </div>
+      <div class="badge">3 MONTHS INTERNSHIP</div>
+    </div>
+    <div class="mid">
+      <h1 class="role-title">IT Support & Systems Intern</h1>
+      <h2 class="instansi-sub">Subbagian Tata Usaha · Pengelolaan Data & Sistem Informasi</h2>
+      <p class="desc">Mengelola pemeliharaan infrastruktur jaringan komputer, verifikasi dan pemrosesan basis data layanan keagamaan, serta dukungan operasional sistem informasi internal instansi pemerintah.</p>
+    </div>
+    <div class="bottom">
+      <div class="tags">
+        <span class="tag">IT Support & Hardware</span>
+        <span class="tag">Network Troubleshooting</span>
+        <span class="tag">Database & Records</span>
+        <span class="tag">Public Services</span>
+      </div>
+      <div class="location">GDC (GRAND DEPOK CITY), KOTA DEPOK</div>
+    </div>
+  </div>
+</body>
+</html>
+"""
+
+async def main():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        
+        # Render Connextion
+        page1 = await browser.new_page(viewport={"width": 1200, "height": 750})
+        await page1.set_content(connextion_html)
+        await page1.screenshot(path='public/experiences/connextion-tech.png')
+        print("Generated public/experiences/connextion-tech.png")
+        await page1.close()
+        
+        # Render UBSI Research
+        ubsi_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { width: 1200px; height: 750px; background: #0c0812; color: #fff; display: flex; align-items: center; justify-content: center; padding: 40px; }
+  .card {
+    width: 100%; height: 100%;
+    background: radial-gradient(circle at 15% 15%, rgba(168, 85, 247, 0.18), transparent 45%),
+                radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.15), transparent 45%),
+                #100c1c;
+    border: 1px solid rgba(168, 85, 247, 0.25);
+    border-radius: 28px;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .top { display: flex; justify-content: space-between; align-items: center; }
+  .brand { display: flex; align-items: center; gap: 16px; }
+  .brand-logo {
+    width: 52px; height: 52px; border-radius: 14px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; font-weight: 800; color: #fff;
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.35);
+  }
+  .brand-text h3 { font-size: 20px; font-weight: 700; color: #f8fafc; letter-spacing: -0.3px; }
+  .brand-text p { font-size: 13.5px; color: #c084fc; font-family: monospace; letter-spacing: 0.8px; margin-top: 2px; }
+  .badge {
+    padding: 8px 18px; border-radius: 100px;
+    background: rgba(168, 85, 247, 0.15); border: 1px solid rgba(168, 85, 247, 0.35);
+    color: #d8b4fe; font-size: 13px; font-family: monospace; font-weight: 600;
+  }
+  .mid { margin-top: 10px; }
+  .role-title { font-size: 44px; font-weight: 700; letter-spacing: -1px; color: #ffffff; line-height: 1.15; }
+  .instansi-sub { font-size: 22px; color: #60a5fa; margin-top: 10px; font-weight: 500; }
+  .desc { font-size: 17px; color: #e2e8f0; max-width: 900px; line-height: 1.6; margin-top: 16px; }
+  .bottom { display: flex; justify-content: space-between; align-items: flex-end; padding-top: 25px; border-top: 1px solid rgba(255, 255, 255, 0.08); }
+  .tags { display: flex; gap: 12px; }
+  .tag {
+    padding: 7px 16px; border-radius: 8px;
+    background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(168, 85, 247, 0.2);
+    color: #e2e8f0; font-size: 14px; font-family: monospace;
+  }
+  .location { font-size: 14px; color: #c084fc; font-family: monospace; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand">
+        <div class="brand-logo">U</div>
+        <div class="brand-text">
+          <h3>UNIVERSITAS BINA SARANA INFORMATIKA</h3>
+          <p>ACADEMIC RESEARCH & APPLICATION DEVELOPMENT</p>
+        </div>
+      </div>
+      <div class="badge">AUG 2025 — SEPT 2025</div>
+    </div>
+    <div class="mid">
+      <h1 class="role-title">Researcher & Application Developer</h1>
+      <h2 class="instansi-sub">SALI Project · Mobile Education & UX Evaluation</h2>
+      <p class="desc">Co-developed early childhood educational application, conducted qualitative UAT testing, authored peer-reviewed research published in JITK (SINTA 2), and registered intellectual property rights (HKI Indonesia).</p>
+    </div>
+    <div class="bottom">
+      <div class="tags">
+        <span class="tag">Mobile Dev</span>
+        <span class="tag">UX Evaluation (UEQ)</span>
+        <span class="tag">SINTA 2 Publication</span>
+        <span class="tag">HKI Copyright</span>
+      </div>
+      <div class="location">DEPOK, INDONESIA</div>
+    </div>
+  </div>
+</body>
+</html>
+"""
+        page3 = await browser.new_page(viewport={"width": 1200, "height": 750})
+        await page3.set_content(ubsi_html)
+        await page3.screenshot(path='public/experiences/ubsi-research.png')
+        print("Generated public/experiences/ubsi-research.png")
+        await page3.close()
+        
+        await browser.close()
+
+    import shutil
+    shutil.copy2('public/certificates/juara-2-it-bootcamp.jpg', 'public/experiences/it-bootcamp-trashpoint.jpg')
+    print("Copied trophy image to public/experiences/it-bootcamp-trashpoint.jpg")
+
+asyncio.run(main())
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+﻿import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 }, deviceScaleFactor: 2 })).newPage();
+await page.goto('http://localhost:3000', { waitUntil: 'load', timeout: 120000 });
+await page.waitForSelector('.preloader-root', { state: 'detached', timeout: 45000 }).catch(() => {});
+await page.waitForTimeout(1200);
+const tech = page.locator('#credentials .folder-card').nth(1);
+await tech.scrollIntoViewIfNeeded();
+await page.waitForTimeout(600);
+await tech.click();
+await page.waitForTimeout(1000);
+const info = await tech.evaluate((el) => [...el.querySelectorAll('.folder-paper')].map((p) => {
+  const s = getComputedStyle(p);
+  const inner = p.firstElementChild;
+  const si = inner ? getComputedStyle(inner) : null;
+  const r = p.getBoundingClientRect();
+  return { text: p.textContent.trim(), w: Math.round(r.width), h: Math.round(r.height), fs: si?.fontSize, color: si?.color, display: si?.display, overflow: s.overflow };
+}));
+console.log(JSON.stringify(info, null, 1));
+const box = await tech.boundingBox();
+await page.screenshot({ path: 'reference/verify-credential-folders/tech-folder-zoom.png', clip: { x: box.x - 40, y: box.y - 100, width: box.width + 80, height: box.height + 160 } });
+await browser.close();

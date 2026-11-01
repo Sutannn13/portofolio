@@ -1,0 +1,67 @@
+[
+  {
+    "id": "home",
+    "className": "relative z-10 flex min-h-screen items-center justify-center overflow-hidden px-4 sm:px-6",
+    "text": "Sutan Arlie Johan - Full-Stack Engineer Intern\nS\nU\nT\nA\nN\nA\n.\nJ\n.\n_\nFull-Stack Engineer Intern\nFull-Stack Engineer Intern\nDepok, Indonesia\nView My Work\nDownload CV\nSCROLL"
+  },
+  {
+    "id": "profile",
+    "className": "relative z-10 w-full min-h-[60vh] sm:min-h-[70vh] md:min-h-[80vh] flex justify-center items-center px-4 sm:px-6 py-12 sm:py-20 overflow-hidden",
+    "text": "Sutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \n@sutanarlie\nAvailable\nContact Me\nSutan Arlie Johan\n\nFull-Stack Engineer Intern"
+  },
+  {
+    "id": "",
+    "className": "",
+    "text": "Sutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nSutan Arlie Johan \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nBackend Developer \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL \nLaravel · PHP · MySQL "
+  },
+  {
+    "id": "",
+    "className": "grid relative overflow-hidden mx-auto w-full",
+    "text": "@sutanarlie\nAvailable\nContact Me\nSutan Arlie Johan\n\nFull-Stack Engineer Intern"
+  },
+  {
+    "id": "about",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "About\nMe\nM\ne\n\nInformation Technology student (semester 6) at UBSI Depok, currently interning as a Full-Stack Engineer at Connextion Tech. I build REST APIs with Laravel, design relational databases with MySQL & Supabase, and ship tested, documented code. My work includes a HKI-certified smart waste management app (Trash Point, Juara 2 UBSI Jabar) and multiple real-client e-commerce platforms. I also hold MTCNA and Cisco networking certifications, and I am a published academic contributor in JITK.\n\nLaravel\nPHP\nMySQL\nREST API\nLaravel Reverb\nMidtrans\nGit"
+  },
+  {
+    "id": "experience",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6 overflow-hidden",
+    "text": "JOURNEY\nExperience\n\nMy professional and organizational journey so far\n\nFeb 2026 — Present\nFull-Stack Engineer Intern\nConnextion Tech — AFK Project\nIndonesia (Remote)\n\nCurrently entrusted by the founder to pivot and lead the end-to-end development of an internal participant database management system for Let's AFK (by Connextion), a rapidly growing offline community in Jakarta.\n\nEnd-to-End Development: Built a unified internal web dashboard from scratch handling both Frontend interfaces and Backend logic to manage community events, participants, and registrations.\nDatabase Architecture: Designed and implemented a robust relational database schema using Supabase (PostgreSQL) to centralize scattered data from dozens of Google Sheets.\nData Migration & Structuring: Migrated and cleaned historical event data, ensuring accurate deduplication of participants via unique identifiers.\nSystem Design: Developed dynamic JSON-based schemas to flexibly store event-specific questionnaire answers without cluttering the main database tables.\nAug 2025 — Sept 2025\nPeneliti & Pengembang Aplikasi\nUniversitas Bina Sarana Informatika, Project Base\nDepok, Indonesia\n\nCo-developed a gamified mobile application for educating early childhood about preventing child sexual abuse (CSA). Contributed to academic publication on UX evaluation and facilitated community-based Digital Marketing training.\n\nCo-developed a gamified mobile education app for child sexual abuse (CSA) prevention targeting early childhood users.\nConducted User Acceptance Testing (UAT) by collecting qualitative feedback from teachers and parents for application feasibility analysis.\nCo-authored a research paper published in Jurnal Ilmu Pengetahuan dan Teknologi Komputer (JITK) on user experience evaluation of educational applications.\nFacilitated community-based Digital Marketing training to help participants develop visual content creation skills.\nRegistered as inventor/copyright holder under Direktorat Jenderal Kekayaan Intelektual (HKI Indonesia) for the developed application.\nJun 2025 — Jul 2025\nProject Manager & Lead Developer\nIT Bootcamp — Universitas Bina Sarana Informatika\nDepok, Indonesia\n\nLed a 9-person team in a fullstack web development bootcamp, building \"Trash Point\" — a web-based education and waste management app.\n\nCoordinated full project lifecycle: ideation, design, task delegation, and final jury presentation\nAchieved 2nd place out of dozens of competing teams at UBSI Jawa Barat\nProject registered and awarded HKI Intellectual Property Certificate\nBuilt with Laravel, MySQL, Tailwind CSS, and JavaScript"
+  },
+  {
+    "id": "projects",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "PORTFOLIO\nSelected Projects\n🏆 Juara 2 — UBSI Jawa Barat\nFEATURED\nREAL PROJECT\nWeb App\nTrash Point\n\nSmart waste management system innovation developed during an IT bootcamp. Awarded 2nd Place at UBSI West Java, featuring location tracking for waste drop-offs, an analytics dashboard, and a point-based reward system.\n\nLaravel\nPHP\nMySQL\nTailwind CSS\nJavaScript\nREAD MORE\nFEATURED\nREAL PROJECT\nE-Commerce\nWebsite Toko Listrik Arip\n\nE-commerce platform for an electrical supply store with multi-role authentication (Admin/User), product CRUD, shopping cart, checkout flow, and an LLM-based AI Assistant that helps customers find the right products.\n\nLaravel\nPHP\nBlade\nTailwind CSS\nAlpine.js\nJavaScript\nSource\nREAD MORE\nFEATURED\nREAL PROJECT\nWeb App\nE-Commerce Platform for Fresh Fish Transactions\n\nE-commerce platform for fresh fish transactions, complete with real-time buyer-seller chat, Midtrans payment integration, automated PDF reporting, low-stock alerts, and an admin dashboard to monitor sales in real-time.\n\nLaravel\nPHP\nMySQL\nTailwind CSS\nMidtrans\nJavaScript\nSource\nREAD MORE\nFEATURED\nORGANIZATION WEBSITE\nOrganization Website\nWebsite HMTI BSI Margonda\n\nOfficial website for the Information Technology Student Association (HMTI) at UBSI Margonda campus — featuring member management, transparent treasury (Kas/Finance) with automated reporting, and real-time internal broadcasting powered by Laravel Reverb.\n\nLaravel\nPHP\nBlade\nMySQL\nTailwind CSS\nLaravel Reverb\nVite\nSource\nREAD MORE\nFEATURED\nDUMMY PROJECT\nAI Learning Platform\nSkill Path AI\n\nPrototype AI platform designed to generate personalized learning roadmaps based on users' career goals, interests, and current skill levels.\n\nTypeScript\nJavaScript\nPostgreSQL\nCSS\nSource\nREAD MORE"
+  },
+  {
+    "id": "skills",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "EXPERTISE\nSkills & Technologies\n\nDrag or scroll the tech bar to explore my stack"
+  },
+  {
+    "id": "certificates",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "ACHIEVEMENTS\nCertificates & Awards\n\nClick the folder below to explore my credentials and awards in more detail.\n\nView All\nView All\nView All"
+  },
+  {
+    "id": "publications",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "RESEARCH\nPublications\n\nPeer-reviewed academic research I have contributed to\n\nJITK (Jurnal Ilmu Pengetahuan dan Teknologi Komputer)\nSINTA 2\n2026\nEvaluation of the Effectiveness and User Experience of the SALI Education Application Using UEQ\n\nIrnawati, O., Solecha, K., Arifin, Y.T., & Johan, S.A.\n\nVol. 11, No. 3, pp. 661–668\n\nRead Paper"
+  },
+  {
+    "id": "github",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "OPEN SOURCE\nGitHub Contributions\n\nActivity from @Sutannn13 over the past year\n\nGITHUB STATS\n\nTOP LANGUAGES\n\nContribution Activity\n \n🐍\nMy Contribution Graph"
+  },
+  {
+    "id": "",
+    "className": "relative z-10 px-4 sm:px-6 py-8 sm:py-12",
+    "text": "See what I'm currently building\n\nLive activity, recent commits, and active repositories from GitHub\n\nView Live Activity"
+  },
+  {
+    "id": "contact",
+    "className": "relative z-10 py-12 sm:py-section px-4 sm:px-6",
+    "text": "GET IN TOUCH\nLet's Work Together\n\nI'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing. Feel free to reach out!\n\nEmail\n\nsutanarliejohan@gmail.com\n\nLocation\n\nJl. Kav. Polri 2 No.14B, Cilangkap, Kec. Tapos, Kota Depok, Jawa Barat 16458\nName\nEmail\nMessage\nSend Message"
+  }
+]

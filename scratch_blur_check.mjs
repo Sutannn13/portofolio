@@ -1,0 +1,15 @@
+﻿import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://localhost:3000', { waitUntil: 'load', timeout: 120000 });
+await page.waitForSelector('.preloader-root', { state: 'detached', timeout: 45000 }).catch(() => {});
+await page.waitForTimeout(1000);
+const cert = page.locator('#credentials .folder-card').nth(0);
+await cert.scrollIntoViewIfNeeded();
+await page.waitForTimeout(500);
+const img = cert.locator('.folder-paper img').first();
+console.log('rest', await img.evaluate((el) => getComputedStyle(el).filter));
+await cert.hover();
+await page.waitForTimeout(900);
+console.log('hover', await img.evaluate((el) => getComputedStyle(el).filter));
+await browser.close();

@@ -1,0 +1,1498 @@
+{
+  "cssAnalysis": [
+    {
+      "file": "2dn814cx9q_gy.css",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2dn814cx9q_gy.css",
+      "bytes": 3319,
+      "mediaQueries": [
+        "(max-width:1025px)",
+        "(prefers-reduced-motion:reduce)",
+        "(max-width:767px)",
+        "(min-width:768px) and (max-width:1025px)"
+      ],
+      "allMediaCount": 4,
+      "fontFaces": [],
+      "keyframes": [
+        "marquee-scroll-y",
+        "marquee-scroll-y-2",
+        "marquee-scroll-y",
+        "marquee-scroll-y-2"
+      ]
+    },
+    {
+      "file": "20mf4hhw25dv9.css",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/20mf4hhw25dv9.css",
+      "bytes": 51649,
+      "mediaQueries": [
+        "(min-width:40rem)",
+        "(min-width:48rem)",
+        "(min-width:64rem)",
+        "(min-width:80rem)",
+        "(min-width:96rem)",
+        "(hover:hover)",
+        "(prefers-reduced-motion:reduce)",
+        "not all and (min-width:1025px)",
+        "not all and (min-width:64rem)",
+        "not all and (min-width:48rem)"
+      ],
+      "allMediaCount": 13,
+      "fontFaces": [
+        "font-family:Host Grotesk;font-style:normal;font-weight:300;font-display:swap;src:url(../media/0d4f81138b703b58-s.3-s8-8wlgr10e.woff2)format(\"woff2\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF",
+        "font-family:Host Grotesk;font-style:normal;font-weight:300;font-display:swap;src:url(../media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2)format(\"woff2\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",
+        "font-family:Host Grotesk;font-style:normal;font-weight:400;font-display:swap;src:url(../media/0d4f81138b703b58-s.3-s8-8wlgr10e.woff2)format(\"woff2\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF",
+        "font-family:Host Grotesk;font-style:normal;font-weight:400;font-display:swap;src:url(../media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2)format(\"woff2\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",
+        "font-family:Host Grotesk;font-style:normal;font-weight:500;font-display:swap;src:url(../media/0d4f81138b703b58-s.3-s8-8wlgr10e.woff2)format(\"woff2\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF",
+        "font-family:Host Grotesk;font-style:normal;font-weight:500;font-display:swap;src:url(../media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2)format(\"woff2\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",
+        "font-family:Host Grotesk;font-style:normal;font-weight:600;font-display:swap;src:url(../media/0d4f81138b703b58-s.3-s8-8wlgr10e.woff2)format(\"woff2\");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF",
+        "font-family:Host Grotesk;font-style:normal;font-weight:600;font-display:swap;src:url(../media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2)format(\"woff2\");unicode-range:U+??,U+131,U+152-153,U+2BB-2BC,U+2C6,U+2DA,U+2DC,U+304,U+308,U+329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD",
+        "font-family:Host Grotesk Fallback;src:local(Arial);ascent-override:96.69%;descent-override:30.01%;line-gap-override:0.0%;size-adjust:104.98%"
+      ],
+      "keyframes": [
+        "spin"
+      ]
+    }
+  ],
+  "jsAnalysis": [
+    {
+      "file": "3s6nzrbk-8mnv.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3s6nzrbk-8mnv.js",
+      "bytes": 5598,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {}
+    },
+    {
+      "file": "0h2qsuyze9ds1.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0h2qsuyze9ds1.js",
+      "bytes": 14377,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {}
+    },
+    {
+      "file": "0lbsfuw32mhg-.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0lbsfuw32mhg-.js",
+      "bytes": 53361,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [
+        "\"3.15.0\""
+      ],
+      "keywordHits": {
+        "gsap": {
+          "count": 22,
+          "samples": [
+            {
+              "line": 127,
+              "snippet": "}\n,E=class e{\nconstructor(e,t){\nthis.isSplit=!1,s||T.register(window.gsap),this.elements=u(e),this.chars=[],this.words=[],this.lines=[],this.masks=[],this.vars=t,this.elements.forEach(e=>{\nvar r;\n!1!==t.overwrite&&(null==(r=e[a])||r._data.orig.filter(({\nelement:t\n}\n)=>t===e).forEach(y)),e[a]=this"
+            },
+            {
+              "line": 222,
+              "snippet": "return new e(t,r)\n}\nstatic register(e){\n(i=i||e||window.gsap)&&(c=i.utils.toArray,d=i.core.context||d),!s&&window.innerWidth>0&&(o=document.fonts,s=!0)\n}\n\n}\n;\nE.version=\"3.15.0\";"
+            },
+            {
+              "line": 230,
+              "snippet": "E.version=\"3.15.0\";\nlet T=E;\nvar S,k,P,M,A,O,R,N,D,B,I,Y,z,F=function(){\nreturn S||\"u\">typeof window&&(S=window.gsap)&&S.registerPlugin&&S\n}\n,L=1,W=[],X=[],H=[],U=Date.now,q=function(e,t){\nreturn t\n}\n,j=function(){"
+            },
+            {
+              "line": 319,
+              "snippet": "\n}\n,es=function(e,t){\nreturn t&&!e._gsapAllow&&!1!==e.cancelable&&e.preventDefault(),e.changedTouches?e.changedTouches[0]:e\n}\n,el=function(e){\nvar t=Math.max.apply(Math,e),r=Math.min.apply(Math,e);return Math.abs(t)>=Math.abs(r)?t:r\n}\n,ec=function(){"
+            },
+            {
+              "line": 342,
+              "snippet": "this.init(e)\n}\nreturn t.prototype.init=function(e){\nk||eu(S)||console.warn(\"Please gsap.registerPlugin(Observer)\"),D||ec();\nvar t=e.tolerance,r=e.dragMinimum,n=e.type,i=e.target,o=e.lineHeight,a=e.debounce,s=e.preventDefault,l=e.onStop,c=e.onStopDelay,u=e.ignore,f=e.wheelSpeed,d=e.event,p=e.onDragStart,h=e.onDragEnd,g=e.onDrag,v=e.onPress,m=e.onRelease,y=e.onRight,x=e.onLeft,b=e.onUp,w=e.onDown,_=e.onChangeX,C=e.onChangeY,E=e.onChange,T=e.onToggleX,B=e.onToggleY,F=e.onHover,L=e.onHoverEnd,X=e.onMove,H=e.ignoreCheck,q=e.isNormalizer,j=e.onGestureStart,V=e.onGestureEnd,Z=e.onWheel,J=e.onEnable,e"
+            },
+            {
+              "line": 500,
+              "snippet": "return\"u\">typeof window\n}\n,e7=function(){\nreturn ed||e6()&&(ed=window.gsap)&&ed.registerPlugin&&ed\n}\n,e8=function(e){\nreturn!!~ey.indexOf(e)\n}\n,te=function(e){"
+            },
+            {
+              "line": 653,
+              "snippet": "\";\nreturn x+=\"position:\"+((g||s)&&h?\"fixed;\":\"absolute;\"),(g||s||!h)&&(x+=(n===er?tp:th)+\":\"+(o+parseFloat(f))+\"px;\"),a&&(x+=\"box-sizing:border-box;\ntext-align:left;\nwidth:\"+a.offsetWidth+\"px;\"),p._isStart=m,p.setAttribute(\"class\",\"gsap-marker-\"+e+(t?\" marker-\"+t:\"\")),p.style.cssText=x,p.innerText=t||0===t?e+\"-\"+t:e,v.children[0]?v.insertBefore(p,v.children[0]):v.appendChild(p),p._offset=p[\"offset\"+n.op.d2],tL(p,0,n,m),p\n}\n,tL=function(e,t,r,n){\nvar i={\ndisplay:\"block\"\n}"
+            },
+            {
+              "line": 722,
+              "snippet": "em.appendChild(eW),eX=!eD&&eW.offsetHeight||eh.innerHeight,em.removeChild(eW)\n}\n,t9=function(e){\nreturn eb(\".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end\").forEach(function(t){\nreturn t.style.display=e?\"none\":\"block\"\n}\n)\n}\n,t4=function(e,t){"
+            },
+            {
+              "line": 773,
+              "snippet": "}\n,re=[td,\"top\",th,tp,tw+tx,tw+tm,tw+\"Top\",tw+ty,\"display\",\"flexShrink\",\"float\",\"zIndex\",\"gridColumnStart\",\"gridColumnEnd\",\"gridRowStart\",\"gridRowEnd\",\"gridArea\",\"justifySelf\",\"alignSelf\",\"placeSelf\",\"order\"],rt=re.concat([tg,tv,\"boxSizing\",\"max\"+t_,\"max\"+tC,\"position\",tw,tb,tb+\"Top\",tb+tm,tb+tx,tb+ty]),rr=function(e,t,r){\nro(r);\nvar n=e._gsap;if(n.spacerIsNative)ro(n.spacerState);\nelse if(e._gsap.swappedIn){\nvar i=t.parentNode;\ni&&(i.insertBefore(e,t),i.removeChild(t))\n}\ne._gsap.swappedIn=!1"
+            },
+            {
+              "line": 774,
+              "snippet": ",re=[td,\"top\",th,tp,tw+tx,tw+tm,tw+\"Top\",tw+ty,\"display\",\"flexShrink\",\"float\",\"zIndex\",\"gridColumnStart\",\"gridColumnEnd\",\"gridRowStart\",\"gridRowEnd\",\"gridArea\",\"justifySelf\",\"alignSelf\",\"placeSelf\",\"order\"],rt=re.concat([tg,tv,\"boxSizing\",\"max\"+t_,\"max\"+tC,\"position\",tw,tb,tb+\"Top\",tb+tm,tb+tx,tb+ty]),rr=function(e,t,r){\nro(r);\nvar n=e._gsap;if(n.spacerIsNative)ro(n.spacerState);\nelse if(e._gsap.swappedIn){\nvar i=t.parentNode;\ni&&(i.insertBefore(e,t),i.removeChild(t))\n}\ne._gsap.swappedIn=!1\n}"
+            },
+            {
+              "line": 778,
+              "snippet": "var i=t.parentNode;\ni&&(i.insertBefore(e,t),i.removeChild(t))\n}\ne._gsap.swappedIn=!1\n}\n,rn=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var i,o=re.length,a=t.style,s=e.style;o--;)a[i=re[o]]=r[i];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[th]=s[tp]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[tg]=tP(e,et)+\"px\",a[tv]=tP(e,er)+\"px\",a[tb]=s[tw]=s.top=s[td]=\"0\",ro(n),s[tg]=s[\"max\"+t_]=r[tg],s[tv]=s[\"max\"+tC]=r[tv],s[tb]=r[tb],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e"
+            },
+            {
+              "line": 781,
+              "snippet": "e._gsap.swappedIn=!1\n}\n,rn=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var i,o=re.length,a=t.style,s=e.style;o--;)a[i=re[o]]=r[i];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[th]=s[tp]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[tg]=tP(e,et)+\"px\",a[tv]=tP(e,er)+\"px\",a[tb]=s[tw]=s.top=s[td]=\"0\",ro(n),s[tg]=s[\"max\"+t_]=r[tg],s[tv]=s[\"max\"+tC]=r[tv],s[tb]=r[tb],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e)),e._gsap.swappedIn=!0\n}\n\n}"
+            },
+            {
+              "line": 783,
+              "snippet": ",rn=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var i,o=re.length,a=t.style,s=e.style;o--;)a[i=re[o]]=r[i];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[th]=s[tp]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[tg]=tP(e,et)+\"px\",a[tv]=tP(e,er)+\"px\",a[tb]=s[tw]=s.top=s[td]=\"0\",ro(n),s[tg]=s[\"max\"+t_]=r[tg],s[tv]=s[\"max\"+tC]=r[tv],s[tb]=r[tb],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e)),e._gsap.swappedIn=!0\n}\n\n}\n,ri=/([A-Z])/g,ro=function(e){\nif(e){"
+            },
+            {
+              "line": 790,
+              "snippet": ",ri=/([A-Z])/g,ro=function(e){\nif(e){\nvar t,r,n=e.t.style,i=e.length,o=0;\nfor((e.t._gsap||ed.core.getCache(e.t)).uncache=1;o<i;o+=2)r=e[o+1],t=e[o],r?n[t]=r:n[t]&&n.removeProperty(t.replace(ri,\"-$1\").toLowerCase())\n}\n\n}\n,ra=function(e){\nfor(var t=rt.length,r=e.style,n=[],i=0;i<t;i++)n.push(rt[i],r[rt[i]]);"
+            },
+            {
+              "line": 873,
+              "snippet": "}\n,rg=function(){\nfunction e(t,r){\nep||e.register(ed)||console.warn(\"Please gsap.registerPlugin(ScrollTrigger)\"),eF(this),this.init(t,r)\n}\nreturn e.prototype.init=function(t,r){\nif(this.progress=this.start=0,this.vars&&this.kill(!0,!0),!e0){\nthis.update=this.refresh=this.kill=e9;\nreturn"
+            }
+          ]
+        },
+        "ScrollTrigger": {
+          "count": 3,
+          "samples": [
+            {
+              "line": 325,
+              "snippet": "var t=Math.max.apply(Math,e),r=Math.min.apply(Math,e);return Math.abs(t)>=Math.abs(r)?t:r\n}\n,ec=function(){\n(D=S.core.globals().ScrollTrigger)&&D.core&&j()\n}\n,eu=function(e){\nreturn S=e||F(),!k&&S&&\"u\">typeof document&&document.body&&(P=window,A=(M=document).documentElement,O=M.body,B=[P,M,A,O],S.utils.clamp,z=S.core.context||function(){\n\n}"
+            },
+            {
+              "line": 873,
+              "snippet": "}\n,rg=function(){\nfunction e(t,r){\nep||e.register(ed)||console.warn(\"Please gsap.registerPlugin(ScrollTrigger)\"),eF(this),this.init(t,r)\n}\nreturn e.prototype.init=function(t,r){\nif(this.progress=this.start=0,this.vars&&this.kill(!0,!0),!e0){\nthis.update=this.refresh=this.kill=e9;\nreturn"
+            },
+            {
+              "line": 1124,
+              "snippet": "for(var r=0;r<X.length;r+=3)tD(tN,X[r],X[r+1]),tD(tN,X[r],X[r+2])\n}\n,e.enable=function(){\nif(eh=window,ev=(eg=document).documentElement,em=eg.body,ed)if(eb=ed.utils.toArray,ew=ed.utils.clamp,eF=ed.core.context||e9,eR=ed.core.suppressOverwrites||e9,eL=eh.history.scrollRestoration||\"auto\",t6=eh.pageYOffset||0,ed.core.globals(\"ScrollTrigger\",e),em){\ne0=1,(eW=document.createElement(\"div\")).style.height=\"100vh\",eW.style.position=\"absolute\",t5(),function e(){\nreturn e0&&requestAnimationFrame(e)\n}\n(),ef.register(ed),e.isTouch=ef.isTouch,ez=ef.isTouch&&/(iPad|iPhone|iPod|Mac)/g.test(navigator.userAgen"
+            }
+          ]
+        },
+        "scrollTrigger:": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 1493,
+              "snippet": "n.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.to(g.current,{\n...e,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",once:!0\n}\n\n}\n):n.default.to(g.current,e);"
+            },
+            {
+              "line": 1517,
+              "snippet": "n.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.fromTo(m.current,t,{\n...y,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",end:\"bottom 68%\",scrub:s\n}\n\n}\n):n.default.fromTo(m.current,t,y)"
+            }
+          ]
+        },
+        "scrollTrigger": {
+          "count": 7,
+          "samples": [
+            {
+              "line": 807,
+              "snippet": "}\n,rc=function(e,t,r,n,i,o,a,s,l,c,u,f,d,p){\nta(e)&&(e=e(s)),to(e)&&\"max\"===e.substr(0,3)&&(e=f+(\"=\"===e.charAt(4)?tz(\"0\"+e.substr(3),r):0));\nvar h,g,v,m=d?d.time():0;if(d&&d.seek(0),isNaN(e)||(e*=1),ts(e))d&&(e=ed.utils.mapRange(d.scrollTrigger.start,d.scrollTrigger.end,0,f,e)),a&&tL(a,r,n,!0);else{\nta(t)&&(t=t(s));\nvar y,x,b,w,_=(e||\"0\").split(\" \");(y=tk(v=en(t,s)||em)||{\n\n}\n).left||y.top||\"none\"!==tE(v).display||(w=v.style.display,v.style.display=\"block\",y=tk(v),w?v.style.display=w:v.style.removeProperty(\"display\")),x=tz(_[0],y[n.d]),b=tz(_[1]||\"0\",r),e=y[n.p]-l[n.p]-c+x+i-b,a&&tL(a,b,n,r-b"
+            },
+            {
+              "line": 902,
+              "snippet": "}\n):(I&&I.progress(1).kill(),I=0)\n}\n,r&&(r.vars.lazy=!1,r._initted&&!eW.isReverted||!1!==r.vars.immediateRender&&!1!==t.immediateRender&&r.duration()&&r.render(0,!0,!0),eW.animation=r.pause(),r.scrollTrigger=eW,eW.scrubDuration(Q),D=0,K||(K=r.vars.id)),ep&&((!tl(ep)||ep.push)&&(ep={\nsnapTo:ep\n}\n),\"scrollBehavior\"in em.style&&ed.set(eB?[em,ev]:eN,{\nscrollBehavior:\"auto\"\n}"
+            },
+            {
+              "line": 987,
+              "snippet": "return e.vars.immediateRender&&e.render(0,!0,!0)\n}\n):r.vars.immediateRender&&r.render(0,!0,!0)),eW.isReverted||eW.revert(!0,!0),eW._subPinOffset=!1;\nvar v,C,T,P,A,R,N,D,B,Y,z,X,H,U=eH(),q=ej(),j=eC?eC.duration():tn(eN,eM),V=y<=.01||!y,G=0,$=s||0,K=tl(a)?a.end:t.end,Z=t.endTrigger||ee,Q=tl(a)?a.start:t.start||(0!==t.start&&ee?ei?\"0 0\":\"0 100%\":0),el=eW.pinnedContainer=t.pinnedContainer&&en(t.pinnedContainer,eW),ec=ee&&Math.max(0,tW.indexOf(eW))||0,eu=ec;for(eF&&tl(a)&&(X=ed.getProperty(h,eM.p),H=ed.getProperty(g,eM.p));eu-- >0;)(R=tW[eu]).end||R.refresh(0,1)||(eE=eW),(N=R.pin)&&(N===ee||N===ei|"
+            },
+            {
+              "line": 1066,
+              "snippet": "}\n,eW.setPositions=function(e,t,r,n){\nif(eC){\nvar i=eC.scrollTrigger,o=eC.duration(),a=i.end-i.start;\ne=i.start+a*e/o,t=i.start+a*t/o\n}\neW.refresh(!1,!1,{\nstart:e2(e,r&&!!eW._startClamp),end:e2(t,r&&!!eW._endClamp)\n}"
+            },
+            {
+              "line": 1090,
+              "snippet": "eW.disable(e,n),I&&!n&&I.kill(),K&&delete tX[K];var i=tW.indexOf(eW);i>=0&&tW.splice(i,1),i===ek&&t7>0&&ek--,i=0,tW.forEach(function(e){\nreturn e.scroller===eW.scroller&&(i=1)\n}\n),i||eV||(eW.scroll.rec=0),r&&(r.scrollTrigger=null,e&&r.revert({\nkill:!1\n}\n),n||r.kill()),d&&[d,p,h,g].forEach(function(e){\nreturn e.parentNode&&e.parentNode.removeChild(e)\n}"
+            },
+            {
+              "line": 1493,
+              "snippet": "n.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.to(g.current,{\n...e,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",once:!0\n}\n\n}\n):n.default.to(g.current,e);"
+            },
+            {
+              "line": 1517,
+              "snippet": "n.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.fromTo(m.current,t,{\n...y,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",end:\"bottom 68%\",scrub:s\n}\n\n}\n):n.default.fromTo(m.current,t,y)"
+            }
+          ]
+        },
+        ".to(": {
+          "count": 7,
+          "samples": [
+            {
+              "line": 571,
+              "snippet": "return e\n}\n,tk=function(e,t){\nvar r=t&&\"matrix(1, 0, 0, 1, 0, 0)\"!==tE(e)[eS]&&ed.to(e,{\nx:0,y:0,xPercent:0,yPercent:0,rotation:0,rotationX:0,rotationY:0,scale:1,skewX:0,skewY:0\n}\n).progress(1),n=e.getBoundingClientRect?e.getBoundingClientRect():e.scrollingElement.getBoundingClientRect();\nreturn r&&r.progress(0).kill(),n\n}"
+            },
+            {
+              "line": 863,
+              "snippet": ",o.onComplete=function(){\nt.tween=0,u&&u.call(c)\n}\n,c=t.tween=ed.to(e,o)\n}\n;\nreturn e[n]=r,r.wheelHandler=function(){\nreturn i.tween&&i.tween.kill()&&(i.tween=0)\n}"
+            },
+            {
+              "line": 894,
+              "snippet": "top:rh(eN,er),left:rh(eN,et)\n}\n,eW.tweenTo=o=eD.tweenScroll[eM.p],eW.scrubDuration=function(e){\n(Y=ts(e)&&e)?I?I.duration(e):I=ed.to(r,{\nease:\"expo\",totalProgress:\"+=0\",inherit:!1,duration:Y,paused:!0,onComplete:function(){\nreturn ec&&ec(eW)\n}\n\n}"
+            },
+            {
+              "line": 1361,
+              "snippet": "}\n,e.onRelease=e.onGestureStart=function(e,t){\nif(y.offset&&M(),t){\nX.cache++;var n,i,a=C();u&&(i=(n=x())+-(.05*a*e.velocityX)/.227,a*=rm(x,n,i,tn(h,et)),o.vars.scrollX=S(i)),i=(n=y())+-(.05*a*e.velocityY)/.227,a*=rm(y,n,i,tn(h,er)),o.vars.scrollY=k(i),o.invalidate().duration(a).play(.01),(ez&&o.vars.scrollY>=r||n>=r-1)&&ed.to({\n\n}\n,{\nonUpdate:O,duration:a\n}"
+            },
+            {
+              "line": 1387,
+              "snippet": ",e.onDisable=function(){\nry(h,!0),tN(eh,\"resize\",O),rg.removeEventListener(\"refresh\",O),E.kill()\n}\n,e.lockAxis=!1!==e.lockAxis,(t=new ef(e)).iOS=ez,ez&&!y()&&y(1),ez&&ed.ticker.add(e9),l=t._dc,o=ed.to(t,{\nease:\"power4\",paused:!0,inherit:!1,scrollX:u?\"+=0.1\":\"+=0\",scrollY:\"+=0.1\",modifiers:{\nscrollY:rd(y,y(),function(){\nreturn o.pause()\n}\n)"
+            },
+            {
+              "line": 1492,
+              "snippet": "let e=o+.8;\nn.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.to(g.current,{\n...e,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",once:!0\n}\n\n}"
+            },
+            {
+              "line": 1498,
+              "snippet": "}\n\n}\n):n.default.to(g.current,e);\nreturn\n}\nlet e=rT[l]??rT.bottom;\nn.default.set(g.current,{\nopacity:1"
+            }
+          ]
+        },
+        ".from(": {
+          "count": 3,
+          "samples": [
+            {
+              "line": 3,
+              "snippet": "(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push([\"object\"==typeof document?document.currentScript:void 0,79921,e=>{\n\"use strict\";var t=e.i(43476),r=e.i(71645),n=e.i(89970);\nlet i,o,a=\"function\"==typeof Symbol?Symbol():\"_split\",s,l=\"u\">typeof Intl&&\"Segmenter\"in Intl?new Intl.Segmenter:0,c=e=>e?\"string\"==typeof e?c(document.querySelectorAll(e)):\"length\"in e?Array.from(e).reduce((e,t)=>(\"string\"==typeof t?e.push(...c(t)):e.push(t),e),[]):[e]:[],u=e=>c(e).filter(e=>e&&1===e.nodeType),f=[],d=function(){\n\n}\n,p={\nadd:e=>e()\n}"
+            },
+            {
+              "line": 105,
+              "snippet": "}\n,C=(e,t,r,n,i,o,a,s,c,u)=>{\nvar d;\nlet p=Array.from(e.childNodes),g=0,{\nwordDelimiter:v,reduceWhiteSpace:m=!0,prepareText:y\n}\n=t,_=e.getBoundingClientRect(),E=_,T=!m&&\"pre\"===window.getComputedStyle(e).whiteSpace.substring(0,3),S=0,k=r.collection,P,M,A,O,R,N,D,B,I,Y,z,F,L,W,X,H,U,q;\nfor(\"object\"==typeof v?(A=v.delimiter||v,M=v.replaceWith||\"\"):M=\"\"===v?\"\":v||\" \",P=\" \"!==M;g<p.length;g++)if(3===(O=p[g]).nodeType){\nfor(X=O.textContent||\"\",m?X=X.replace(h,\" \"):T&&(X=X.replace(/\\n/g,M+\"\\n\")),y&&(X=y(X,e)),O.textContent=X,U=(R=M||A?X.split(A||M):X.match(s)||f)[R.length-1],B=P?\" \"===U.slice(-1):!U"
+            },
+            {
+              "line": 1458,
+              "snippet": "let g=(0,r.useRef)(null),v=(0,r.useRef)([]),m=(0,r.useRef)([]);return(0,r.useEffect)(()=>{\nlet e,t;if(!g.current||!h)return;\nv.current=[],m.current=[];\nlet r=g.current.hasAttribute(\"data-copy-wrapper\")?Array.from(g.current.children):[g.current],a=window.matchMedia&&window.matchMedia(\"(prefers-reduced-motion: reduce)\").matches,y=null,x=!1,b=()=>{\n!x&&g.current&&(e=n.default.context(()=>{\nif(r.forEach(e=>{\nif(\"lines\"===c){\nlet t=T.create(e,{\ntype:\"lines\",mask:\"lines\",linesClass:\"line++\",reduceWhiteSpace:!1"
+            }
+          ]
+        },
+        ".fromTo(": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 1516,
+              "snippet": "let e=o+h*Math.max(m.current.length-1,0)+f;\nn.default.delayedCall(Math.max(e-p,0),d)\n}\ni?n.default.fromTo(m.current,t,{\n...y,scrollTrigger:{\ntrigger:g.current,start:\"top 85%\",end:\"bottom 68%\",scrub:s\n}\n\n}"
+            },
+            {
+              "line": 1522,
+              "snippet": "}\n\n}\n):n.default.fromTo(m.current,t,y)\n}\n,g))\n}\n,w=()=>{\nlet e=!1,r=()=>{"
+            }
+          ]
+        },
+        "ease:": {
+          "count": 5,
+          "samples": [
+            {
+              "line": 895,
+              "snippet": "}\n,eW.tweenTo=o=eD.tweenScroll[eM.p],eW.scrubDuration=function(e){\n(Y=ts(e)&&e)?I?I.duration(e):I=ed.to(r,{\nease:\"expo\",totalProgress:\"+=0\",inherit:!1,duration:Y,paused:!0,onComplete:function(){\nreturn ec&&ec(eW)\n}\n\n}\n):(I&&I.progress(1).kill(),I=0)"
+            },
+            {
+              "line": 929,
+              "snippet": "var i,a,l=(e-u)/y,c=r&&!eA?r.totalProgress():l,d=t?0:(c-B)/(eZ()-e_)*1e3||0,p=ed.utils.clamp(-l,1-l,tf(d/2)*d/.185),h=l+(!1===ep.inertia?0:p),g=ep,v=g.onStart,m=g.onInterrupt,x=g.onComplete;if(ts(i=s(h,eW))||(i=h),a=Math.max(0,Math.round(u+i*y)),e<=f&&e>=u&&a!==e){\nif(n&&!n._initted&&n.data<=tf(a-e))return;\n!1===ep.inertia&&(p=i-l),o(a,{\nduration:z(tf(.185*Math.max(tf(h-c),tf(i-c))/d/.05||0)),ease:ep.ease||\"power3\",data:tf(a-e),onInterrupt:function(){\nreturn F.restart(!0)&&m&&tu(eW,m)\n}\n,onComplete:function(){\neW.update(),eG=e5(),r&&!eA&&(I?I.resetTo(\"totalProgress\",i,r._tTime/r._tDur):r.progr"
+            },
+            {
+              "line": 1388,
+              "snippet": "ry(h,!0),tN(eh,\"resize\",O),rg.removeEventListener(\"refresh\",O),E.kill()\n}\n,e.lockAxis=!1!==e.lockAxis,(t=new ef(e)).iOS=ez,ez&&!y()&&y(1),ez&&ed.ticker.add(e9),l=t._dc,o=ed.to(t,{\nease:\"power4\",paused:!0,inherit:!1,scrollX:u?\"+=0.1\":\"+=0\",scrollY:\"+=0.1\",modifiers:{\nscrollY:rd(y,y(),function(){\nreturn o.pause()\n}\n)\n}"
+            },
+            {
+              "line": 1486,
+              "snippet": "}\n);\nlet e={\nopacity:1,y:0,duration:.8,ease:\"power2.out\",delay:o\n}\n;if(d){\nlet e=o+.8;\nn.default.delayedCall(Math.max(e-p,0),d)\n}"
+            },
+            {
+              "line": 1510,
+              "snippet": "...e,willChange:\"transform\"\n}\n,h=u??(\"lines\"===c?.1:.03),y={\nyPercent:0,xPercent:0,rotate:0,opacity:1,duration:f,stagger:h,ease:\"power3.out\",delay:o\n}\n;if(d){\nlet e=o+h*Math.max(m.current.length-1,0)+f;\nn.default.delayedCall(Math.max(e-p,0),d)\n}"
+            }
+          ]
+        },
+        "stagger": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 1452,
+              "snippet": "}\n);\ne.s([\"default\",0,function({\nchildren:e=rS,animateOnScroll:i=!0,delay:o=0,className:a=\"\",scrub:s=!1,direction:l=\"bottom\",splitBy:c=\"chars\",stagger:u,duration:f=.5,onComplete:d,completeOverlap:p=0,start:h=!0\n}\n){\nlet g=(0,r.useRef)(null),v=(0,r.useRef)([]),m=(0,r.useRef)([]);return(0,r.useEffect)(()=>{\nlet e,t;if(!g.current||!h)return;\nv.current=[],m.current=[];"
+            },
+            {
+              "line": 1510,
+              "snippet": "...e,willChange:\"transform\"\n}\n,h=u??(\"lines\"===c?.1:.03),y={\nyPercent:0,xPercent:0,rotate:0,opacity:1,duration:f,stagger:h,ease:\"power3.out\",delay:o\n}\n;if(d){\nlet e=o+h*Math.max(m.current.length-1,0)+f;\nn.default.delayedCall(Math.max(e-p,0),d)\n}"
+            }
+          ]
+        },
+        "data-copy-wrapper": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 1458,
+              "snippet": "let g=(0,r.useRef)(null),v=(0,r.useRef)([]),m=(0,r.useRef)([]);return(0,r.useEffect)(()=>{\nlet e,t;if(!g.current||!h)return;\nv.current=[],m.current=[];\nlet r=g.current.hasAttribute(\"data-copy-wrapper\")?Array.from(g.current.children):[g.current],a=window.matchMedia&&window.matchMedia(\"(prefers-reduced-motion: reduce)\").matches,y=null,x=!1,b=()=>{\n!x&&g.current&&(e=n.default.context(()=>{\nif(r.forEach(e=>{\nif(\"lines\"===c){\nlet t=T.create(e,{\ntype:\"lines\",mask:\"lines\",linesClass:\"line++\",reduceWhiteSpace:!1"
+            },
+            {
+              "line": 1565,
+              "snippet": "\n}\n,[i,o,s,l,c,u,f,d,p,h]),(0,t.jsx)(\"div\",{\nref:g,\"data-copy-wrapper\":\"true\",className:`opacity-0 ${\na\n}\n`,children:e\n}\n)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "1gp3fy3xhglqx.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/1gp3fy3xhglqx.js",
+      "bytes": 160210,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {
+        ".from(": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 5199,
+              "snippet": "}\n),\"$K\"+e.toString(16)\n}\nif(h instanceof Map)return e=o++,A=i(Array.from(h),e),null===s&&(s=new FormData),s.append(\"\"+e,A),\"$Q\"+e.toString(16);if(h instanceof Set)return e=o++,A=i(Array.from(h),e),null===s&&(s=new FormData),s.append(\"\"+e,A),\"$W\"+e.toString(16);\nif(h instanceof ArrayBuffer)return e=new Blob([h]),A=o++,null===s&&(s=new FormData),s.append(\"\"+A,e),\"$A\"+A.toString(16);\nif(h instanceof Int8Array)return l(\"O\",h);\nif(h instanceof Uint8Array)return l(\"o\",h);\nif(h instanceof Uint8ClampedArray)return l(\"U\",h);\nif(h instanceof Int16Array)return l(\"S\",h);"
+            },
+            {
+              "line": 5213,
+              "snippet": "if(h instanceof BigInt64Array)return l(\"M\",h);\nif(h instanceof BigUint64Array)return l(\"m\",h);\nif(h instanceof DataView)return l(\"V\",h);\nif(\"function\"==typeof Blob&&h instanceof Blob)return null===s&&(s=new FormData),e=o++,s.append(\"\"+e,h),\"$B\"+e.toString(16);if(e=null===(P=h)||\"object\"!=typeof P?null:\"function\"==typeof(P=g&&P[g]||P[\"@@iterator\"])?P:null)return(A=e.call(h))===h?(e=o++,A=i(Array.from(A),e),null===s&&(s=new FormData),s.append(\"\"+e,A),\"$i\"+e.toString(16)):Array.from(A);\nif(\"function\"==typeof ReadableStream&&h instanceof ReadableStream)return function(e){\ntry{\nvar t,a,l,i,f,d,h,p="
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "2i7tjb2l-wn62.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2i7tjb2l-wn62.js",
+      "bytes": 43483,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [
+        "\"3.15.0\""
+      ],
+      "keywordHits": {
+        "gsap": {
+          "count": 20,
+          "samples": [
+            {
+              "line": 5,
+              "snippet": "e.e,function(e){\n\"use strict\";\nvar t,r,n,o,i,a,s,l,c,u,f,p,d,h=function(){\nreturn t||\"u\">typeof window&&(t=window.gsap)&&t.registerPlugin&&t\n}\n,g=1,v=[],m=[],y=[],x=Date.now,b=function(e,t){\nreturn t\n}\n,w=function(){"
+            },
+            {
+              "line": 94,
+              "snippet": "\n}\n,I=function(e,t){\nreturn t&&!e._gsapAllow&&!1!==e.cancelable&&e.preventDefault(),e.changedTouches?e.changedTouches[0]:e\n}\n,N=function(e){\nvar t=Math.max.apply(Math,e),r=Math.min.apply(Math,e);return Math.abs(t)>=Math.abs(r)?t:r\n}\n,X=function(){"
+            },
+            {
+              "line": 117,
+              "snippet": "this.init(e)\n}\nreturn u.prototype.init=function(e){\nr||z(t)||console.warn(\"Please gsap.registerPlugin(Observer)\"),c||X();\nvar u=e.tolerance,h=e.dragMinimum,g=e.type,m=e.target,y=e.lineHeight,b=e.debounce,w=e.preventDefault,_=e.onStop,k=e.onStopDelay,S=e.ignore,M=e.wheelSpeed,F=e.event,L=e.onDragStart,H=e.onDragEnd,W=e.onDrag,U=e.onPress,q=e.onRelease,V=e.onRight,G=e.onLeft,j=e.onUp,K=e.onDown,Z=e.onChangeX,$=e.onChangeY,J=e.onChange,Q=e.onToggleX,ee=e.onToggleY,et=e.onHover,er=e.onHoverEnd,en=e.onMove,eo=e.ignoreCheck,ei=e.isNormalizer,ea=e.onGestureStart,es=e.onGestureEnd,el=e.onWheel,ec=e.on"
+            },
+            {
+              "line": 275,
+              "snippet": "return\"u\">typeof window\n}\n,eN=function(){\nreturn L||eI()&&(L=window.gsap)&&L.registerPlugin&&L\n}\n,eX=function(e){\nreturn!!~G.indexOf(e)\n}\n,ez=function(e){"
+            },
+            {
+              "line": 428,
+              "snippet": "\";\nreturn x+=\"position:\"+((g||s)&&h?\"fixed;\":\"absolute;\"),(g||s||!h)&&(x+=(n===A?eJ:eQ)+\":\"+(i+parseFloat(f))+\"px;\"),a&&(x+=\"box-sizing:border-box;\ntext-align:left;\nwidth:\"+a.offsetWidth+\"px;\"),d._isStart=m,d.setAttribute(\"class\",\"gsap-marker-\"+e+(t?\" marker-\"+t:\"\")),d.style.cssText=x,d.innerText=t||0===t?e+\"-\"+t:e,v.children[0]?v.insertBefore(d,v.children[0]):v.appendChild(d),d._offset=d[\"offset\"+n.op.d2],tg(d,0,n,m),d\n}\n,tg=function(e,t,r,n){\nvar o={\ndisplay:\"block\"\n}"
+            },
+            {
+              "line": 497,
+              "snippet": "V.appendChild(ev),em=!ec&&ev.offsetHeight||W.innerHeight,V.removeChild(ev)\n}\n,tY=function(e){\nreturn K(\".gsap-marker-start, .gsap-marker-end, .gsap-marker-scroller-start, .gsap-marker-scroller-end\").forEach(function(t){\nreturn t.style.display=e?\"none\":\"block\"\n}\n)\n}\n,tB=function(e,t){"
+            },
+            {
+              "line": 548,
+              "snippet": "}\n,tz=[e$,\"top\",eQ,eJ,e6+e5,e6+e2,e6+\"Top\",e6+e3,\"display\",\"flexShrink\",\"float\",\"zIndex\",\"gridColumnStart\",\"gridColumnEnd\",\"gridRowStart\",\"gridRowEnd\",\"gridArea\",\"justifySelf\",\"alignSelf\",\"placeSelf\",\"order\"],tF=tz.concat([e0,e1,\"boxSizing\",\"max\"+e4,\"max\"+e8,\"position\",e6,e9,e9+\"Top\",e9+e2,e9+e5,e9+e3]),tL=function(e,t,r){\ntU(r);\nvar n=e._gsap;if(n.spacerIsNative)tU(n.spacerState);\nelse if(e._gsap.swappedIn){\nvar o=t.parentNode;\no&&(o.insertBefore(e,t),o.removeChild(t))\n}\ne._gsap.swappedIn=!1"
+            },
+            {
+              "line": 549,
+              "snippet": ",tz=[e$,\"top\",eQ,eJ,e6+e5,e6+e2,e6+\"Top\",e6+e3,\"display\",\"flexShrink\",\"float\",\"zIndex\",\"gridColumnStart\",\"gridColumnEnd\",\"gridRowStart\",\"gridRowEnd\",\"gridArea\",\"justifySelf\",\"alignSelf\",\"placeSelf\",\"order\"],tF=tz.concat([e0,e1,\"boxSizing\",\"max\"+e4,\"max\"+e8,\"position\",e6,e9,e9+\"Top\",e9+e2,e9+e5,e9+e3]),tL=function(e,t,r){\ntU(r);\nvar n=e._gsap;if(n.spacerIsNative)tU(n.spacerState);\nelse if(e._gsap.swappedIn){\nvar o=t.parentNode;\no&&(o.insertBefore(e,t),o.removeChild(t))\n}\ne._gsap.swappedIn=!1\n}"
+            },
+            {
+              "line": 553,
+              "snippet": "var o=t.parentNode;\no&&(o.insertBefore(e,t),o.removeChild(t))\n}\ne._gsap.swappedIn=!1\n}\n,tH=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var o,i=tz.length,a=t.style,s=e.style;i--;)a[o=tz[i]]=r[o];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[eQ]=s[eJ]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[e0]=tn(e,O)+\"px\",a[e1]=tn(e,A)+\"px\",a[e9]=s[e6]=s.top=s[e$]=\"0\",tU(n),s[e0]=s[\"max\"+e4]=r[e0],s[e1]=s[\"max\"+e8]=r[e1],s[e9]=r[e9],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e))"
+            },
+            {
+              "line": 556,
+              "snippet": "e._gsap.swappedIn=!1\n}\n,tH=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var o,i=tz.length,a=t.style,s=e.style;i--;)a[o=tz[i]]=r[o];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[eQ]=s[eJ]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[e0]=tn(e,O)+\"px\",a[e1]=tn(e,A)+\"px\",a[e9]=s[e6]=s.top=s[e$]=\"0\",tU(n),s[e0]=s[\"max\"+e4]=r[e0],s[e1]=s[\"max\"+e8]=r[e1],s[e9]=r[e9],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e)),e._gsap.swappedIn=!0\n}\n\n}"
+            },
+            {
+              "line": 558,
+              "snippet": ",tH=function(e,t,r,n){\nif(!e._gsap.swappedIn){\nfor(var o,i=tz.length,a=t.style,s=e.style;i--;)a[o=tz[i]]=r[o];\na.position=\"absolute\"===r.position?\"absolute\":\"relative\",\"inline\"===r.display&&(a.display=\"inline-block\"),s[eQ]=s[eJ]=\"auto\",a.flexBasis=r.flexBasis||\"auto\",a.overflow=\"visible\",a.boxSizing=\"border-box\",a[e0]=tn(e,O)+\"px\",a[e1]=tn(e,A)+\"px\",a[e9]=s[e6]=s.top=s[e$]=\"0\",tU(n),s[e0]=s[\"max\"+e4]=r[e0],s[e1]=s[\"max\"+e8]=r[e1],s[e9]=r[e9],e.parentNode!==t&&(e.parentNode.insertBefore(t,e),t.appendChild(e)),e._gsap.swappedIn=!0\n}\n\n}\n,tW=/([A-Z])/g,tU=function(e){\nif(e){"
+            },
+            {
+              "line": 565,
+              "snippet": ",tW=/([A-Z])/g,tU=function(e){\nif(e){\nvar t,r,n=e.t.style,o=e.length,i=0;\nfor((e.t._gsap||L.core.getCache(e.t)).uncache=1;i<o;i+=2)r=e[i+1],t=e[i],r?n[t]=r:n[t]&&n.removeProperty(t.replace(tW,\"-$1\").toLowerCase())\n}\n\n}\n,tq=function(e){\nfor(var t=tF.length,r=e.style,n=[],o=0;o<t;o++)n.push(tF[o],r[tF[o]]);"
+            },
+            {
+              "line": 648,
+              "snippet": "}\n,t0=function(){\nfunction e(t,r){\nH||e.register(L)||console.warn(\"Please gsap.registerPlugin(ScrollTrigger)\"),eh(this),this.init(t,r)\n}\nreturn e.prototype.init=function(t,r){\nif(this.progress=this.start=0,this.vars&&this.kill(!0,!0),!eM){\nthis.update=this.refresh=this.kill=eY;\nreturn"
+            },
+            {
+              "line": 718,
+              "snippet": "}\nelse tS.isActive&&tA!==e&&en.restart(!0)\n}\n).pause()),ed&&(tm[ed]=tS),(ec=(em=tS.trigger=R(em||!0!==ey&&ey))&&em._gsap&&em._gsap.stRevert)&&(ec=ec(tS)),ey=!0===ey?em:R(ey),eU(ep)&&(ep={\ntargets:em,className:ep\n}\n),ey&&(!1===ew||ew===e6||(ew=(!!ew||!ey.parentNode||!ey.parentNode.style||\"flex\"!==e7(ey.parentNode).display)&&e9),tS.pin=ey,(a=L.core.getCache(ey)).spacer?w=a.pinState:(eW&&((eW=R(eW))&&!eW.nodeType&&(eW=eW.current||eW.nativeElement),a.spacerIsNative=!!eW,eW&&(a.spacerState=tq(eW))),a.spacer=E=eW||U.createElement(\"div\"),E.classList.add(\"pin-spacer\"),ed&&E.classList.add(\"pin-spacer-\""
+            },
+            {
+              "line": 1064,
+              "snippet": "auto:1,scroll:1\n}\n,t9=function(e){\nvar t,r=e.event,n=e.target,o=e.axis,i=(r.changedTouches?r.changedTouches[0]:r).target,a=i._gsap||L.core.getCache(i),s=ek();\nif(!a._isScrollT||s-a._isScrollT>2e3){\nfor(;\ni&&i!==V&&(i.scrollHeight<=i.clientHeight&&i.scrollWidth<=i.clientWidth||!(t5[(t=e7(i)).overflowY]||t5[t.overflowX]));)i=i.parentNode;\na._isScroll=i&&i!==n&&!eX(i)&&(t5[(t=e7(i)).overflowY]||t5[t.overflowX]),a._isScrollT=s\n}"
+            }
+          ]
+        },
+        "ScrollTrigger": {
+          "count": 4,
+          "samples": [
+            {
+              "line": 100,
+              "snippet": "var t=Math.max.apply(Math,e),r=Math.min.apply(Math,e);return Math.abs(t)>=Math.abs(r)?t:r\n}\n,X=function(){\n(c=t.core.globals().ScrollTrigger)&&c.core&&w()\n}\n,z=function(e){\nreturn t=e||h(),!r&&t&&\"u\">typeof document&&document.body&&(n=window,i=(o=document).documentElement,a=o.body,u=[n,o,i,a],t.utils.clamp,d=t.core.context||function(){\n\n}"
+            },
+            {
+              "line": 648,
+              "snippet": "}\n,t0=function(){\nfunction e(t,r){\nH||e.register(L)||console.warn(\"Please gsap.registerPlugin(ScrollTrigger)\"),eh(this),this.init(t,r)\n}\nreturn e.prototype.init=function(t,r){\nif(this.progress=this.start=0,this.vars&&this.kill(!0,!0),!eM){\nthis.update=this.refresh=this.kill=eY;\nreturn"
+            },
+            {
+              "line": 899,
+              "snippet": "for(var r=0;r<m.length;r+=3)tc(tl,m[r],m[r+1]),tc(tl,m[r],m[r+2])\n}\n,e.enable=function(){\nif(W=window,q=(U=document).documentElement,V=U.body,L)if(K=L.utils.toArray,Z=L.utils.clamp,eh=L.core.context||eY,es=L.core.suppressOverwrites||eY,eg=W.history.scrollRestoration||\"auto\",tI=W.pageYOffset||0,L.core.globals(\"ScrollTrigger\",e),V){\neM=1,(ev=document.createElement(\"div\")).style.height=\"100vh\",ev.style.position=\"absolute\",tD(),function e(){\nreturn eM&&requestAnimationFrame(e)\n}\n(),F.register(L),e.isTouch=F.isTouch,ed=F.isTouch&&/(iPad|iPhone|iPod|Mac)/g.test(navigator.userAgent),eu=1===F.isTouch,"
+            },
+            {
+              "line": 1206,
+              "snippet": "}\n\n}\n,eN()&&L.registerPlugin(t0),e.ScrollTrigger=t0,e.default=t0,\"u\"<typeof window||window!==e?Object.defineProperty(e,\"__esModule\",{\nvalue:!0\n}\n):delete window.default\n}\n(r)"
+            }
+          ]
+        },
+        "scrollTrigger": {
+          "count": 5,
+          "samples": [
+            {
+              "line": 582,
+              "snippet": "}\n,tj=function(e,t,r,n,o,i,a,s,l,c,u,f,p,d){\neq(e)&&(e=e(s)),eU(e)&&\"max\"===e.substr(0,3)&&(e=f+(\"=\"===e.charAt(4)?td(\"0\"+e.substr(3),r):0));\nvar h,g,v,m=p?p.time():0;if(p&&p.seek(0),isNaN(e)||(e*=1),eV(e))p&&(e=L.utils.mapRange(p.scrollTrigger.start,p.scrollTrigger.end,0,f,e)),a&&tg(a,r,n,!0);else{\neq(t)&&(t=t(s));\nvar y,x,b,w,_=(e||\"0\").split(\" \");(y=tr(v=R(t,s)||V)||{\n\n}\n).left||y.top||\"none\"!==e7(v).display||(w=v.style.display,v.style.display=\"block\",y=tr(v),w?v.style.display=w:v.style.removeProperty(\"display\")),x=td(_[0],y[n.d]),b=td(_[1]||\"0\",r),e=y[n.p]-l[n.p]-c+x+o-b,a&&tg(a,b,n,r-b<20"
+            },
+            {
+              "line": 677,
+              "snippet": "}\n):(j&&j.progress(1).kill(),j=0)\n}\n,r&&(r.vars.lazy=!1,r._initted&&!tS.isReverted||!1!==r.vars.immediateRender&&!1!==t.immediateRender&&r.duration()&&r.render(0,!0,!0),tS.animation=r.pause(),r.scrollTrigger=tS,tS.scrubDuration(ev),H=0,ed||(ed=r.vars.id)),eN&&((!eG(eN)||eN.push)&&(eN={\nsnapTo:eN\n}\n),\"scrollBehavior\"in V.style&&L.set(ty?[V,q]:tp,{\nscrollBehavior:\"auto\"\n}"
+            },
+            {
+              "line": 762,
+              "snippet": "return e.vars.immediateRender&&e.render(0,!0,!0)\n}\n):r.vars.immediateRender&&r.render(0,!0,!0)),tS.isReverted||tS.revert(!0,!0),tS._subPinOffset=!1;\nvar v,m,y,_,k,P,B,N,z,F,H,W,G,K=tM(),Z=tO(),$=e$?e$.duration():eH(tp,ta),J=b<=.01||!b,ee=0,et=s||0,er=eG(a)?a.end:t.end,ea=t.endTrigger||em,el=eG(a)?a.start:t.start||(0!==t.start&&em?ey?\"0 0\":\"0 100%\":0),ec=tS.pinnedContainer=t.pinnedContainer&&R(t.pinnedContainer,tS),eu=em&&Math.max(0,tv.indexOf(tS))||0,ef=eu;for(tE&&eG(a)&&(W=L.getProperty(h,ta.p),G=L.getProperty(g,ta.p));ef-- >0;)(P=tv[ef]).end||P.refresh(0,1)||(Q=tS),(B=P.pin)&&(B===em||B===ey"
+            },
+            {
+              "line": 841,
+              "snippet": "}\n,tS.setPositions=function(e,t,r,n){\nif(e$){\nvar o=e$.scrollTrigger,i=e$.duration(),a=o.end-o.start;\ne=o.start+a*e/i,t=o.start+a*t/i\n}\ntS.refresh(!1,!1,{\nstart:eA(e,r&&!!tS._startClamp),end:eA(t,r&&!!tS._endClamp)\n}"
+            },
+            {
+              "line": 865,
+              "snippet": "tS.disable(e,n),j&&!n&&j.kill(),ed&&delete tm[ed];var o=tv.indexOf(tS);o>=0&&tv.splice(o,1),o===er&&tN>0&&er--,o=0,tv.forEach(function(e){\nreturn e.scroller===tS.scroller&&(o=1)\n}\n),o||e_||(tS.scroll.rec=0),r&&(r.scrollTrigger=null,e&&r.revert({\nkill:!1\n}\n),n||r.kill()),p&&[p,d,h,g].forEach(function(e){\nreturn e.parentNode&&e.parentNode.removeChild(e)\n}"
+            }
+          ]
+        },
+        ".to(": {
+          "count": 5,
+          "samples": [
+            {
+              "line": 346,
+              "snippet": "return e\n}\n,tr=function(e,t){\nvar r=t&&\"matrix(1, 0, 0, 1, 0, 0)\"!==e7(e)[et]&&L.to(e,{\nx:0,y:0,xPercent:0,yPercent:0,rotation:0,rotationX:0,rotationY:0,scale:1,skewX:0,skewY:0\n}\n).progress(1),n=e.getBoundingClientRect?e.getBoundingClientRect():e.scrollingElement.getBoundingClientRect();\nreturn r&&r.progress(0).kill(),n\n}"
+            },
+            {
+              "line": 638,
+              "snippet": ",i.onComplete=function(){\nt.tween=0,u&&u.call(c)\n}\n,c=t.tween=L.to(e,i)\n}\n;\nreturn e[n]=r,r.wheelHandler=function(){\nreturn o.tween&&o.tween.kill()&&(o.tween=0)\n}"
+            },
+            {
+              "line": 669,
+              "snippet": "top:tQ(tp,A),left:tQ(tp,O)\n}\n,tS.tweenTo=i=tg.tweenScroll[ta.p],tS.scrubDuration=function(e){\n(J=eV(e)&&e)?j?j.duration(e):j=L.to(r,{\nease:\"expo\",totalProgress:\"+=0\",inherit:!1,duration:J,paused:!0,onComplete:function(){\nreturn eR&&eR(tS)\n}\n\n}"
+            },
+            {
+              "line": 1136,
+              "snippet": "}\n,e.onRelease=e.onGestureStart=function(e,t){\nif(x.offset&&D(),t){\nm.cache++;var n,o,a=C();u&&(o=(n=b())+-(.05*a*e.velocityX)/.227,a*=t2(b,n,o,eH(h,O)),i.vars.scrollX=S(o)),o=(n=x())+-(.05*a*e.velocityY)/.227,a*=t2(x,n,o,eH(h,A)),i.vars.scrollY=P(o),i.invalidate().duration(a).play(.01),(ed&&i.vars.scrollY>=r||n>=r-1)&&L.to({\n\n}\n,{\nonUpdate:I,duration:a\n}"
+            },
+            {
+              "line": 1162,
+              "snippet": ",e.onDisable=function(){\nt3(h,!0),tl(W,\"resize\",I),t0.removeEventListener(\"refresh\",I),E.kill()\n}\n,e.lockAxis=!1!==e.lockAxis,(t=new F(e)).iOS=ed,ed&&!x()&&x(1),ed&&L.ticker.add(eY),l=t._dc,i=L.to(t,{\nease:\"power4\",paused:!0,inherit:!1,scrollX:u?\"+=0.1\":\"+=0\",scrollY:\"+=0.1\",modifiers:{\nscrollY:t$(x,x(),function(){\nreturn i.pause()\n}\n)"
+            }
+          ]
+        },
+        "ease:": {
+          "count": 3,
+          "samples": [
+            {
+              "line": 670,
+              "snippet": "}\n,tS.tweenTo=i=tg.tweenScroll[ta.p],tS.scrubDuration=function(e){\n(J=eV(e)&&e)?j?j.duration(e):j=L.to(r,{\nease:\"expo\",totalProgress:\"+=0\",inherit:!1,duration:J,paused:!0,onComplete:function(){\nreturn eR&&eR(tS)\n}\n\n}\n):(j&&j.progress(1).kill(),j=0)"
+            },
+            {
+              "line": 704,
+              "snippet": "var o,a,l=(e-u)/b,c=r&&!tc?r.totalProgress():l,p=t?0:(c-G)/(ek()-$)*1e3||0,d=L.utils.clamp(-l,1-l,eZ(p/2)*p/.185),h=l+(!1===eN.inertia?0:d),g=eN,v=g.onStart,m=g.onInterrupt,y=g.onComplete;if(eV(o=s(h,tS))||(o=h),a=Math.max(0,Math.round(u+o*b)),e<=f&&e>=u&&a!==e){\nif(n&&!n._initted&&n.data<=eZ(a-e))return;\n!1===eN.inertia&&(d=o-l),i(a,{\nduration:et(eZ(.185*Math.max(eZ(h-c),eZ(o-c))/p/.05||0)),ease:eN.ease||\"power3\",data:eZ(a-e),onInterrupt:function(){\nreturn en.restart(!0)&&m&&eK(tS,m)\n}\n,onComplete:function(){\ntS.update(),tA=tB(),r&&!tc&&(j?j.resetTo(\"totalProgress\",o,r._tTime/r._tDur):r.progr"
+            },
+            {
+              "line": 1163,
+              "snippet": "t3(h,!0),tl(W,\"resize\",I),t0.removeEventListener(\"refresh\",I),E.kill()\n}\n,e.lockAxis=!1!==e.lockAxis,(t=new F(e)).iOS=ed,ed&&!x()&&x(1),ed&&L.ticker.add(eY),l=t._dc,i=L.to(t,{\nease:\"power4\",paused:!0,inherit:!1,scrollX:u?\"+=0.1\":\"+=0\",scrollY:\"+=0.1\",modifiers:{\nscrollY:t$(x,x(),function(){\nreturn i.pause()\n}\n)\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "3i70kutwraqmh.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3i70kutwraqmh.js",
+      "bytes": 70167,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [
+        "\"3.15.0\""
+      ],
+      "keywordHits": {
+        "gsap": {
+          "count": 23,
+          "samples": [
+            {
+              "line": 55,
+              "snippet": "return(ts=tL(t,tn))&&rA\n}\n,to=function(t,e){\nreturn console.warn(\"Invalid property\",t,\"set to\",e,\"Missing plugin? gsap.registerPlugin()\")\n}\n,tu=function(t,e){\nreturn!e&&console.warn(t)\n}\n,th=function(t,e){"
+            },
+            {
+              "line": 88,
+              "snippet": "\n}\n,ty=30,tT=[],tx=\"\",tb=function(t){\nvar e,r,i=t[0];if(q(i)||U(i)||(t=[t]),!(e=(i._gsap||{\n\n}\n).harness)){\nfor(r=tT.length;\nr--&&!tT[r].targetTest(i););"
+            },
+            {
+              "line": 96,
+              "snippet": "r--&&!tT[r].targetTest(i););\ne=tT[r]\n}\nfor(r=t.length;r--;)t[r]&&(t[r]._gsap||(t[r]._gsap=new eq(t[r],e)))||t.splice(r,1);\nreturn t\n}\n,tw=function(t){\nreturn t._gsap||tb(ea(t))[0]._gsap\n}"
+            },
+            {
+              "line": 100,
+              "snippet": "return t\n}\n,tw=function(t){\nreturn t._gsap||tb(ea(t))[0]._gsap\n}\n,tO=function(t,e,r){\nreturn(r=t[e])&&U(r)?t[e]():N(r)&&t.getAttribute&&t.getAttribute(e)||r\n}\n,tM=function(t,e){"
+            },
+            {
+              "line": 475,
+              "snippet": "A&&(!M&&j()&&(k=(O=M=window).document||{\n\n}\n,tn.gsap=rA,(O.gsapVersions||(O.gsapVersions=[])).push(rA.version),ta(ts||O.GreenSockGlobals||!O.gsap&&O||{\n\n}\n),ey.forEach(eT)),o=\"u\">typeof requestAnimationFrame&&requestAnimationFrame,s&&u.sleep(),a=o||function(t){\nreturn setTimeout(t,g-1e3*u.time+1|0)\n}"
+            },
+            {
+              "line": 628,
+              "snippet": "return tx+=t+\",\"+t+\"Params,\"\n}\n);var eq=function(t,e){\nthis.id=F++,t._gsap=this,this.target=t,this.harness=e,this.get=e?e.get:tO,this.set=e?e.getSetter:rn\n}\n,eV=function(){\nfunction t(t){\nthis.vars=t,this._delay=+t.delay||0,(this._repeat=t.repeat===1/0?-2:t.repeat||0)&&(this._rDelay=t.repeatDelay||0,this._yoyo=!!t.yoyo||!!t.yoyoEase),this._ts=1,t6(this,+t.duration,1,1),this.data=t.data,b&&(this._ctx=b,b.data.push(this)),R||eD.wake()\n}"
+            },
+            {
+              "line": 1009,
+              "snippet": "}\nelse t(e._startAt,1e-8,1e-8);\nfor(e._pt=e._ptCache=0,O=R&&V(O)||O&&!R,s=0;s<z.length;s++){\nif(l=(u=z[s])._gsap||tb(z)[s]._gsap,e._ptLookup[s]=p={\n\n}\n,tm[l.id]&&td.length&&tR(),_=F===z?s:F.indexOf(u),f&&!1!==(c=new f).init(u,d||n,e,_,F)&&(e._pt=o=new rp(e._pt,u,c.name,0,1,c.render,c,0,c.priority),c._props.forEach(function(t){\np[t]=o\n}"
+            },
+            {
+              "line": 1065,
+              "snippet": "function i(r,i,n,s){\n\"number\"==typeof i&&(n.duration=i,i=n,n=null);\nvar a,o,u,h,l,f,c,p,_=t.call(this,s?i:tY(i))||this,d=_.vars,m=d.duration,g=d.delay,v=d.immediateRender,y=d.stagger,x=d.overwrite,b=d.keyframes,O=d.defaults,M=d.scrollTrigger,k=i.parent||w,A=(Q(r)||G(r)?X(r[0]):\"length\"in i)?[r]:ea(r);\nif(_._targets=A.length?tb(A):tu(\"GSAP target \"+r+\" not found. https://gsap.com\",!P.nullTargetWarn)||[],_._ptLookup=[],_._overwrite=x,b||y||W(m)||W(g)){\nvar C=(i=_.vars).easeReverse||i.yoyoEase;\nif((a=_.timeline=new ej({\ndata:\"nested\",defaults:O||{\n\n}"
+            },
+            {
+              "line": 1706,
+              "snippet": "return t.style.setProperty(e,r)\n}\n,rK=function(t,e,r){\nreturn t._gsap[e]=r\n}\n,rJ=function(t,e,r){\nreturn t._gsap.scaleX=t._gsap.scaleY=r\n}\n,r0=function(t,e,r,i,n){"
+            },
+            {
+              "line": 1709,
+              "snippet": "return t._gsap[e]=r\n}\n,rJ=function(t,e,r){\nreturn t._gsap.scaleX=t._gsap.scaleY=r\n}\n,r0=function(t,e,r,i,n){\nvar s=t._gsap;\ns.scaleX=s.scaleY=r,s.renderTransform(n,s)\n}"
+            },
+            {
+              "line": 1712,
+              "snippet": "return t._gsap.scaleX=t._gsap.scaleY=r\n}\n,r0=function(t,e,r,i,n){\nvar s=t._gsap;\ns.scaleX=s.scaleY=r,s.renderTransform(n,s)\n}\n,r1=function(t,e,r,i,n){\nvar s=t._gsap;\ns[e]=r,s.renderTransform(n,s)"
+            },
+            {
+              "line": 1716,
+              "snippet": "s.scaleX=s.scaleY=r,s.renderTransform(n,s)\n}\n,r1=function(t,e,r,i,n){\nvar s=t._gsap;\ns[e]=r,s.renderTransform(n,s)\n}\n,r2=\"transform\",r5=r2+\"Origin\",r8=function t(e,r){\nvar i=this,n=this.target,s=n.style,a=n._gsap;if(e in rF&&s){\nif(this.tfm=this.tfm||{"
+            },
+            {
+              "line": 1720,
+              "snippet": "s[e]=r,s.renderTransform(n,s)\n}\n,r2=\"transform\",r5=r2+\"Origin\",r8=function t(e,r){\nvar i=this,n=this.target,s=n.style,a=n._gsap;if(e in rF&&s){\nif(this.tfm=this.tfm||{\n\n}\n,\"transform\"===e)return rN.transform.split(\",\").forEach(function(e){\nreturn t.call(i,e,r)"
+            },
+            {
+              "line": 1739,
+              "snippet": "t.translate&&(t.removeProperty(\"translate\"),t.removeProperty(\"scale\"),t.removeProperty(\"rotate\"))\n}\n,r6=function(){\nvar t,e,r=this.props,i=this.target,n=i.style,s=i._gsap;\nfor(t=0;t<r.length;t+=3)r[t+1]?2===r[t+1]?i[r[t]](r[t+2]):i[r[t]]=r[t+2]:r[t+2]?n[r[t]]=r[t+2]:n.removeProperty(\"--\"===r[t].substr(0,2)?r[t]:r[t].replace(rY,\"-$1\").toLowerCase());if(this.tfm){\nfor(e in this.tfm)s[e]=this.tfm[e];\ns.svg&&(s.renderTransform(),i.setAttribute(\"data-svg-origin\",this.svgo||\"\")),(t=rz())&&t.isStart||n[r2]||(r3(n),s.zOrigin&&n[r5]&&(n[r5]+=\" \"+s.zOrigin+\"px\",s.zOrigin=0,s.renderTransform()),s.uncache"
+            },
+            {
+              "line": 1751,
+              "snippet": "target:t,props:[],revert:r6,save:r8\n}\n;\nreturn t._gsap||rA.core.getCache(t),e&&t.style&&t.nodeType&&e.split(\",\").forEach(function(t){\nreturn r.save(t)\n}\n),r\n}\n,r9=function(t,e){"
+            }
+          ]
+        },
+        "ScrollTrigger": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 226,
+              "snippet": "return e.parent&&tq(e),e._start=tA((X(r)?r:r||t!==w?t7(t,r,e):t._time)+e._delay),e._end=tA(e._start+(e.totalDuration()/Math.abs(e.timeScale())||0)),tX(t,e,\"_first\",\"_last\",t._sort?\"_start\":0),t5(e)||(t._recent=e),i||tK(t,e),t._ts<0&&t$(t,t._tTime),t\n}\n,t0=function(t,e){\nreturn(tn.ScrollTrigger||to(\"scrollTrigger\",e))&&tn.ScrollTrigger.create(e,t)\n}\n,t1=function(t,e,r,i,n){\nreturn(e2(t,e,n),t._initted)?!r&&t._pt&&!x&&(t._dur&&!1!==t.vars.lazy||!t._dur&&t.vars.lazy)&&C!==eD.frame?(td.push(t),t._lazy=[n,i],1):void 0:1\n}\n,t2=function t(e){"
+            }
+          ]
+        },
+        "scrollTrigger": {
+          "count": 8,
+          "samples": [
+            {
+              "line": 226,
+              "snippet": "return e.parent&&tq(e),e._start=tA((X(r)?r:r||t!==w?t7(t,r,e):t._time)+e._delay),e._end=tA(e._start+(e.totalDuration()/Math.abs(e.timeScale())||0)),tX(t,e,\"_first\",\"_last\",t._sort?\"_start\":0),t5(e)||(t._recent=e),i||tK(t,e),t._ts<0&&t$(t,t._tTime),t\n}\n,t0=function(t,e){\nreturn(tn.ScrollTrigger||to(\"scrollTrigger\",e))&&tn.ScrollTrigger.create(e,t)\n}\n,t1=function(t,e,r,i,n){\nreturn(e2(t,e,n),t._initted)?!r&&t._pt&&!x&&(t._dur&&!1!==t.vars.lazy||!t._dur&&t.vars.lazy)&&C!==eD.frame?(td.push(t),t._lazy=[n,i],1):void 0:1\n}\n,t2=function t(e){"
+            },
+            {
+              "line": 391,
+              "snippet": "var i,n,s,a=t.vars,o=a[e],u=b,h=t._ctx;if(o)return i=a[e+\"Params\"],n=a.callbackScope||t,r&&td.length&&tR(),h&&(b=h),s=i?o.apply(n,i):o.call(n),b=u,s\n}\n,ev=function(t){\nreturn tq(t),t.scrollTrigger&&t.scrollTrigger.kill(!!x),1>t.progress()&&eg(t,\"onInterrupt\"),t\n}\n,ey=[],eT=function(t){\nif(t)if(t=!t.name&&t.default||t,j()||t.headless){\nvar e=t.name,r=U(t),i=e&&!r&&t.init?function(){\nthis._props=[]"
+            },
+            {
+              "line": 771,
+              "snippet": "),(n=t.call(this,r)||this).labels={\n\n}\n,n.smoothChildTiming=!!r.smoothChildTiming,n.autoRemoveChildren=!!r.autoRemoveChildren,n._sort=V(r.sortChildren),w&&tJ(r.parent||w,e(n),i),r.reversed&&n.reverse(),r.paused&&n.paused(!0),r.scrollTrigger&&t0(e(n),r.scrollTrigger),n\n}\nr(i,t);\nvar n=i.prototype;\nreturn n.to=function(t,e,r){\nreturn et(0,arguments,this),this"
+            },
+            {
+              "line": 1058,
+              "snippet": "\n}\n;\ntM(e4+\",id,stagger,delay,duration,paused,scrollTrigger\",function(t){\nreturn e9[t]=1\n}\n);var e7=function(t){\nfunction i(r,i,n,s){\n\"number\"==typeof i&&(n.duration=i,i=n,n=null);"
+            },
+            {
+              "line": 1064,
+              "snippet": ");var e7=function(t){\nfunction i(r,i,n,s){\n\"number\"==typeof i&&(n.duration=i,i=n,n=null);\nvar a,o,u,h,l,f,c,p,_=t.call(this,s?i:tY(i))||this,d=_.vars,m=d.duration,g=d.delay,v=d.immediateRender,y=d.stagger,x=d.overwrite,b=d.keyframes,O=d.defaults,M=d.scrollTrigger,k=i.parent||w,A=(Q(r)||G(r)?X(r[0]):\"length\"in i)?[r]:ea(r);\nif(_._targets=A.length?tb(A):tu(\"GSAP target \"+r+\" not found. https://gsap.com\",!P.nullTargetWarn)||[],_._ptLookup=[],_._overwrite=x,b||y||W(m)||W(g)){\nvar C=(i=_.vars).easeReverse||i.yoyoEase;\nif((a=_.timeline=new ej({\ndata:\"nested\",defaults:O||{\n"
+            },
+            {
+              "line": 1155,
+              "snippet": "return(this._initted||e2(this,s),e5(this,t,e,r,i,this._ease(s/this._dur),s,n))?this.resetTo(t,e,r,i,1):(t$(this,0),this.parent||tX(this._dp,this,\"_first\",\"_last\",this._dp._sort?\"_start\":0),this.render(0))\n}\n,n.kill=function(t,e){\nif(void 0===e&&(e=\"all\"),!t&&(!e||\"all\"===e))return this._lazy=this._pt=0,this.parent?ev(this):this.scrollTrigger&&this.scrollTrigger.kill(!!x),this;if(this.timeline){\nvar r=this.timeline.totalDuration();\nreturn this.timeline.killTweensOf(t,e,eZ&&!0!==eZ.vars.overwrite)._first||ev(this),this.parent&&r!==this.timeline.totalDuration()&&t6(this,this._dur*this.timeline._t"
+            },
+            {
+              "line": 1267,
+              "snippet": ",t\n}\n();\ntM(tx+\"parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger,easeReverse\",function(t){\nreturn t_[t]=1\n}\n),tn.TweenMax=tn.TweenLite=e7,tn.TimelineLite=tn.TimelineMax=ej,w=new ej({\nsortChildren:!1,defaults:S,autoRemoveChildren:!0,id:\"root\",smoothChildTiming:!0\n}"
+            },
+            {
+              "line": 1343,
+              "snippet": ").forEach(function(e){\nreturn e.t.revert(t)\n}\n),s=r.data.length;s--;)(i=r.data[s])instanceof ej?\"nested\"!==i.data&&(i.scrollTrigger&&i.scrollTrigger.revert(),i.kill()):i instanceof e7||!i.revert||i.revert(t);\nr._r.forEach(function(e){\nreturn e(t,r)\n}\n),r.isReverted=!0\n}"
+            }
+          ]
+        },
+        ".to(": {
+          "count": 6,
+          "samples": [
+            {
+              "line": 887,
+              "snippet": "\n}\n;\nvar r,i=this,n=t7(i,t),s=e,a=s.startAt,o=s.onStart,u=s.onStartParams,h=s.immediateRender,l=e7.to(i,tF({\nease:e.ease||\"none\",lazy:!1,immediateRender:!1,time:n,overwrite:\"auto\",duration:e.duration||Math.abs((n-(a&&\"time\"in a?a.time:i._time))/i.timeScale())||1e-8,onStart:function(){\nif(i.pause(),!r){\nvar t=e.duration||Math.abs((n-(a&&\"time\"in a?a.time:i._time))/i.timeScale());\nl._dur!==t&&t6(l,t,0,1).render(l._time,!0,!0),r=1\n}"
+            },
+            {
+              "line": 1077,
+              "snippet": "if(h=A.length,c=y&&eh(y),q(y))for(l in y)~e4.indexOf(l)&&(p||(p={\n\n}\n),p[l]=y[l]);for(o=0;o<h;o++)(u=tB(i,e9)).stagger=0,C&&(u.easeReverse=C),p&&tL(u,p),f=A[o],u.duration=+e6(m,e(_),o,f,A),u.delay=(+e6(g,e(_),o,f,A)||0)-_._delay,!y&&1===h&&u.delay&&(_._delay=g=u.delay,_._start+=g,u.delay=0),a.to(f,u,c?c(o,f,A):0),a._ease=eP.none;a.duration()?m=g=0:_.timeline=0\n}\nelse if(b){\ntY(tF(a.vars.defaults,{\nease:\"none\"\n}"
+            },
+            {
+              "line": 1084,
+              "snippet": "ease:\"none\"\n}\n)),a._ease=eB(b.ease||i.ease||\"none\");var D,R,S,z=0;if(Q(b))b.forEach(function(t){\nreturn a.to(A,t,\">\")\n}\n),a.duration();else{\nfor(l in u={\n\n}"
+            },
+            {
+              "line": 1096,
+              "snippet": "),z=0,o=0;o<D.length;o++)(S={\nease:(R=D[o]).e,duration:(R.t-(o?D[o-1].t:0))/100*m\n}\n)[l]=R.v,a.to(A,S,z),z+=S.duration;a.duration()<m&&a.to({\n\n}\n,{\nduration:m-a.duration()\n}"
+            },
+            {
+              "line": 1446,
+              "snippet": "\n}\n,quickTo:function(t,e,r){\nvar i,n=rA.to(t,tF(((i={\n\n}\n)[e]=\"+=0.1\",i.paused=!0,i.stagger=0,i),r||{\n\n}"
+            },
+            {
+              "line": 1615,
+              "snippet": "tM(\"to,from,fromTo,delayedCall,set,killTweensOf\",function(t){\nreturn rw[t]=e7[t]\n}\n),eD.add(ej.updateRoot),D=rw.to({\n\n}\n,{\nduration:0\n}"
+            }
+          ]
+        },
+        "ease:": {
+          "count": 3,
+          "samples": [
+            {
+              "line": 888,
+              "snippet": "}\n;\nvar r,i=this,n=t7(i,t),s=e,a=s.startAt,o=s.onStart,u=s.onStartParams,h=s.immediateRender,l=e7.to(i,tF({\nease:e.ease||\"none\",lazy:!1,immediateRender:!1,time:n,overwrite:\"auto\",duration:e.duration||Math.abs((n-(a&&\"time\"in a?a.time:i._time))/i.timeScale())||1e-8,onStart:function(){\nif(i.pause(),!r){\nvar t=e.duration||Math.abs((n-(a&&\"time\"in a?a.time:i._time))/i.timeScale());\nl._dur!==t&&t6(l,t,0,1).render(l._time,!0,!0),r=1\n}\no&&o.apply(l,u||[])"
+            },
+            {
+              "line": 1081,
+              "snippet": "}\nelse if(b){\ntY(tF(a.vars.defaults,{\nease:\"none\"\n}\n)),a._ease=eB(b.ease||i.ease||\"none\");var D,R,S,z=0;if(Q(b))b.forEach(function(t){\nreturn a.to(A,t,\">\")\n}\n),a.duration();else{"
+            },
+            {
+              "line": 1094,
+              "snippet": "return t.t-e.t\n}\n),z=0,o=0;o<D.length;o++)(S={\nease:(R=D[o]).e,duration:(R.t-(o?D[o-1].t:0))/100*m\n}\n)[l]=R.v,a.to(A,S,z),z+=S.duration;a.duration()<m&&a.to({\n\n}\n,{"
+            }
+          ]
+        },
+        "stagger": {
+          "count": 16,
+          "samples": [
+            {
+              "line": 790,
+              "snippet": ",n.call=function(t,e,r){\nreturn tJ(this,e7.delayedCall(0,t,e),r)\n}\n,n.staggerTo=function(t,e,r,i,n,s,a){\nreturn r.duration=e,r.stagger=r.stagger||i,r.onComplete=s,r.onCompleteParams=a,r.parent=this,new e7(t,r,t7(this,n)),this\n}\n,n.staggerFrom=function(t,e,r,i,n,s,a){\nreturn r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}"
+            },
+            {
+              "line": 791,
+              "snippet": "return tJ(this,e7.delayedCall(0,t,e),r)\n}\n,n.staggerTo=function(t,e,r,i,n,s,a){\nreturn r.duration=e,r.stagger=r.stagger||i,r.onComplete=s,r.onCompleteParams=a,r.parent=this,new e7(t,r,t7(this,n)),this\n}\n,n.staggerFrom=function(t,e,r,i,n,s,a){\nreturn r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}\n,n.staggerFromTo=function(t,e,r,i,n,s,a,o){"
+            },
+            {
+              "line": 793,
+              "snippet": ",n.staggerTo=function(t,e,r,i,n,s,a){\nreturn r.duration=e,r.stagger=r.stagger||i,r.onComplete=s,r.onCompleteParams=a,r.parent=this,new e7(t,r,t7(this,n)),this\n}\n,n.staggerFrom=function(t,e,r,i,n,s,a){\nreturn r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}\n,n.staggerFromTo=function(t,e,r,i,n,s,a,o){\nreturn i.startAt=r,tY(i).immediateRender=V(i.immediateRender),this.staggerTo(t,e,i,n,s,a,o)\n}"
+            },
+            {
+              "line": 794,
+              "snippet": "return r.duration=e,r.stagger=r.stagger||i,r.onComplete=s,r.onCompleteParams=a,r.parent=this,new e7(t,r,t7(this,n)),this\n}\n,n.staggerFrom=function(t,e,r,i,n,s,a){\nreturn r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}\n,n.staggerFromTo=function(t,e,r,i,n,s,a,o){\nreturn i.startAt=r,tY(i).immediateRender=V(i.immediateRender),this.staggerTo(t,e,i,n,s,a,o)\n}\n,n.render=function(t,e,r){"
+            },
+            {
+              "line": 796,
+              "snippet": ",n.staggerFrom=function(t,e,r,i,n,s,a){\nreturn r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}\n,n.staggerFromTo=function(t,e,r,i,n,s,a,o){\nreturn i.startAt=r,tY(i).immediateRender=V(i.immediateRender),this.staggerTo(t,e,i,n,s,a,o)\n}\n,n.render=function(t,e,r){\nvar i,n,s,a,o,u,h,l,f,c,p,_,d=this._time,m=this._dirty?this.totalDuration():this._tDur,g=this._dur,v=t<=0?0:tA(t),y=this._zTime<0!=t<0&&(this._initted||!g);\nif(this!==w&&v>m&&t>=0&&(v=m),v!==this._tTime||r||y){"
+            },
+            {
+              "line": 797,
+              "snippet": "return r.runBackwards=1,tY(r).immediateRender=V(r.immediateRender),this.staggerTo(t,e,r,i,n,s,a)\n}\n,n.staggerFromTo=function(t,e,r,i,n,s,a,o){\nreturn i.startAt=r,tY(i).immediateRender=V(i.immediateRender),this.staggerTo(t,e,i,n,s,a,o)\n}\n,n.render=function(t,e,r){\nvar i,n,s,a,o,u,h,l,f,c,p,_,d=this._time,m=this._dirty?this.totalDuration():this._tDur,g=this._dur,v=t<=0?0:tA(t),y=this._zTime<0!=t<0&&(this._initted||!g);\nif(this!==w&&v>m&&t>=0&&(v=m),v!==this._tTime||r||y){\nif(d!==this._time&&g&&(v+=this._time-d,t+=this._time-d),i=v,f=this._start,u=!(l=this._ts),y&&(g||(d=this._zTime),(t||!e)&&(th"
+            },
+            {
+              "line": 987,
+              "snippet": "}\n,e2=function t(e,r,i){\nvar n,s,a,o,u,h,l,f,c,p,_,d,m,g=e.vars,v=g.ease,y=g.startAt,b=g.immediateRender,O=g.lazy,M=g.onUpdate,k=g.runBackwards,A=g.yoyoEase,C=g.keyframes,D=g.autoRevert,R=e._dur,P=e._startAt,z=e._targets,E=e.parent,F=E&&\"nested\"===E.data?E.vars.targets:z,L=\"auto\"===e._overwrite&&!T,I=e.timeline,B=g.easeReverse||A;\nif(!I||C&&v||(v=\"none\"),e._ease=eB(v,S.ease),e._rEase=B&&(eB(B)||e._ease),e._from=!I&&!!g.runBackwards,e._from&&(e.ratio=1),!I||C&&!g.stagger){\nif(d=(f=z[0]?tw(z[0]).harness:0)&&g[f.prop],n=tB(g,t_),P&&(P._zTime<0&&P.progress(1),r<0&&k&&b&&!D?P.render(-1,!0):P.revert"
+            },
+            {
+              "line": 993,
+              "snippet": "data:\"isStart\",overwrite:!1,parent:E,immediateRender:!0,lazy:!P&&V(O),startAt:null,delay:0,onUpdate:M&&function(){\nreturn eg(e,\"onUpdate\")\n}\n,stagger:0\n}\n,y))),e._startAt._dp=0,e._startAt._sat=e,r<0&&(x||!b&&!D)&&e._startAt.revert(tc),b&&R&&r<=0&&i<=0){\nr&&(e._zTime=r);\nreturn\n}"
+            },
+            {
+              "line": 1002,
+              "snippet": "\n}\nelse if(k&&R&&!P)if(r&&(b=!1),a=tF({\noverwrite:!1,data:\"isFromStart\",lazy:b&&!P&&V(O),immediateRender:b,stagger:0,parent:E\n}\n,n),d&&(a[f.prop]=d),tq(e._startAt=e7.set(z,a)),e._startAt._dp=0,e._startAt._sat=e,r<0&&(x?e._startAt.revert(tc):e._startAt.render(-1,!0)),e._zTime=r,b){\nif(!r)return\n}\nelse t(e._startAt,1e-8,1e-8);"
+            },
+            {
+              "line": 1058,
+              "snippet": "\n}\n;\ntM(e4+\",id,stagger,delay,duration,paused,scrollTrigger\",function(t){\nreturn e9[t]=1\n}\n);var e7=function(t){\nfunction i(r,i,n,s){\n\"number\"==typeof i&&(n.duration=i,i=n,n=null);"
+            },
+            {
+              "line": 1064,
+              "snippet": ");var e7=function(t){\nfunction i(r,i,n,s){\n\"number\"==typeof i&&(n.duration=i,i=n,n=null);\nvar a,o,u,h,l,f,c,p,_=t.call(this,s?i:tY(i))||this,d=_.vars,m=d.duration,g=d.delay,v=d.immediateRender,y=d.stagger,x=d.overwrite,b=d.keyframes,O=d.defaults,M=d.scrollTrigger,k=i.parent||w,A=(Q(r)||G(r)?X(r[0]):\"length\"in i)?[r]:ea(r);\nif(_._targets=A.length?tb(A):tu(\"GSAP target \"+r+\" not found. https://gsap.com\",!P.nullTargetWarn)||[],_._ptLookup=[],_._overwrite=x,b||y||W(m)||W(g)){\nvar C=(i=_.vars).easeReverse||i.yoyoEase;\nif((a=_.timeline=new ej({\ndata:\"nested\",defaults:O||{\n"
+            },
+            {
+              "line": 1077,
+              "snippet": "if(h=A.length,c=y&&eh(y),q(y))for(l in y)~e4.indexOf(l)&&(p||(p={\n\n}\n),p[l]=y[l]);for(o=0;o<h;o++)(u=tB(i,e9)).stagger=0,C&&(u.easeReverse=C),p&&tL(u,p),f=A[o],u.duration=+e6(m,e(_),o,f,A),u.delay=(+e6(g,e(_),o,f,A)||0)-_._delay,!y&&1===h&&u.delay&&(_._delay=g=u.delay,_._start+=g,u.delay=0),a.to(f,u,c?c(o,f,A):0),a._ease=eP.none;a.duration()?m=g=0:_.timeline=0\n}\nelse if(b){\ntY(tF(a.vars.defaults,{\nease:\"none\"\n}"
+            },
+            {
+              "line": 1202,
+              "snippet": "tF(e7.prototype,{\n_targets:[],_lazy:0,_startAt:0,_op:0,_onInit:0\n}\n),tM(\"staggerTo,staggerFrom,staggerFromTo\",function(t){\ne7[t]=function(){\nvar e=new ej,r=en.call(arguments,0);\nreturn r.splice(\"staggerFromTo\"===t?5:4,0,0),e[t].apply(e,r)\n}\n"
+            },
+            {
+              "line": 1205,
+              "snippet": "),tM(\"staggerTo,staggerFrom,staggerFromTo\",function(t){\ne7[t]=function(){\nvar e=new ej,r=en.call(arguments,0);\nreturn r.splice(\"staggerFromTo\"===t?5:4,0,0),e[t].apply(e,r)\n}\n\n}\n);\nvar rt=function(t,e,r){"
+            },
+            {
+              "line": 1267,
+              "snippet": ",t\n}\n();\ntM(tx+\"parent,duration,ease,delay,overwrite,runBackwards,startAt,yoyo,immediateRender,repeat,repeatDelay,data,paused,reversed,lazy,callbackScope,stringFilter,id,yoyoEase,stagger,inherit,repeatRefresh,keyframes,autoRevert,scrollTrigger,easeReverse\",function(t){\nreturn t_[t]=1\n}\n),tn.TweenMax=tn.TweenLite=e7,tn.TimelineLite=tn.TimelineMax=ej,w=new ej({\nsortChildren:!1,defaults:S,autoRemoveChildren:!0,id:\"root\",smoothChildTiming:!0\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "227kwhsrjlnp4.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/227kwhsrjlnp4.js",
+      "bytes": 228922,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {
+        ".from(": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 33,
+              "snippet": ")\n}\n),Object.fromEntries||(Object.fromEntries=function(e){\nreturn Array.from(e).reduce(function(e,t){\nreturn e[t[0]]=t[1],e\n}\n,{\n\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "3450qyhportkm.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3450qyhportkm.js",
+      "bytes": 34015,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {}
+    },
+    {
+      "file": "turbopack-45026wnz98ivb.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/turbopack-45026wnz98ivb.js",
+      "bytes": 9652,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {
+        ".from(": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 461,
+              "snippet": "\"],script[src^=\"${\nn\n}\n?\"]`);if(o.length>0)for(let n of Array.from(o))n.addEventListener(\"error\",()=>{\nn.remove(),I(e,t,r)\n}\n,{\nonce:!0\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "42rc0wabyru76.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/42rc0wabyru76.js",
+      "bytes": 112273,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {
+        "ScrollTrigger": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 3549,
+              "snippet": "base64,UklGRgABAABXRUJQVlA4TPQAAAAvB4AAEM1VICICHggACQAAAAB0iAEsGGAAAGYAgAAGZgAgAAAAAAADABgAMAAAYAAAAABIBAAAgAcCQAIAAABw/oFBAAAgAACAAQBgAAAAAAAAAAAAIGMMGCAYAIABGAge2KgADwTYBAAAAOD8+eKFcJ57AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBAgIPdAwE2AQAAADj/oB4CAhAQAAAAEgA4gMAQcAAAAAAAAAAgAAAAAgAIAIA4ABw8D9/98r8Q4l2cb3mHHdkf2jha69pDxlmzB9peXVtg15Q1bSJ0wI/4qZ4hf4K2bEJ0R4lELToT\"\n}\n;var f=e.i(79921);\nr.default.registerPlugin(i.ScrollTrigger);\nlet A=[{\nsrc:l,alt:\"Google logo\"\n}\n,{\nsrc:o,alt:\"Adobe logo\""
+            }
+          ]
+        },
+        "scrollTrigger:": {
+          "count": 13,
+          "samples": [
+            {
+              "line": 2406,
+              "snippet": "}\n);\nlet t=e.map(e=>n.default.to(e,{\nscaleX:1,duration:.8,ease:\"power2.inOut\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2763,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,ease:\"power2.out\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2878,
+              "snippet": "yPercent:20\n}\n,{\nyPercent:0,ease:\"power1.out\",scrollTrigger:{\ntrigger:e.current,start:\"top 60%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 3204,
+              "snippet": ",[]),(0,o.useEffect)(()=>{\nif(!n.current||!e.current)return;\nlet t=c.default.timeline({\nscrollTrigger:{\ntrigger:e.current,start:\"top top\",end:\"bottom bottom\",scrub:!0,invalidateOnRefresh:!0\n}\n\n}\n);"
+            },
+            {
+              "line": 3360,
+              "snippet": "}\n,[]),(0,r.useEffect)(()=>{\nlet t=d.length-1,r=n.default.timeline({\nscrollTrigger:{\ntrigger:\"#portfolio\",start:\"10% top\",end:\"bottom bottom\",scrub:!0,...h.current?{\n\n}\n:{\nsnap:{"
+            },
+            {
+              "line": 3422,
+              "snippet": "}\n,i+1);\nh.current||(globalThis.innerWidth>1024?n.default.to(\".circle-clip\",{\nyPercent:-70,ease:\"none\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n):n.default.to(\".circle-clip\",{"
+            },
+            {
+              "line": 3428,
+              "snippet": "\n}\n):n.default.to(\".circle-clip\",{\nyPercent:-50,ease:\"none\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n),n.default.set(l.current,{"
+            },
+            {
+              "line": 3437,
+              "snippet": "clipPath:\"ellipse(150% 100% at 50% 100%)\"\n}\n),n.default.to(l.current,{\nclipPath:\"ellipse(60% 100% at 50% 100%)\",ease:\"power2.out\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n))"
+            },
+            {
+              "line": 3577,
+              "snippet": "defaults:{\nease:\"none\"\n}\n,scrollTrigger:{\ntrigger:e.current,start:\"top 20%\",end:\"bottom center\",scrub:!0\n}\n\n}\n),l=globalThis.innerWidth>1024,o=l?1.5:4,c=l?1.5:3.5,u=o+.4,d=l?.4:.5,h=[];for(let e=0;e<s;){"
+            },
+            {
+              "line": 3681,
+              "snippet": "xPercent:70\n}\n,{\nxPercent:-33,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n):globalThis.innerWidth<1025&&globalThis.innerWidth>541?i.default.fromTo(e.current,{"
+            },
+            {
+              "line": 3690,
+              "snippet": "xPercent:50\n}\n,{\nxPercent:-65,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n):i.default.fromTo(e.current,{"
+            },
+            {
+              "line": 3699,
+              "snippet": "xPercent:50\n}\n,{\nxPercent:-77,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n),()=>{"
+            },
+            {
+              "line": 3889,
+              "snippet": "opacity:0,yPercent:10\n}\n,{\nopacity:1,yPercent:0,stagger:.05,ease:\"power2.out\",scrollTrigger:{\ntrigger:\"#work-with-me\",start:\"top top\"\n}\n\n}\n);return()=>{"
+            }
+          ]
+        },
+        "scrollTrigger": {
+          "count": 19,
+          "samples": [
+            {
+              "line": 2406,
+              "snippet": "}\n);\nlet t=e.map(e=>n.default.to(e,{\nscaleX:1,duration:.8,ease:\"power2.inOut\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2412,
+              "snippet": "\n}\n));return()=>{\nt.forEach(e=>e.scrollTrigger?.kill()),t.forEach(e=>e.kill())\n}\n\n}\n,[]);\nlet A=(0,r.useCallback)(t=>{"
+            },
+            {
+              "line": 2763,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,ease:\"power2.out\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2769,
+              "snippet": "\n}\n));return()=>{\nt.forEach(e=>e.scrollTrigger?.kill()),t.forEach(e=>e.kill())\n}\n\n}\n,[a]),(0,t.jsxs)(\"section\",{\nclassName:\"w-screen py-[6vw] px-[10vw] relative bg-[#070707] text-white max-[1025px]:px-[5vw]\",children:[(0,t.jsx)(m.default,{"
+            },
+            {
+              "line": 2878,
+              "snippet": "yPercent:20\n}\n,{\nyPercent:0,ease:\"power1.out\",scrollTrigger:{\ntrigger:e.current,start:\"top 60%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 2884,
+              "snippet": "\n}\n);return()=>{\nt.scrollTrigger?.kill(),t.kill()\n}\n\n}\n,[]),(0,t.jsx)(t.Fragment,{\nchildren:(0,t.jsxs)(\"footer\",{"
+            },
+            {
+              "line": 3204,
+              "snippet": ",[]),(0,o.useEffect)(()=>{\nif(!n.current||!e.current)return;\nlet t=c.default.timeline({\nscrollTrigger:{\ntrigger:e.current,start:\"top top\",end:\"bottom bottom\",scrub:!0,invalidateOnRefresh:!0\n}\n\n}\n);"
+            },
+            {
+              "line": 3220,
+              "snippet": "filter:\"blur(0px)\",opacity:1,ease:\"power2.out\",duration:.18\n}\n,.32)),()=>{\nt.scrollTrigger?.kill(),t.kill()\n}\n\n}\n,[]),(0,o.useEffect)(()=>{\nlet e;"
+            },
+            {
+              "line": 3360,
+              "snippet": "}\n,[]),(0,r.useEffect)(()=>{\nlet t=d.length-1,r=n.default.timeline({\nscrollTrigger:{\ntrigger:\"#portfolio\",start:\"10% top\",end:\"bottom bottom\",scrub:!0,...h.current?{\n\n}\n:{\nsnap:{"
+            },
+            {
+              "line": 3422,
+              "snippet": "}\n,i+1);\nh.current||(globalThis.innerWidth>1024?n.default.to(\".circle-clip\",{\nyPercent:-70,ease:\"none\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n):n.default.to(\".circle-clip\",{"
+            },
+            {
+              "line": 3428,
+              "snippet": "\n}\n):n.default.to(\".circle-clip\",{\nyPercent:-50,ease:\"none\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n),n.default.set(l.current,{"
+            },
+            {
+              "line": 3437,
+              "snippet": "clipPath:\"ellipse(150% 100% at 50% 100%)\"\n}\n),n.default.to(l.current,{\nclipPath:\"ellipse(60% 100% at 50% 100%)\",ease:\"power2.out\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}\n))"
+            },
+            {
+              "line": 3577,
+              "snippet": "defaults:{\nease:\"none\"\n}\n,scrollTrigger:{\ntrigger:e.current,start:\"top 20%\",end:\"bottom center\",scrub:!0\n}\n\n}\n),l=globalThis.innerWidth>1024,o=l?1.5:4,c=l?1.5:3.5,u=o+.4,d=l?.4:.5,h=[];for(let e=0;e<s;){"
+            },
+            {
+              "line": 3681,
+              "snippet": "xPercent:70\n}\n,{\nxPercent:-33,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n):globalThis.innerWidth<1025&&globalThis.innerWidth>541?i.default.fromTo(e.current,{"
+            },
+            {
+              "line": 3690,
+              "snippet": "xPercent:50\n}\n,{\nxPercent:-65,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n):i.default.fromTo(e.current,{"
+            }
+          ]
+        },
+        ".to(": {
+          "count": 23,
+          "samples": [
+            {
+              "line": 2405,
+              "snippet": "scaleX:1\n}\n);\nlet t=e.map(e=>n.default.to(e,{\nscaleX:1,duration:.8,ease:\"power2.inOut\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}"
+            },
+            {
+              "line": 2423,
+              "snippet": "d.current?n.default.set(i,{\ny:l\n}\n):n.default.to(i,{\ny:l,duration:.65,ease:\"back.out(1.6)\"\n}\n)\n}\nlet s=a.current[t];"
+            },
+            {
+              "line": 2438,
+              "snippet": "):(n.default.set(s,{\nscale:0\n}\n),n.default.to(s,{\nscale:1.05,duration:.45,ease:\"power2.out\"\n}\n)))\n}\n,[]),m=(0,r.useCallback)((e,t)=>{"
+            },
+            {
+              "line": 2492,
+              "snippet": "}\n),(0,t.jsxs)(\"div\",{\nonMouseEnter:()=>{\nn.default.to(s.current,{\nopacity:1,duration:.4*!d.current,ease:\"power2.out\"\n}\n)\n}\n,onMouseLeave:()=>{"
+            },
+            {
+              "line": 2498,
+              "snippet": ")\n}\n,onMouseLeave:()=>{\nh.current=null,n.default.to(s.current,{\nopacity:0,duration:.4*!d.current,ease:\"power2.out\"\n}\n)\n}\n,children:[x.map((e,i)=>(0,t.jsxs)(r.Fragment,{"
+            },
+            {
+              "line": 3104,
+              "snippet": "let e=window.scrollY;\nif(c(e>.4*window.innerHeight),!A.current){\nlet t=e-h.current;\nt>0&&e>0&&!f.current?(f.current=!0,n.default.to(d.current,{\nyPercent:-100,duration:.5,ease:\"power3.out\"\n}\n)):t<0&&f.current&&(f.current=!1,n.default.to(d.current,{\nyPercent:0,duration:.5,ease:\"power3.out\"\n}"
+            },
+            {
+              "line": 3107,
+              "snippet": "t>0&&e>0&&!f.current?(f.current=!0,n.default.to(d.current,{\nyPercent:-100,duration:.5,ease:\"power3.out\"\n}\n)):t<0&&f.current&&(f.current=!1,n.default.to(d.current,{\nyPercent:0,duration:.5,ease:\"power3.out\"\n}\n))\n}\nh.current=e"
+            },
+            {
+              "line": 3171,
+              "snippet": "reveal:-40\n}\n,t=c.default.timeline();\nreturn t.to(e,{\nreveal:125,duration:3.5,ease:\"power2.out\",onUpdate:()=>{\nl.current?.style.setProperty(\"--reveal\",`${\ne.reveal\n}\n%`)"
+            },
+            {
+              "line": 3210,
+              "snippet": "\n}\n);\nreturn t.to(n.current,{\nscale:.5,ease:\"power2.inOut\",duration:1\n}\n,0),u.current&&(c.default.set(u.current,{\nfilter:\"blur(24px)\",opacity:.35\n}"
+            },
+            {
+              "line": 3216,
+              "snippet": ",0),u.current&&(c.default.set(u.current,{\nfilter:\"blur(24px)\",opacity:.35\n}\n),t.to(u.current,{\nfilter:\"blur(0px)\",opacity:1,ease:\"power2.out\",duration:.18\n}\n,.32)),()=>{\nt.scrollTrigger?.kill(),t.kill()\n}"
+            },
+            {
+              "line": 3405,
+              "snippet": "}\n)\n}\n),r.to(s.current,{\nscaleY:1,ease:\"none\",duration:t\n}\n,0);for(let i=0;i<t;i+=1)h.current?r.to(a.current[i+1],{\nopacity:1,ease:\"none\",duration:1\n}"
+            },
+            {
+              "line": 3408,
+              "snippet": "),r.to(s.current,{\nscaleY:1,ease:\"none\",duration:t\n}\n,0);for(let i=0;i<t;i+=1)h.current?r.to(a.current[i+1],{\nopacity:1,ease:\"none\",duration:1\n}\n,i):r.to(a.current[i+1],{\nyPercent:0,ease:\"power2.inOut\",duration:1\n}"
+            },
+            {
+              "line": 3411,
+              "snippet": ",0);for(let i=0;i<t;i+=1)h.current?r.to(a.current[i+1],{\nopacity:1,ease:\"none\",duration:1\n}\n,i):r.to(a.current[i+1],{\nyPercent:0,ease:\"power2.inOut\",duration:1\n}\n,i),r.to(a.current[i],{\nfilter:\"brightness(0.3)\",ease:\"power2.inOut\",duration:1\n}"
+            },
+            {
+              "line": 3414,
+              "snippet": ",i):r.to(a.current[i+1],{\nyPercent:0,ease:\"power2.inOut\",duration:1\n}\n,i),r.to(a.current[i],{\nfilter:\"brightness(0.3)\",ease:\"power2.inOut\",duration:1\n}\n,i),r.set(e.current[i+1],{\nbackgroundColor:\"#ffffff\",borderColor:\"#ffffff\"\n}"
+            },
+            {
+              "line": 3421,
+              "snippet": "backgroundColor:\"#ffffff\",borderColor:\"#ffffff\"\n}\n,i+1);\nh.current||(globalThis.innerWidth>1024?n.default.to(\".circle-clip\",{\nyPercent:-70,ease:\"none\",scrollTrigger:{\ntrigger:\"#portfolio\",start:\"top bottom\",end:\"30% bottom\",scrub:!0\n}\n\n}"
+            }
+          ]
+        },
+        ".from(": {
+          "count": 7,
+          "samples": [
+            {
+              "line": 587,
+              "snippet": ")\n}\ncleanUpClassName(){\nfor(let e of Array.from(this.rootElement.classList))(\"lenis\"===e||e.startsWith(\"lenis-\"))&&this.rootElement.classList.remove(e)\n}\n\n}\n,h=e.i(71645),f=e.i(43476);\nlet A=(0,h.createContext)(null),m=new class{"
+            },
+            {
+              "line": 1944,
+              "snippet": "}\n=e;function l(){\nif(t&&t.mountedInstances){\nlet e=i.Children.toArray(Array.from(t.mountedInstances).filter(Boolean));t.updateHead(r(e))\n}\n\n}\nreturn n&&(t?.mountedInstances?.add(e.children),l()),s(()=>(t?.mountedInstances?.add(e.children),()=>{\nt?.mountedInstances?.delete(e.children)"
+            },
+            {
+              "line": 3572,
+              "snippet": "e.s([\"default\",0,function(){\nlet e=(0,a.useRef)(null),i=(0,a.useRef)(null);return(0,n.useGSAP)(()=>{\nlet t=i.current;if(!t)return;\nlet n=Array.from(t.querySelectorAll(\".grid__item\")),s=n.length;if(0===s)return;\nlet a=r.default.timeline({\ndefaults:{\nease:\"none\"\n}\n,scrollTrigger:{"
+            },
+            {
+              "line": 3584,
+              "snippet": "}\n),l=globalThis.innerWidth>1024,o=l?1.5:4,c=l?1.5:3.5,u=o+.4,d=l?.4:.5,h=[];for(let e=0;e<s;){\nlet t=Math.min(s-e,r.default.utils.random(2,3,1));\nh.push(Array.from({\nlength:t\n}\n,(t,r)=>e+r)),e+=t\n}\nh.forEach((e,t)=>{"
+            },
+            {
+              "line": 3999,
+              "snippet": "}\n,[e,x]),(0,r.useEffect)(()=>{\nlet e=f.current;\ne&&Array.from(e.children||[]).forEach(e=>{\ne.style.display=\"inline-block\",e.style.position=\"relative\",e.style.textShadow=\"0px 1.3em currentColor\",e.style.transform=\"translateY(0em) rotate(0.001deg)\",e.style.transition=x?\"none\":\"transform 0.6s cubic-bezier(0.625, 0.05, 0, 1), color 0.6s cubic-bezier(0.625, 0.05, 0, 1)\",e.style.willChange=\"transform\"\n}\n)\n}\n,[e,x]),(0,r.useEffect)(()=>{"
+            },
+            {
+              "line": 4021,
+              "snippet": "}\n,[]);let b=()=>{\nlet e=f.current;\ne&&Array.from(e.children).forEach(e=>{\ne.style.transform=\"translateY(-1.3em) rotate(0.001deg)\"\n}\n),m(!0)\n}\n,y=()=>{"
+            },
+            {
+              "line": 4028,
+              "snippet": "}\n,y=()=>{\nlet e=f.current;\ne&&Array.from(e.children).forEach(e=>{\ne.style.transform=\"translateY(0em) rotate(0.001deg)\"\n}\n),m(!1)\n}\n;return(0,t.jsxs)(i.default,{"
+            }
+          ]
+        },
+        ".fromTo(": {
+          "count": 11,
+          "samples": [
+            {
+              "line": 485,
+              "snippet": ");\nreturn\n}\ns||(this.targetScroll=A),\"number\"==typeof l&&\"function\"!=typeof o?o=u:\"function\"==typeof o&&\"number\"!=typeof l&&(l=1),this.animate.fromTo(this.animatedScroll,A,{\nduration:l,easing:o,lerp:a,onStart:()=>{\nn&&(this.isLocked=!0),this.isScrolling=\"smooth\",c?.(this)\n}\n,onUpdate:(e,t)=>{\nthis.isScrolling=\"smooth\",this.lastVelocity=this.velocity,this.velocity=e-this.animatedScroll,this.direction=Math.sign(this.velocity),this.animatedScroll=e,this.setScroll(this.scroll),s&&(this.targetScroll=e),t||this.emit(),t&&(this.reset(),this.emit(),d?.(this),this.userData={"
+            },
+            {
+              "line": 2615,
+              "snippet": "k.current=t,i.default.set(e,{\nheight:0\n}\n),i.default.fromTo(e,{\nheight:0\n}\n,{\nheight:t,duration:r,ease:\"power3.out\",onComplete:()=>{\ni.default.set(e,{"
+            },
+            {
+              "line": 2632,
+              "snippet": "else i.default.set(e,{\noverflow:\"hidden\"\n}\n),i.default.fromTo(e,{\nheight:k.current\n}\n,{\nheight:0,duration:r,ease:\"power3.out\"\n}"
+            },
+            {
+              "line": 2759,
+              "snippet": "opacity:1,y:0\n}\n);\nlet t=e.map(e=>i.default.fromTo(e,{\nopacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,ease:\"power2.out\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\""
+            },
+            {
+              "line": 2874,
+              "snippet": "}\n);\nif(globalThis.innerWidth<=1025)return;\nlet t=n.default.fromTo(s.current,{\nyPercent:20\n}\n,{\nyPercent:0,ease:\"power1.out\",scrollTrigger:{\ntrigger:e.current,start:\"top 60%\",end:\"bottom bottom\",scrub:!0"
+            },
+            {
+              "line": 3180,
+              "snippet": "}\n\n}\n,0).fromTo(l.current,{\nopacity:0\n}\n,{\nopacity:1,duration:1.5,ease:\"power2.out\"\n}"
+            },
+            {
+              "line": 3188,
+              "snippet": "}\n,0).call(()=>v(!0),void 0,1).call(()=>y(!0),void 0,1.5).call(()=>{\nlet e=document.getElementById(\"header\"),t=document.getElementById(\"header-logo\");\nc.default.fromTo([e,t],{\nyPercent:-50,opacity:0\n}\n,{\nyPercent:0,opacity:1,duration:.8,ease:\"power3.out\",onComplete:()=>E.current?.start()\n}"
+            },
+            {
+              "line": 3677,
+              "snippet": "return f?void i.default.set(e.current,{\nclearProps:\"transform\"\n}\n):(t=globalThis.innerWidth>1025?i.default.fromTo(e.current,{\nxPercent:70\n}\n,{\nxPercent:-33,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0"
+            },
+            {
+              "line": 3686,
+              "snippet": "}\n\n}\n):globalThis.innerWidth<1025&&globalThis.innerWidth>541?i.default.fromTo(e.current,{\nxPercent:50\n}\n,{\nxPercent:-65,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0"
+            },
+            {
+              "line": 3695,
+              "snippet": "}\n\n}\n):i.default.fromTo(e.current,{\nxPercent:50\n}\n,{\nxPercent:-77,ease:\"none\",scrollTrigger:{\ntrigger:\"#services\",start:\"top 20%\",end:\"bottom bottom\",scrub:!0"
+            },
+            {
+              "line": 3885,
+              "snippet": "opacity:1,yPercent:0\n}\n);\nlet e=i.default.fromTo(\".work-card\",{\nopacity:0,yPercent:10\n}\n,{\nopacity:1,yPercent:0,stagger:.05,ease:\"power2.out\",scrollTrigger:{\ntrigger:\"#work-with-me\",start:\"top top\""
+            }
+          ]
+        },
+        "timeline(": {
+          "count": 4,
+          "samples": [
+            {
+              "line": 3170,
+              "snippet": "let e={\nreveal:-40\n}\n,t=c.default.timeline();\nreturn t.to(e,{\nreveal:125,duration:3.5,ease:\"power2.out\",onUpdate:()=>{\nl.current?.style.setProperty(\"--reveal\",`${\ne.reveal\n}"
+            },
+            {
+              "line": 3203,
+              "snippet": "}\n,[]),(0,o.useEffect)(()=>{\nif(!n.current||!e.current)return;\nlet t=c.default.timeline({\nscrollTrigger:{\ntrigger:e.current,start:\"top top\",end:\"bottom bottom\",scrub:!0,invalidateOnRefresh:!0\n}\n\n}"
+            },
+            {
+              "line": 3359,
+              "snippet": "\n}\n,[]),(0,r.useEffect)(()=>{\nlet t=d.length-1,r=n.default.timeline({\nscrollTrigger:{\ntrigger:\"#portfolio\",start:\"10% top\",end:\"bottom bottom\",scrub:!0,...h.current?{\n\n}\n:{"
+            },
+            {
+              "line": 3573,
+              "snippet": "let e=(0,a.useRef)(null),i=(0,a.useRef)(null);return(0,n.useGSAP)(()=>{\nlet t=i.current;if(!t)return;\nlet n=Array.from(t.querySelectorAll(\".grid__item\")),s=n.length;if(0===s)return;\nlet a=r.default.timeline({\ndefaults:{\nease:\"none\"\n}\n,scrollTrigger:{\ntrigger:e.current,start:\"top 20%\",end:\"bottom center\",scrub:!0"
+            }
+          ]
+        },
+        "Lenis": {
+          "count": 3,
+          "samples": [
+            {
+              "line": 448,
+              "snippet": "else if(\"string\"==typeof A&&[\"bottom\",\"right\",\"end\"].includes(A))A=this.limit;\nelse{\nlet e=null;\nif(\"string\"==typeof A?(e=A.startsWith(\"#\")?document.getElementById(A.slice(1)):document.querySelector(A))||(\"#top\"===A?A=0:console.warn(\"Lenis: Target not found\",A)):A instanceof HTMLElement&&A?.nodeType&&(e=A),e){\nif(this.options.wrapper!==window){\nlet e=this.rootElement.getBoundingClientRect();\nm-=this.isHorizontal?e.left:e.top\n}\nlet t=e.getBoundingClientRect(),r=getComputedStyle(e),i=this.isHorizontal?Number.parseFloat(r.scrollMarginLeft):Number.parseFloat(r.scrollMarginTop),n=getComputedStyle(t"
+            },
+            {
+              "line": 690,
+              "snippet": "\n}\n;\ne.s([\"Lenis\",0,p,\"LenisContext\",0,A,\"ReactLenis\",0,p,\"default\",0,p,\"useLenis\",0,function(e,t=[],r=0){\nlet i=(0,h.useContext)(A),n=function(e){\nlet[t,r]=(0,h.useState)(e.get());return(0,h.useEffect)(()=>e.subscribe(e=>r(e)),[e]),t\n}\n(m),{\nlenis:s,addCallback:a,removeCallback:l"
+            },
+            {
+              "line": 3152,
+              "snippet": ";var n=e.i(55702),s=e.i(53649),a=e.i(75241),l=e.i(9921),o=e.i(71645),c=e.i(89970),u=e.i(33809),d=e.i(55667),h=e.i(79921);\nc.default.registerPlugin(u.default);\nlet f=[n.default,a.default,n.default,a.default],A=[s.default,l.default,s.default,l.default],m=[n.default,s.default,a.default,l.default,n.default,s.default,a.default,l.default];e.s([\"default\",0,()=>{\nlet e=(0,o.useRef)(null),n=(0,o.useRef)(null),s=(0,o.useRef)(null),a=(0,o.useRef)(null),l=(0,o.useRef)(null),u=(0,o.useRef)(null),p=(0,o.useRef)(!1),[g,x]=(0,o.useState)(!1),[w,v]=(0,o.useState)(!1),[b,y]=(0,o.useState)(!1),j=(0,d.useLenis)()"
+            }
+          ]
+        },
+        "lenis": {
+          "count": 16,
+          "samples": [
+            {
+              "line": 258,
+              "snippet": "\n}\n){\nwindow.lenisVersion=t,window.lenis||(window.lenis={\n\n}\n),window.lenis.version=t,\"horizontal\"===m&&(window.lenis.horizontal=!0),!0===a&&(window.lenis.touch=!0),this.isIos=/(iPad|iPhone|iPod)/g.test(navigator.userAgent),e&&e!==document.documentElement||(e=window),\"number\"==typeof d&&\"function\"!=typeof h?h=u:\"function\"==typeof h&&\"number\"!=typeof d&&(d=1),this.options={\nwrapper:e,content:r,eventsTarget:i,smoothWheel:s,syncTouch:a,syncTouchLerp:l,touchInertiaExponent:o,duration:d,easing:h,lerp:f,infinite:A,gestureOrientation:p,orientation:m,touchMultiplier:g,wheelMultiplier:x,autoResize:w,pr"
+            },
+            {
+              "line": 261,
+              "snippet": "window.lenisVersion=t,window.lenis||(window.lenis={\n\n}\n),window.lenis.version=t,\"horizontal\"===m&&(window.lenis.horizontal=!0),!0===a&&(window.lenis.touch=!0),this.isIos=/(iPad|iPhone|iPod)/g.test(navigator.userAgent),e&&e!==document.documentElement||(e=window),\"number\"==typeof d&&\"function\"!=typeof h?h=u:\"function\"==typeof h&&\"number\"!=typeof d&&(d=1),this.options={\nwrapper:e,content:r,eventsTarget:i,smoothWheel:s,syncTouch:a,syncTouchLerp:l,touchInertiaExponent:o,duration:d,easing:h,lerp:f,infinite:A,gestureOrientation:p,orientation:m,touchMultiplier:g,wheelMultiplier:x,autoResize:w,prevent:"
+            },
+            {
+              "line": 294,
+              "snippet": "dispatchScrollendEvent=()=>{\nthis.options.wrapper.dispatchEvent(new CustomEvent(\"scrollend\",{\nbubbles:this.options.wrapper===window,detail:{\nlenisScrollEnd:!0\n}\n\n}\n))\n}"
+            },
+            {
+              "line": 351,
+              "snippet": "if(this.emitter.emit(\"virtual-scroll\",{\ndeltaX:t,deltaY:r,event:i\n}\n),i.ctrlKey||i.lenisStopPropagation)return;\nlet n=i.type.includes(\"touch\"),s=i.type.includes(\"wheel\");\nif(n&&this.isIos&&(\"touchstart\"===i.type&&(this._isDraggingSelection=this.isTouchOnSelectionHandle(i)),this._isDraggingSelection)){\n\"touchend\"===i.type&&(this._isDraggingSelection=!1);\nreturn\n}"
+            },
+            {
+              "line": 364,
+              "snippet": "let o=i.composedPath();\no=o.slice(0,o.indexOf(this.rootElement));\nlet c=this.options.prevent,u=Math.abs(t)>=Math.abs(r)?\"horizontal\":\"vertical\";\nif(o.find(e=>e instanceof HTMLElement&&(\"function\"==typeof c&&c?.(e)||e.hasAttribute?.(\"data-lenis-prevent\")||\"vertical\"===u&&e.hasAttribute?.(\"data-lenis-prevent-vertical\")||\"horizontal\"===u&&e.hasAttribute?.(\"data-lenis-prevent-horizontal\")||n&&e.hasAttribute?.(\"data-lenis-prevent-touch\")||s&&e.hasAttribute?.(\"data-lenis-prevent-wheel\")||this.options.allowNestedScroll&&this.hasNestedScroll(e,{\ndeltaX:t,deltaY:r\n}\n))))return;\nif(this.isStopped||this."
+            },
+            {
+              "line": 373,
+              "snippet": "return\n}\nif(!(this.options.syncTouch&&n||this.options.smoothWheel&&s)){\nthis.isScrolling=\"native\",this.animate.stop(),i.lenisStopPropagation=!0;\nreturn\n}\nlet d=r;\n\"both\"===this.options.gestureOrientation?d=Math.abs(r)>Math.abs(t)?r:t:\"horizontal\"===this.options.gestureOrientation&&(d=t),(!this.options.overscroll||this.options.infinite||this.options.wrapper!==window&&this.limit>0&&(this.animatedScroll>0&&this.animatedScroll<this.limit||0===this.animatedScroll&&r>0||this.animatedScroll===this.limit&&r<0))&&(i.lenisStopPropagation=!0),i.cancelable&&i.preventDefault();\nlet h=n&&this.options.syncTo"
+            },
+            {
+              "line": 377,
+              "snippet": "return\n}\nlet d=r;\n\"both\"===this.options.gestureOrientation?d=Math.abs(r)>Math.abs(t)?r:t:\"horizontal\"===this.options.gestureOrientation&&(d=t),(!this.options.overscroll||this.options.infinite||this.options.wrapper!==window&&this.limit>0&&(this.animatedScroll>0&&this.animatedScroll<this.limit||0===this.animatedScroll&&r>0||this.animatedScroll===this.limit&&r<0))&&(i.lenisStopPropagation=!0),i.cancelable&&i.preventDefault();\nlet h=n&&this.options.syncTouch,f=n&&\"touchend\"===i.type;f&&(d=Math.sign(d)*Math.abs(this.velocity)**this.options.touchInertiaExponent),this.scrollTo(this.targetScroll+d,{\np"
+            },
+            {
+              "line": 515,
+              "snippet": "}\n){\nlet i,n,s,a,l,o,c,u,d,h,f,A,m,p,g,x,w=Date.now();\ne._lenis||(e._lenis={\n\n}\n);\nlet v=e._lenis;if(w-(v.time??0)>2e3){\nv.time=Date.now();"
+            },
+            {
+              "line": 519,
+              "snippet": "\n}\n);\nlet v=e._lenis;if(w-(v.time??0)>2e3){\nv.time=Date.now();\nlet t=window.getComputedStyle(e);\nif(v.computedStyle=t,i=[\"auto\",\"overlay\",\"scroll\"].includes(t.overflowX),n=[\"auto\",\"overlay\",\"scroll\"].includes(t.overflowY),l=[\"auto\"].includes(t.overscrollBehaviorX),o=[\"auto\"].includes(t.overscrollBehaviorY),v.hasOverflowX=i,v.hasOverflowY=n,!(i||n))return!1;\nc=e.scrollWidth,u=e.scrollHeight,d=e.clientWidth,h=e.clientHeight,s=c>d,a=u>h,v.isScrollableX=s,v.isScrollableY=a,v.scrollWidth=c,v.scrollHeight=u,v.clientWidth=d,v.clientHeight=h,v.hasOverscrollBehaviorX=l,v.hasOverscrollBehaviorY=o\n}"
+            },
+            {
+              "line": 577,
+              "snippet": "return this.options.respectReducedMotion&&this.reducedMotionMediaQuery.matches\n}\nget className(){\nlet e=\"lenis\";\nreturn this.options.autoToggle&&(e+=\" lenis-autoToggle\"),this.isStopped&&(e+=\" lenis-stopped\"),this.isLocked&&(e+=\" lenis-locked\"),this.isScrolling&&(e+=\" lenis-scrolling\"),\"smooth\"===this.isScrolling&&(e+=\" lenis-smooth\"),e\n}\nupdateClassName(){\nthis.cleanUpClassName(),this.className.split(\" \").forEach(e=>{\nthis.rootElement.classList.add(e)"
+            },
+            {
+              "line": 578,
+              "snippet": "}\nget className(){\nlet e=\"lenis\";\nreturn this.options.autoToggle&&(e+=\" lenis-autoToggle\"),this.isStopped&&(e+=\" lenis-stopped\"),this.isLocked&&(e+=\" lenis-locked\"),this.isScrolling&&(e+=\" lenis-scrolling\"),\"smooth\"===this.isScrolling&&(e+=\" lenis-smooth\"),e\n}\nupdateClassName(){\nthis.cleanUpClassName(),this.className.split(\" \").forEach(e=>{\nthis.rootElement.classList.add(e)\n}"
+            },
+            {
+              "line": 587,
+              "snippet": ")\n}\ncleanUpClassName(){\nfor(let e of Array.from(this.rootElement.classList))(\"lenis\"===e||e.startsWith(\"lenis-\"))&&this.rootElement.classList.remove(e)\n}\n\n}\n,h=e.i(71645),f=e.i(43476);\nlet A=(0,h.createContext)(null),m=new class{"
+            },
+            {
+              "line": 619,
+              "snippet": ",a)=>{\nlet l=(0,h.useRef)(null),o=(0,h.useRef)(null),[c,u]=(0,h.useState)(void 0);\n(0,h.useImperativeHandle)(a,()=>({\nwrapper:l.current,content:o.current,lenis:c\n}\n),[c]),(0,h.useEffect)(()=>{\nlet e=new d({\n...r,...l.current&&o.current&&{\nwrapper:l.current,content:o.current"
+            },
+            {
+              "line": 648,
+              "snippet": ",[]);\nreturn((0,h.useEffect)(()=>{\nif(t&&c)return m.set({\nlenis:c,addCallback:g,removeCallback:x\n}\n),()=>m.set(null)\n}\n,[t,c,g,x]),(0,h.useEffect)(()=>{\nif(!c)return;"
+            },
+            {
+              "line": 668,
+              "snippet": "}\n,[c]),e)?(0,f.jsx)(A.Provider,{\nvalue:{\nlenis:c,addCallback:g,removeCallback:x\n}\n,children:t&&\"asChild\"!==t?e:(0,f.jsx)(\"div\",{\nref:l,className:`${\nn\n}"
+            }
+          ]
+        },
+        "marquee": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 3303,
+              "snippet": "),(0,t.jsx)(\"div\",{\nref:u,className:\"absolute inset-0 w-full h-full bg-[#070707]   \",children:(0,t.jsxs)(\"div\",{\nclassName:\"w-full h-screen sticky top-0 px-[4vw] flex gap-[2.5vw] overflow-hidden\",children:[(0,t.jsx)(\"div\",{\nclassName:\"w-[50%] h-fit flex flex-col gap-[2.5vw] marquee-1\",children:(g?m:f).map((e,i)=>(0,t.jsx)(\"div\",{\nclassName:\"w-full h-[27vw] max-[1025px]:h-[45vw] max-md:h-[55vw] overflow-hidden\",children:(0,t.jsx)(r.default,{\nsrc:e,alt:\"portfolio-img\",width:700,height:500,className:\"w-full h-full overflow-hidden object-cover\"\n}\n)\n}"
+            },
+            {
+              "line": 3312,
+              "snippet": ",i))\n}\n),(0,t.jsx)(\"div\",{\nclassName:\"w-[50%] h-fit flex flex-col gap-[2.5vw] marquee-2\",children:(g?m:A).map((e,i)=>(0,t.jsx)(\"div\",{\nclassName:\"w-full h-[27vw] max-[1025px]:h-[45vw] max-md:h-[55vw] overflow-hidden\",children:(0,t.jsx)(r.default,{\nsrc:e,alt:\"portfolio-img\",width:700,height:500,className:\"w-full h-full overflow-hidden object-cover\"\n}\n)\n}"
+            }
+          ]
+        },
+        "ease:": {
+          "count": 33,
+          "samples": [
+            {
+              "line": 2406,
+              "snippet": "}\n);\nlet t=e.map(e=>n.default.to(e,{\nscaleX:1,duration:.8,ease:\"power2.inOut\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2424,
+              "snippet": "y:l\n}\n):n.default.to(i,{\ny:l,duration:.65,ease:\"back.out(1.6)\"\n}\n)\n}\nlet s=a.current[t];\ns&&(c.current+=1,n.default.set(s,{"
+            },
+            {
+              "line": 2439,
+              "snippet": "scale:0\n}\n),n.default.to(s,{\nscale:1.05,duration:.45,ease:\"power2.out\"\n}\n)))\n}\n,[]),m=(0,r.useCallback)((e,t)=>{\nlet r=l.current,i=null;"
+            },
+            {
+              "line": 2493,
+              "snippet": "),(0,t.jsxs)(\"div\",{\nonMouseEnter:()=>{\nn.default.to(s.current,{\nopacity:1,duration:.4*!d.current,ease:\"power2.out\"\n}\n)\n}\n,onMouseLeave:()=>{\nh.current=null,n.default.to(s.current,{"
+            },
+            {
+              "line": 2499,
+              "snippet": "}\n,onMouseLeave:()=>{\nh.current=null,n.default.to(s.current,{\nopacity:0,duration:.4*!d.current,ease:\"power2.out\"\n}\n)\n}\n,children:[x.map((e,i)=>(0,t.jsxs)(r.Fragment,{\nchildren:[0!==i&&(0,t.jsx)(\"div\",{"
+            },
+            {
+              "line": 2619,
+              "snippet": "height:0\n}\n,{\nheight:t,duration:r,ease:\"power3.out\",onComplete:()=>{\ni.default.set(e,{\nheight:\"auto\",overflow:\"visible\"\n}\n)\n}"
+            },
+            {
+              "line": 2636,
+              "snippet": "height:k.current\n}\n,{\nheight:0,duration:r,ease:\"power3.out\"\n}\n)\n}\n,[S,A]),(0,t.jsx)(c.Provider,{\nvalue:{"
+            },
+            {
+              "line": 2763,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,ease:\"power2.out\",scrollTrigger:{\ntrigger:e,start:\"top 85%\",toggleActions:\"play none none none\"\n}\n\n}\n));return()=>{"
+            },
+            {
+              "line": 2878,
+              "snippet": "yPercent:20\n}\n,{\nyPercent:0,ease:\"power1.out\",scrollTrigger:{\ntrigger:e.current,start:\"top 60%\",end:\"bottom bottom\",scrub:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 3105,
+              "snippet": "if(c(e>.4*window.innerHeight),!A.current){\nlet t=e-h.current;\nt>0&&e>0&&!f.current?(f.current=!0,n.default.to(d.current,{\nyPercent:-100,duration:.5,ease:\"power3.out\"\n}\n)):t<0&&f.current&&(f.current=!1,n.default.to(d.current,{\nyPercent:0,duration:.5,ease:\"power3.out\"\n}\n))"
+            },
+            {
+              "line": 3108,
+              "snippet": "yPercent:-100,duration:.5,ease:\"power3.out\"\n}\n)):t<0&&f.current&&(f.current=!1,n.default.to(d.current,{\nyPercent:0,duration:.5,ease:\"power3.out\"\n}\n))\n}\nh.current=e\n}"
+            },
+            {
+              "line": 3172,
+              "snippet": "}\n,t=c.default.timeline();\nreturn t.to(e,{\nreveal:125,duration:3.5,ease:\"power2.out\",onUpdate:()=>{\nl.current?.style.setProperty(\"--reveal\",`${\ne.reveal\n}\n%`)\n}"
+            },
+            {
+              "line": 3184,
+              "snippet": "opacity:0\n}\n,{\nopacity:1,duration:1.5,ease:\"power2.out\"\n}\n,0).call(()=>v(!0),void 0,1).call(()=>y(!0),void 0,1.5).call(()=>{\nlet e=document.getElementById(\"header\"),t=document.getElementById(\"header-logo\");\nc.default.fromTo([e,t],{\nyPercent:-50,opacity:0"
+            },
+            {
+              "line": 3192,
+              "snippet": "yPercent:-50,opacity:0\n}\n,{\nyPercent:0,opacity:1,duration:.8,ease:\"power3.out\",onComplete:()=>E.current?.start()\n}\n)\n}\n,void 0,1.8),()=>{\nt.kill(),p.current=!1,v(!1),y(!1)"
+            },
+            {
+              "line": 3211,
+              "snippet": "}\n);\nreturn t.to(n.current,{\nscale:.5,ease:\"power2.inOut\",duration:1\n}\n,0),u.current&&(c.default.set(u.current,{\nfilter:\"blur(24px)\",opacity:.35\n}\n),t.to(u.current,{"
+            }
+          ]
+        },
+        "stagger": {
+          "count": 8,
+          "samples": [
+            {
+              "line": 2482,
+              "snippet": "className:\"relative w-screen bg-[#070707] text-white py-[7vw]\",id:\"awards\",children:(0,t.jsxs)(\"div\",{\nclassName:\"w-screen flex items-center px-[4vw] gap-[4vw]  max-[1025px]:px-[5vw]\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"w-full\",children:[(0,t.jsx)(u.default,{\nstagger:.015,children:(0,t.jsxs)(\"h2\",{\nclassName:\"text-[5.5vw] leading-[1.2]  mb-[4vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:[\"Awards and Industry\",(0,t.jsx)(\"br\",{\n\n}\n),\"Recognition\"]\n}"
+            },
+            {
+              "line": 2775,
+              "snippet": "}\n,[a]),(0,t.jsxs)(\"section\",{\nclassName:\"w-screen py-[6vw] px-[10vw] relative bg-[#070707] text-white max-[1025px]:px-[5vw]\",children:[(0,t.jsx)(m.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] text-center mb-[6vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:\"Frequently Asked Questions\"\n}\n)\n}\n),(0,t.jsx)(\"div\",{"
+            },
+            {
+              "line": 3262,
+              "snippet": ",children:[(0,t.jsxs)(\"div\",{\nref:a,className:\"w-full h-fit flex justify-between max-[1025px]:flex-col max-[1025px]:gap-8\",children:[(0,t.jsx)(\"div\",{\nclassName:\" w-[45%] leading-30! max-[1025px]:w-[62%] max-md:w-full\",children:(0,t.jsx)(h.default,{\nstagger:.015,start:w,children:(0,t.jsx)(\"h1\",{\nclassName:\"text-[7.5vw] text-white max-[1025px]:text-[12vw]  max-md:text-[15vw] leading-[1.1]!\",children:\"Visualise Your Mind in Motion\"\n}\n)\n}\n)"
+            },
+            {
+              "line": 3453,
+              "snippet": "}\n),(0,t.jsxs)(\"div\",{\nclassName:\"w-screen h-screen sticky top-0 z-3 flex flex-col items-center justify-center px-[4vw] gap-[5vw] overflow-hidden bg-linear-to-r from-[#F16B0D] to-[#E61416] max-md:gap-[15vw] max-[1025px]:gap-12 max-[1025px]:px-[5vw]\",children:[(0,t.jsx)(u.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] text-center max-[1025px]:text-[6.5vw] max-md:text-[9vw]\",children:\"Award Winning Work\"\n}\n)\n}\n),(0,t.jsxs)(\"div\",{"
+            },
+            {
+              "line": 3614,
+              "snippet": "ref:e,id:\"clientblur\",className:\"relative w-screen h-[240vh] text-center z-2  bg-[#070707]\",children:[(0,t.jsx)(\"div\",{\nclassName:\"sticky w-full top-0 h-screen flex items-center justify-center\",children:(0,t.jsx)(\"div\",{\nclassName:\"w-3/5 max-lg:w-4/5\",children:(0,t.jsx)(f.default,{\nstagger:.015,children:(0,t.jsx)(\"h3\",{\nclassName:\"text-[5.5vw]  text-white leading-[1.2] max-lg:text-[7vw] max-md:text-[8vw]\",children:\"Trusted by Founders and Creatives, Built for Ambitious Brands.\"\n}\n)\n}\n)"
+            },
+            {
+              "line": 3715,
+              "snippet": "}\n`,id:\"services\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"relative pt-[6vw] px-[4vw] w-[60%] max-[1025px]:w-[85%] max-md:w-full  max-[1025px]:px-[5vw] max-[1025px]:pt-[15vw]\",children:[(0,t.jsx)(o.default,{\nstagger:.015,children:(0,t.jsxs)(\"h2\",{\nclassName:\"text-[5.5vw] leading-[1.2] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:[\"Design That Speaks\",(0,t.jsx)(\"br\",{\n\n}\n),\"to Your Audience\"]\n}"
+            },
+            {
+              "line": 3889,
+              "snippet": "opacity:0,yPercent:10\n}\n,{\nopacity:1,yPercent:0,stagger:.05,ease:\"power2.out\",scrollTrigger:{\ntrigger:\"#work-with-me\",start:\"top top\"\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 3902,
+              "snippet": ",[n]),(0,t.jsxs)(\"section\",{\nclassName:\"relative w-screen bg-[#070707] text-white pt-[25vw] pb-[10vw] max-[1025px]:pt-[65vw] \",id:\"work-with-me\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"text-center mb-[5vw] max-md:mb-[10vw]\",children:[(0,t.jsx)(c.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:\"Why Work With Me?\"\n}\n)\n}\n),(0,t.jsx)(c.default,{"
+            }
+          ]
+        },
+        "Visualise Your Mind": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 3263,
+              "snippet": "ref:a,className:\"w-full h-fit flex justify-between max-[1025px]:flex-col max-[1025px]:gap-8\",children:[(0,t.jsx)(\"div\",{\nclassName:\" w-[45%] leading-30! max-[1025px]:w-[62%] max-md:w-full\",children:(0,t.jsx)(h.default,{\nstagger:.015,start:w,children:(0,t.jsx)(\"h1\",{\nclassName:\"text-[7.5vw] text-white max-[1025px]:text-[12vw]  max-md:text-[15vw] leading-[1.1]!\",children:\"Visualise Your Mind in Motion\"\n}\n)\n}\n)\n}"
+            }
+          ]
+        },
+        "Award Winning Work": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 3454,
+              "snippet": "),(0,t.jsxs)(\"div\",{\nclassName:\"w-screen h-screen sticky top-0 z-3 flex flex-col items-center justify-center px-[4vw] gap-[5vw] overflow-hidden bg-linear-to-r from-[#F16B0D] to-[#E61416] max-md:gap-[15vw] max-[1025px]:gap-12 max-[1025px]:px-[5vw]\",children:[(0,t.jsx)(u.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] text-center max-[1025px]:text-[6.5vw] max-md:text-[9vw]\",children:\"Award Winning Work\"\n}\n)\n}\n),(0,t.jsxs)(\"div\",{\nclassName:\"w-full flex items-center gap-[4vw] max-[1025px]:flex-col max-md:gap-[15vw] max-[1025px]:items-start max-[1025px]:gap-16\",children:[("
+            }
+          ]
+        },
+        "Why Work With Me": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 3903,
+              "snippet": "className:\"relative w-screen bg-[#070707] text-white pt-[25vw] pb-[10vw] max-[1025px]:pt-[65vw] \",id:\"work-with-me\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"text-center mb-[5vw] max-md:mb-[10vw]\",children:[(0,t.jsx)(c.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:\"Why Work With Me?\"\n}\n)\n}\n),(0,t.jsx)(c.default,{\nsplitBy:\"lines\",children:(0,t.jsx)(\"p\",{"
+            }
+          ]
+        },
+        "Design That Speaks": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 3716,
+              "snippet": "`,id:\"services\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"relative pt-[6vw] px-[4vw] w-[60%] max-[1025px]:w-[85%] max-md:w-full  max-[1025px]:px-[5vw] max-[1025px]:pt-[15vw]\",children:[(0,t.jsx)(o.default,{\nstagger:.015,children:(0,t.jsxs)(\"h2\",{\nclassName:\"text-[5.5vw] leading-[1.2] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:[\"Design That Speaks\",(0,t.jsx)(\"br\",{\n\n}\n),\"to Your Audience\"]\n}\n)"
+            }
+          ]
+        },
+        "Awards and Industry": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 2483,
+              "snippet": "className:\"w-screen flex items-center px-[4vw] gap-[4vw]  max-[1025px]:px-[5vw]\",children:[(0,t.jsxs)(\"div\",{\nclassName:\"w-full\",children:[(0,t.jsx)(u.default,{\nstagger:.015,children:(0,t.jsxs)(\"h2\",{\nclassName:\"text-[5.5vw] leading-[1.2]  mb-[4vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:[\"Awards and Industry\",(0,t.jsx)(\"br\",{\n\n}\n),\"Recognition\"]\n}\n)"
+            }
+          ]
+        },
+        "Frequently Asked": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 2776,
+              "snippet": ",[a]),(0,t.jsxs)(\"section\",{\nclassName:\"w-screen py-[6vw] px-[10vw] relative bg-[#070707] text-white max-[1025px]:px-[5vw]\",children:[(0,t.jsx)(m.default,{\nstagger:.015,children:(0,t.jsx)(\"h2\",{\nclassName:\"text-[5.5vw] text-center mb-[6vw] max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:\"Frequently Asked Questions\"\n}\n)\n}\n),(0,t.jsx)(\"div\",{\nclassName:\"w-full mx-auto \",children:p.map((r,i)=>{"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "file": "2m2cyqvl-o39e.js",
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2m2cyqvl-o39e.js",
+      "bytes": 132463,
+      "hasSourceMap": false,
+      "mapStatus": 404,
+      "versionStrings3x": [],
+      "keywordHits": {
+        "scrollTrigger:": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 5247,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,stagger:.12,ease:\"power2.out\",scrollTrigger:{\ntrigger:i.current,start:\"top 70%\",once:!0\n}\n\n}\n);return()=>{"
+            }
+          ]
+        },
+        "scrollTrigger": {
+          "count": 2,
+          "samples": [
+            {
+              "line": 5247,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,stagger:.12,ease:\"power2.out\",scrollTrigger:{\ntrigger:i.current,start:\"top 70%\",once:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 5253,
+              "snippet": "\n}\n);return()=>{\nn.scrollTrigger?.kill(),n.kill()\n}\n\n}\n,[]);\nlet s=(0,a.useCallback)(()=>{"
+            }
+          ]
+        },
+        ".from(": {
+          "count": 4,
+          "samples": [
+            {
+              "line": 317,
+              "snippet": "}\n=tD(\"u\">typeof requestAnimationFrame?requestAnimationFrame:tC,!0),tI=new Set,tF=!1,tO=!1,tU=!1;function tN(){\nif(tO){\nlet t=Array.from(tI).filter(t=>t.needsMeasurement),e=new Set(t.map(t=>t.element)),i=new Map;\ne.forEach(t=>{\nlet e,n=(e=[],tE.forEach(i=>{\nlet n=t.getValue(i);\nvoid 0!==n&&(e.push([i,n.get()]),n.set(+!!i.startsWith(\"scale\")))\n}"
+            },
+            {
+              "line": 2619,
+              "snippet": "return d\n}\nfunction nL(t,e,i,n=0,s=1){\nlet r=Array.from(t).sort((t,e)=>t.sortNodePosition(e)).indexOf(e),o=t.size,a=(o-1)*n;\nreturn\"function\"==typeof i?i(r,o):1===s?r*n:a-r*n\n}\nfunction nB(t,e,i={\n\n}"
+            },
+            {
+              "line": 2725,
+              "snippet": "if(\"string\"==typeof t){\nlet n=document;e&&(n=e.current);\nlet s=i?.[t]??n.querySelectorAll(t);\nreturn s?Array.from(s):[]\n}\nreturn Array.from(t).filter(t=>null!=t)\n}\nlet n0=new WeakMap,n1=(t,e,i)=>(n,s)=>s&&s[0]?s[0][t+\"Size\"]:nJ(n)&&\"getBBox\"in n?n.getBBox()[e]:n[i],n2=n1(\"inline\",\"width\",\"offsetWidth\"),n5=n1(\"block\",\"height\",\"offsetHeight\");\nfunction n3({"
+            },
+            {
+              "line": 2727,
+              "snippet": "let s=i?.[t]??n.querySelectorAll(t);\nreturn s?Array.from(s):[]\n}\nreturn Array.from(t).filter(t=>null!=t)\n}\nlet n0=new WeakMap,n1=(t,e,i)=>(n,s)=>s&&s[0]?s[0][t+\"Size\"]:nJ(n)&&\"getBBox\"in n?n.getBBox()[e]:n[i],n2=n1(\"inline\",\"width\",\"offsetWidth\"),n5=n1(\"block\",\"height\",\"offsetHeight\");\nfunction n3({\ntarget:t,borderBoxSize:e\n}"
+            }
+          ]
+        },
+        ".fromTo(": {
+          "count": 1,
+          "samples": [
+            {
+              "line": 5243,
+              "snippet": "opacity:1,y:0\n}\n);\nlet n=l.default.fromTo(e,{\nopacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,stagger:.12,ease:\"power2.out\",scrollTrigger:{\ntrigger:i.current,start:\"top 70%\",once:!0"
+            }
+          ]
+        },
+        "ease:": {
+          "count": 13,
+          "samples": [
+            {
+              "line": 580,
+              "snippet": "n\n}\n)`,t7={\nlinear:\"linear\",ease:\"ease\",easeIn:\"ease-in\",easeOut:\"ease-out\",easeInOut:\"ease-in-out\",circIn:t8([0,.65,.55,1]),circOut:t8([.55,0,1,.45]),backIn:t8([.31,.01,.66,-.59]),backOut:t8([.33,1.53,.69,.99])\n}\n;function et(t){\nreturn\"function\"==typeof t&&\"applyToOptions\"in t\n}\nclass ee extends t3{"
+            },
+            {
+              "line": 601,
+              "snippet": "}\n(t);\nthis.animation=function(t,e,i,{\ndelay:n=0,duration:s=300,repeat:r=0,repeatType:o=\"loop\",ease:a=\"easeOut\",times:l\n}\n={\n\n}\n,h){"
+            },
+            {
+              "line": 947,
+              "snippet": "let i;\nif(this.valueSubscriptions.has(t)&&this.valueSubscriptions.get(t)(),e.accelerate&&ei.has(t)&&this.current instanceof HTMLElement){\nlet{\nfactory:i,keyframes:n,times:s,ease:r,duration:o\n}\n=e.accelerate,a=new ee({\nelement:this.current,name:t,keyframes:n,times:s,ease:r,duration:tG(o)\n}\n),l=i(a);"
+            },
+            {
+              "line": 950,
+              "snippet": "factory:i,keyframes:n,times:s,ease:r,duration:o\n}\n=e.accelerate,a=new ee({\nelement:this.current,name:t,keyframes:n,times:s,ease:r,duration:tG(o)\n}\n),l=i(a);\nthis.valueSubscriptions.set(t,()=>{\nl(),a.cancel()\n}"
+            },
+            {
+              "line": 2101,
+              "snippet": "}\n),s=Math.min(iK(n),2e4);\nreturn{\ntype:\"keyframes\",ease:t=>n.next(s*t).value/e,duration:s/1e3\n}\n\n}\n(t,100,i3);\nreturn t.ease=e.ease,t.duration=tG(e.duration),t.type=\"keyframes\",t"
+            },
+            {
+              "line": 2132,
+              "snippet": "}\n;\nfunction nm({\nduration:t=300,keyframes:e,times:i,ease:n=\"easeInOut\"\n}\n){\nvar s;\nlet r,o=Array.isArray(n)&&\"number\"!=typeof n[0]?n.map(nc):nc(n),a={\ndone:!1,value:e[0]"
+            },
+            {
+              "line": 2140,
+              "snippet": "done:!1,value:e[0]\n}\n,l=function(t,e,{\nclamp:i=!0,ease:n,mixer:s\n}\n={\n\n}\n){"
+            },
+            {
+              "line": 2171,
+              "snippet": "\n}\n(r=[0],e.length-1),r),s.map(e=>e*t)),e,{\nease:Array.isArray(o)?o:e.map(()=>o||ne).splice(0,e.length-1)\n}\n);\nreturn{\ncalculatedDuration:t,next:e=>(a.value=l(e),a.done=e>=t,a)\n}"
+            },
+            {
+              "line": 2494,
+              "snippet": "type:\"keyframes\",duration:.8\n}\n,nk={\ntype:\"keyframes\",ease:[.25,.1,.35,1],duration:.3\n}\n,nV=new Set([\"when\",\"delay\",\"delayChildren\",\"staggerChildren\",\"staggerDirection\",\"repeat\",\"repeatType\",\"repeatDelay\",\"from\",\"elapsed\"]),nD=(t,e,i,n={\n\n}\n,s,r)=>o=>{"
+            },
+            {
+              "line": 2508,
+              "snippet": "}\n=n;h-=tG(l);\nlet u={\nkeyframes:Array.isArray(i)?i:[null,i],ease:\"easeOut\",velocity:e.getVelocity(),...a,delay:-h,onUpdate:t=>{\ne.set(t),a.onUpdate&&a.onUpdate(t)\n}\n,onComplete:()=>{\no(),a.onComplete&&a.onComplete()\n}"
+            },
+            {
+              "line": 4285,
+              "snippet": "return t.animationValues&&void 0!==t.animationValues.opacityExit\n}\nlet rh={\nduration:.45,ease:[.4,0,.1,1]\n}\n,ru=t=>\"u\">typeof navigator&&navigator.userAgent&&navigator.userAgent.toLowerCase().includes(t),rd=ru(\"applewebkit/\")&&!ru(\"chrome/\")?Math.round:tC;function rc(t){\nt.min=rd(t.min),t.max=rd(t.max)\n}\nfunction rp(t,e,i){"
+            },
+            {
+              "line": 5247,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,stagger:.12,ease:\"power2.out\",scrollTrigger:{\ntrigger:i.current,start:\"top 70%\",once:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 5298,
+              "snippet": "scale:u?1.6:1\n}\n,transition:{\nduration:.6,ease:[.22,1,.36,1]\n}\n,style:{\norder:h,zIndex:u?10:n-Math.abs(h)\n}\n,className:`w-[5vw] h-[5vw] rounded-full overflow-hidden [clip-path:circle(50%)] cursor-pointer max-[1025px]:w-[9vw] max-[1025px]:h-[9vw] max-md:w-[12vw] max-md:h-[12vw] ${"
+            }
+          ]
+        },
+        "stagger": {
+          "count": 4,
+          "samples": [
+            {
+              "line": 2496,
+              "snippet": ",nk={\ntype:\"keyframes\",ease:[.25,.1,.35,1],duration:.3\n}\n,nV=new Set([\"when\",\"delay\",\"delayChildren\",\"staggerChildren\",\"staggerDirection\",\"repeat\",\"repeatType\",\"repeatDelay\",\"from\",\"elapsed\"]),nD=(t,e,i,n={\n\n}\n,s,r)=>o=>{\nlet a=iD(n,t)||{\n"
+            },
+            {
+              "line": 2638,
+              "snippet": ";\ni.transitionOverride&&(s=i.transitionOverride);let r=n?()=>Promise.all(nR(t,n,i)):()=>Promise.resolve(),o=t.variantChildren&&t.variantChildren.size?(n=0)=>{\nlet{\ndelayChildren:r=0,staggerChildren:o,staggerDirection:a\n}\n=s;\nreturn function(t,e,i=0,n=0,s=0,r=1,o){\nlet a=[];\nfor(let l of t.variantChildren)l.notify(\"AnimationStart\",e),a.push(nB(l,e,{"
+            },
+            {
+              "line": 5247,
+              "snippet": "opacity:0,y:40\n}\n,{\nopacity:1,y:0,duration:.8,stagger:.12,ease:\"power2.out\",scrollTrigger:{\ntrigger:i.current,start:\"top 70%\",once:!0\n}\n\n}\n);return()=>{"
+            },
+            {
+              "line": 5268,
+              "snippet": "ref:i,className:\"w-screen bg-[#070707] py-[7vw] px-[4vw] max-[1025px]:px-[5vw] max-[1025px]:py-[12vw]\",id:\"testimonials\",children:(0,r.jsxs)(\"div\",{\nclassName:\"w-full flex flex-col gap-[6vw] max-[1025px]:gap-[12vw]\",children:[(0,r.jsx)(\"div\",{\nclassName:\"w-[65%] mx-auto max-[1025px]:w-full\",children:(0,r.jsx)(rq.default,{\nstagger:.015,children:(0,r.jsx)(\"h2\",{\nclassName:\"text-[5.2vw] leading-[1.2]! text-center max-[1025px]:text-[7vw] max-md:text-[9vw]\",children:\"Don't Take It from Us, Take It from Our Clients\"\n}\n)\n}\n)"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

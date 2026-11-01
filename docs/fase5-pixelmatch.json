@@ -1,0 +1,901 @@
+{
+  "generatedAt": "2026-10-30T10:16:26.022Z",
+  "viewports": {
+    "390": {
+      "refDimensions": {
+        "width": 390,
+        "height": 14056,
+        "scrollHeight": 14056
+      },
+      "localDimensions": {
+        "width": 390,
+        "height": 14056,
+        "scrollHeight": 14056
+      },
+      "sections": {
+        "Header": {
+          "refRect": {
+            "y": 0,
+            "height": 79
+          },
+          "localRect": {
+            "y": 0,
+            "height": 79
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 79
+          },
+          "diffPixels": 131,
+          "totalPixels": 30810,
+          "diffPercent": 0.4252,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Header-390.png"
+        },
+        "Hero": {
+          "refRect": {
+            "y": 0,
+            "height": 2532
+          },
+          "localRect": {
+            "y": 0,
+            "height": 2532
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 2532
+          },
+          "diffPixels": 3746,
+          "totalPixels": 987480,
+          "diffPercent": 0.3793,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Hero-390.png"
+        },
+        "AwardWinningWork": {
+          "refRect": {
+            "y": 2532,
+            "height": 3038
+          },
+          "localRect": {
+            "y": 2532,
+            "height": 3038
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 3038
+          },
+          "diffPixels": 2043,
+          "totalPixels": 1184820,
+          "diffPercent": 0.1724,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-AwardWinningWork-390.png"
+        },
+        "WhyWorkWithMe": {
+          "refRect": {
+            "y": 5570,
+            "height": 1129
+          },
+          "localRect": {
+            "y": 5570,
+            "height": 1129
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 1129
+          },
+          "diffPixels": 458,
+          "totalPixels": 440310,
+          "diffPercent": 0.104,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-WhyWorkWithMe-390.png"
+        },
+        "Services": {
+          "refRect": {
+            "y": 6700,
+            "height": 2321
+          },
+          "localRect": {
+            "y": 6700,
+            "height": 2321
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 2321
+          },
+          "diffPixels": 5525,
+          "totalPixels": 905190,
+          "diffPercent": 0.6104,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Services-390.png"
+        },
+        "Awards": {
+          "refRect": {
+            "y": 9021,
+            "height": 675
+          },
+          "localRect": {
+            "y": 9021,
+            "height": 675
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 675
+          },
+          "diffPixels": 1699,
+          "totalPixels": 263250,
+          "diffPercent": 0.6454,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Awards-390.png"
+        },
+        "ClientLogos": {
+          "refRect": {
+            "y": 9696,
+            "height": 2026
+          },
+          "localRect": {
+            "y": 9696,
+            "height": 2026
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 2026
+          },
+          "diffPixels": 477,
+          "totalPixels": 790140,
+          "diffPercent": 0.0604,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-ClientLogos-390.png"
+        },
+        "Testimonials": {
+          "refRect": {
+            "y": 11721,
+            "height": 748
+          },
+          "localRect": {
+            "y": 11721,
+            "height": 748
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 748
+          },
+          "diffPixels": 178,
+          "totalPixels": 291720,
+          "diffPercent": 0.061,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Testimonials-390.png"
+        },
+        "Faq": {
+          "refRect": {
+            "y": 12470,
+            "height": 833
+          },
+          "localRect": {
+            "y": 12470,
+            "height": 833
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 833
+          },
+          "diffPixels": 128,
+          "totalPixels": 324870,
+          "diffPercent": 0.0394,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Faq-390.png"
+        },
+        "Footer": {
+          "refRect": {
+            "y": 13303,
+            "height": 753
+          },
+          "localRect": {
+            "y": 13303,
+            "height": 753
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 390,
+            "height": 753
+          },
+          "diffPixels": 130,
+          "totalPixels": 293670,
+          "diffPercent": 0.0443,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Footer-390.png"
+        }
+      }
+    },
+    "768": {
+      "refDimensions": {
+        "width": 768,
+        "height": 17230,
+        "scrollHeight": 17230
+      },
+      "localDimensions": {
+        "width": 768,
+        "height": 17230,
+        "scrollHeight": 17230
+      },
+      "sections": {
+        "Header": {
+          "refRect": {
+            "y": 0,
+            "height": 108
+          },
+          "localRect": {
+            "y": 0,
+            "height": 108
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 108
+          },
+          "diffPixels": 273,
+          "totalPixels": 82944,
+          "diffPercent": 0.3291,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Header-768.png"
+        },
+        "Hero": {
+          "refRect": {
+            "y": 0,
+            "height": 3072
+          },
+          "localRect": {
+            "y": 0,
+            "height": 3072
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 3072
+          },
+          "diffPixels": 4451,
+          "totalPixels": 2359296,
+          "diffPercent": 0.1887,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Hero-768.png"
+        },
+        "AwardWinningWork": {
+          "refRect": {
+            "y": 3072,
+            "height": 3686
+          },
+          "localRect": {
+            "y": 3072,
+            "height": 3686
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 3686
+          },
+          "diffPixels": 2444,
+          "totalPixels": 2830848,
+          "diffPercent": 0.0863,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-AwardWinningWork-768.png"
+        },
+        "WhyWorkWithMe": {
+          "refRect": {
+            "y": 6758,
+            "height": 1743
+          },
+          "localRect": {
+            "y": 6758,
+            "height": 1743
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 1743
+          },
+          "diffPixels": 236,
+          "totalPixels": 1338624,
+          "diffPercent": 0.0176,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-WhyWorkWithMe-768.png"
+        },
+        "Services": {
+          "refRect": {
+            "y": 8501,
+            "height": 2816
+          },
+          "localRect": {
+            "y": 8501,
+            "height": 2816
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 2816
+          },
+          "diffPixels": 5749,
+          "totalPixels": 2162688,
+          "diffPercent": 0.2658,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Services-768.png"
+        },
+        "Awards": {
+          "refRect": {
+            "y": 11317,
+            "height": 833
+          },
+          "localRect": {
+            "y": 11317,
+            "height": 833
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 833
+          },
+          "diffPixels": 1329,
+          "totalPixels": 639744,
+          "diffPercent": 0.2077,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Awards-768.png"
+        },
+        "ClientLogos": {
+          "refRect": {
+            "y": 12151,
+            "height": 2458
+          },
+          "localRect": {
+            "y": 12151,
+            "height": 2458
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 2458
+          },
+          "diffPixels": 16,
+          "totalPixels": 1887744,
+          "diffPercent": 0.0008,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-ClientLogos-768.png"
+        },
+        "Testimonials": {
+          "refRect": {
+            "y": 14608,
+            "height": 876
+          },
+          "localRect": {
+            "y": 14608,
+            "height": 876
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 876
+          },
+          "diffPixels": 11,
+          "totalPixels": 672768,
+          "diffPercent": 0.0016,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Testimonials-768.png"
+        },
+        "Faq": {
+          "refRect": {
+            "y": 15484,
+            "height": 1000
+          },
+          "localRect": {
+            "y": 15484,
+            "height": 1000
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 1000
+          },
+          "diffPixels": 16,
+          "totalPixels": 768000,
+          "diffPercent": 0.0021,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Faq-768.png"
+        },
+        "Footer": {
+          "refRect": {
+            "y": 16484,
+            "height": 746
+          },
+          "localRect": {
+            "y": 16484,
+            "height": 746
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 768,
+            "height": 746
+          },
+          "diffPixels": 334,
+          "totalPixels": 572928,
+          "diffPercent": 0.0583,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Footer-768.png"
+        }
+      }
+    },
+    "1024": {
+      "refDimensions": {
+        "width": 1024,
+        "height": 17039,
+        "scrollHeight": 17039
+      },
+      "localDimensions": {
+        "width": 1024,
+        "height": 17039,
+        "scrollHeight": 17039
+      },
+      "sections": {
+        "Header": {
+          "refRect": {
+            "y": 0,
+            "height": 143
+          },
+          "localRect": {
+            "y": 0,
+            "height": 143
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 143
+          },
+          "diffPixels": 0,
+          "totalPixels": 146432,
+          "diffPercent": 0,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Header-1024.png"
+        },
+        "Hero": {
+          "refRect": {
+            "y": 0,
+            "height": 2700
+          },
+          "localRect": {
+            "y": 0,
+            "height": 2700
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 2700
+          },
+          "diffPixels": 3705,
+          "totalPixels": 2764800,
+          "diffPercent": 0.134,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Hero-1024.png"
+        },
+        "AwardWinningWork": {
+          "refRect": {
+            "y": 2700,
+            "height": 3240
+          },
+          "localRect": {
+            "y": 2700,
+            "height": 3240
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 3240
+          },
+          "diffPixels": 48,
+          "totalPixels": 3317760,
+          "diffPercent": 0.0014,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-AwardWinningWork-1024.png"
+        },
+        "WhyWorkWithMe": {
+          "refRect": {
+            "y": 5940,
+            "height": 2273
+          },
+          "localRect": {
+            "y": 5940,
+            "height": 2273
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 2273
+          },
+          "diffPixels": 108,
+          "totalPixels": 2327552,
+          "diffPercent": 0.0046,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-WhyWorkWithMe-1024.png"
+        },
+        "Services": {
+          "refRect": {
+            "y": 8213,
+            "height": 2475
+          },
+          "localRect": {
+            "y": 8213,
+            "height": 2475
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 2475
+          },
+          "diffPixels": 2942,
+          "totalPixels": 2534400,
+          "diffPercent": 0.1161,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Services-1024.png"
+        },
+        "Awards": {
+          "refRect": {
+            "y": 10688,
+            "height": 1008
+          },
+          "localRect": {
+            "y": 10688,
+            "height": 1008
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 1008
+          },
+          "diffPixels": 381,
+          "totalPixels": 1032192,
+          "diffPercent": 0.0369,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Awards-1024.png"
+        },
+        "ClientLogos": {
+          "refRect": {
+            "y": 11696,
+            "height": 2160
+          },
+          "localRect": {
+            "y": 11696,
+            "height": 2160
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 2160
+          },
+          "diffPixels": 19,
+          "totalPixels": 2211840,
+          "diffPercent": 0.0009,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-ClientLogos-1024.png"
+        },
+        "Testimonials": {
+          "refRect": {
+            "y": 13856,
+            "height": 1152
+          },
+          "localRect": {
+            "y": 13856,
+            "height": 1152
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 1152
+          },
+          "diffPixels": 99,
+          "totalPixels": 1179648,
+          "diffPercent": 0.0084,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Testimonials-1024.png"
+        },
+        "Faq": {
+          "refRect": {
+            "y": 15008,
+            "height": 1176
+          },
+          "localRect": {
+            "y": 15008,
+            "height": 1176
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 1176
+          },
+          "diffPixels": 25,
+          "totalPixels": 1204224,
+          "diffPercent": 0.0021,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Faq-1024.png"
+        },
+        "Footer": {
+          "refRect": {
+            "y": 16185,
+            "height": 854
+          },
+          "localRect": {
+            "y": 16185,
+            "height": 854
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1024,
+            "height": 854
+          },
+          "diffPixels": 0,
+          "totalPixels": 874496,
+          "diffPercent": 0,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Footer-1024.png"
+        }
+      }
+    },
+    "1440": {
+      "refDimensions": {
+        "width": 1440,
+        "height": 15607,
+        "scrollHeight": 15607
+      },
+      "localDimensions": {
+        "width": 1440,
+        "height": 15607,
+        "scrollHeight": 15607
+      },
+      "sections": {
+        "Header": {
+          "refRect": {
+            "y": 0,
+            "height": 94
+          },
+          "localRect": {
+            "y": 0,
+            "height": 94
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 94
+          },
+          "diffPixels": 264,
+          "totalPixels": 135360,
+          "diffPercent": 0.195,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Header-1440.png"
+        },
+        "Hero": {
+          "refRect": {
+            "y": 0,
+            "height": 2700
+          },
+          "localRect": {
+            "y": 0,
+            "height": 2700
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 2700
+          },
+          "diffPixels": 3958,
+          "totalPixels": 3888000,
+          "diffPercent": 0.1018,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Hero-1440.png"
+        },
+        "AwardWinningWork": {
+          "refRect": {
+            "y": 2700,
+            "height": 3240
+          },
+          "localRect": {
+            "y": 2700,
+            "height": 3240
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 3240
+          },
+          "diffPixels": 2823,
+          "totalPixels": 4665600,
+          "diffPercent": 0.0605,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-AwardWinningWork-1440.png"
+        },
+        "WhyWorkWithMe": {
+          "refRect": {
+            "y": 5940,
+            "height": 1204
+          },
+          "localRect": {
+            "y": 5940,
+            "height": 1204
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 1204
+          },
+          "diffPixels": 258,
+          "totalPixels": 1733760,
+          "diffPercent": 0.0149,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-WhyWorkWithMe-1440.png"
+        },
+        "Services": {
+          "refRect": {
+            "y": 7144,
+            "height": 2475
+          },
+          "localRect": {
+            "y": 7144,
+            "height": 2475
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 2475
+          },
+          "diffPixels": 4966,
+          "totalPixels": 3564000,
+          "diffPercent": 0.1393,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Services-1440.png"
+        },
+        "Awards": {
+          "refRect": {
+            "y": 9619,
+            "height": 1021
+          },
+          "localRect": {
+            "y": 9619,
+            "height": 1021
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 1021
+          },
+          "diffPixels": 1074,
+          "totalPixels": 1470240,
+          "diffPercent": 0.073,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Awards-1440.png"
+        },
+        "ClientLogos": {
+          "refRect": {
+            "y": 10640,
+            "height": 2160
+          },
+          "localRect": {
+            "y": 10640,
+            "height": 2160
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 2160
+          },
+          "diffPixels": 61,
+          "totalPixels": 3110400,
+          "diffPercent": 0.002,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-ClientLogos-1440.png"
+        },
+        "Testimonials": {
+          "refRect": {
+            "y": 12800,
+            "height": 991
+          },
+          "localRect": {
+            "y": 12800,
+            "height": 991
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 991
+          },
+          "diffPixels": 21,
+          "totalPixels": 1427040,
+          "diffPercent": 0.0015,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Testimonials-1440.png"
+        },
+        "Faq": {
+          "refRect": {
+            "y": 13791,
+            "height": 1085
+          },
+          "localRect": {
+            "y": 13791,
+            "height": 1085
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 1085
+          },
+          "diffPixels": 20,
+          "totalPixels": 1562400,
+          "diffPercent": 0.0013,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Faq-1440.png"
+        },
+        "Footer": {
+          "refRect": {
+            "y": 14876,
+            "height": 731
+          },
+          "localRect": {
+            "y": 14876,
+            "height": 731
+          },
+          "heightDeltaPx": 0,
+          "yDeltaPx": 0,
+          "compareSize": {
+            "width": 1440,
+            "height": 731
+          },
+          "diffPixels": 145,
+          "totalPixels": 1052640,
+          "diffPercent": 0.0138,
+          "passUnder1Pct": true,
+          "diffImage": "reference/local-fase5/diffs/diff-Footer-1440.png"
+        }
+      }
+    }
+  }
+}

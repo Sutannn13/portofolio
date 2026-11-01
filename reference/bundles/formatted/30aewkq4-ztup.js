@@ -1,0 +1,739 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([
+  "object" == typeof document ? document.currentScript : void 0,
+  40146,
+  (e) => {
+    "use strict";
+    var r = e.i(43476),
+      t = e.i(71645);
+    let a = (0, t.forwardRef)(function (
+        {
+          id: e,
+          label: a,
+          placeholder: l,
+          type: s = "text",
+          error: o,
+          className: n = "",
+          ...i
+        },
+        d,
+      ) {
+        let c = (0, t.useId)(),
+          u = e ?? c,
+          m = "string" == typeof a ? a : void 0;
+        return (0, r.jsxs)("div", {
+          className: "w-full",
+          children: [
+            a &&
+              (0, r.jsx)("label", {
+                htmlFor: u,
+                className: "sr-only",
+                children: a,
+              }),
+            (0, r.jsx)("input", {
+              ref: d,
+              id: u,
+              type: s,
+              placeholder: l ?? m,
+              className: `
+ w-full border rounded-full bg-white
+ h-14 pl-5 pr-4 text-sm text-gray-800
+ outline-none transition-all
+ border-gray-200
+ focus-within:border-[#ff5f00]
+ ${o ? "border-red-400 focus:border-red-400" : ""}
+ ${n}
+ `,
+              "aria-invalid": !!o || void 0,
+              "aria-describedby": o ? `${u}-error` : void 0,
+              ...i,
+            }),
+            o &&
+              (0, r.jsx)("p", {
+                id: `${u}-error`,
+                className: "mt-1 ml-4 text-xs text-red-500",
+                children: o,
+              }),
+          ],
+        });
+      }),
+      l = (0, t.forwardRef)(function (
+        { id: e, label: t, error: a, rows: l = 5, className: s = "", ...o },
+        n,
+      ) {
+        let i = "string" == typeof t ? t : void 0;
+        return (0, r.jsxs)("div", {
+          className: "w-full",
+          children: [
+            t &&
+              (0, r.jsx)("label", {
+                htmlFor: e,
+                className: "sr-only",
+                children: t,
+              }),
+            (0, r.jsx)("textarea", {
+              ref: n,
+              id: e,
+              rows: l,
+              placeholder: i ?? "",
+              className: `
+ w-full border rounded-2xl bg-white
+ pt-5 pb-4 pl-5 pr-4 text-sm text-gray-800
+ outline-none transition-all resize-none
+ border-gray-200
+ focus:border-gray-400
+ ${a ? "border-red-400 focus:border-red-400" : ""}
+ ${s}
+ `,
+              "aria-invalid": !!a || void 0,
+              "aria-describedby": a ? `${e}-error` : void 0,
+              ...o,
+            }),
+            a &&
+              (0, r.jsx)("p", {
+                id: `${e}-error`,
+                className: "mt-1 ml-4 text-xs text-red-500",
+                children: a,
+              }),
+          ],
+        });
+      }),
+      s = (0, t.forwardRef)(function (
+        { id: e, label: a, options: l = [], error: s, className: o = "", ...n },
+        i,
+      ) {
+        let [d, c] = (0, t.useState)(!1),
+          u = (0, t.useRef)(null),
+          m = l.find((e) => e.value === n.value);
+        return (
+          (0, t.useEffect)(() => {
+            let e = (e) => {
+              u.current?.contains(e.target) || c(!1);
+            };
+            return (
+              document.addEventListener("mousedown", e),
+              () => document.removeEventListener("mousedown", e)
+            );
+          }, []),
+          (0, r.jsxs)("div", {
+            className: "w-full",
+            ref: u,
+            children: [
+              (0, r.jsxs)("div", {
+                className: "relative w-full",
+                children: [
+                  (0, r.jsx)("button", {
+                    type: "button",
+                    id: e,
+                    ref: i,
+                    "aria-describedby": s ? `${e}-error` : void 0,
+                    onClick: () => c((e) => !e),
+                    className: `
+ w-full border rounded-full bg-white
+ h-14 pl-5 pr-10 text-left text-sm!
+ outline-none transition-all cursor-pointer
+ border-gray-200
+ focus:border-gray-400
+ flex items-center
+ ${!m ? "text-gray-700" : "text-gray-800"}
+ ${s ? "border-red-400 focus:border-red-400" : ""}
+ ${o}
+ `,
+                    children: m ? m.label : a,
+                  }),
+                  (0, r.jsx)("span", {
+                    className:
+                      "pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-gray-400",
+                    children: (0, r.jsx)("svg", {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      width: "16",
+                      height: "16",
+                      viewBox: "0 0 24 24",
+                      fill: "none",
+                      stroke: "currentColor",
+                      strokeWidth: "2",
+                      children: (0, r.jsx)("path", { d: "m6 9 6 6 6-6" }),
+                    }),
+                  }),
+                  (0, r.jsx)("div", {
+                    className: `
+ absolute z-50 mt-2 w-full
+ transition-all duration-200 origin-top
+ ${d ? "opacity-100 scale-100 translate-y-0" : "opacity-0 scale-95 -translate-y-2 pointer-events-none"}
+ `,
+                    children: (0, r.jsx)("div", {
+                      className:
+                        "bg-white p-1 border border-gray-200 rounded-lg shadow-xl overflow-hidden",
+                      children: l.map((t) =>
+                        (0, r.jsx)(
+                          "button",
+                          {
+                            type: "button",
+                            onClick: () => {
+                              var r;
+                              return (
+                                (r = t.value),
+                                void (n.onChange &&
+                                  n.onChange({ target: { value: r, id: e } }),
+                                c(!1))
+                              );
+                            },
+                            className: `
+ w-full text-left px-5 py-3 text-sm transition-all rounded-lg
+ hover:bg-gray-100
+ ${n.value === t.value ? "bg-gray-50 text-gray-900 font-medium" : "text-gray-700"}
+ `,
+                            children: t.label,
+                          },
+                          t.value,
+                        ),
+                      ),
+                    }),
+                  }),
+                ],
+              }),
+              s &&
+                (0, r.jsx)("p", {
+                  id: `${e}-error`,
+                  className: "mt-1 ml-4 text-xs text-red-500",
+                  children: s,
+                }),
+            ],
+          })
+        );
+      }),
+      o = [
+        { code: "IN", dial: "+91", flag: "🇮🇳", name: "India" },
+        { code: "IE", dial: "+353", flag: "🇮🇪", name: "Ireland" },
+        { code: "US", dial: "+1", flag: "🇺🇸", name: "United States" },
+        { code: "GB", dial: "+44", flag: "🇬🇧", name: "United Kingdom" },
+        { code: "AU", dial: "+61", flag: "🇦🇺", name: "Australia" },
+        { code: "CA", dial: "+1", flag: "🇨🇦", name: "Canada" },
+        { code: "DE", dial: "+49", flag: "🇩🇪", name: "Germany" },
+        { code: "FR", dial: "+33", flag: "🇫🇷", name: "France" },
+        { code: "AE", dial: "+971", flag: "🇦🇪", name: "United Arab Emirates" },
+        { code: "SG", dial: "+65", flag: "🇸🇬", name: "Singapore" },
+      ],
+      n = (...e) => e.filter(Boolean).join(" "),
+      i = (0, t.forwardRef)(function (
+        {
+          id: e = "phone",
+          label: a = "Phone Number*",
+          value: l = "",
+          onChange: s,
+          defaultCountry: i = "IN",
+          countries: d = o,
+          error: c,
+          className: u = "",
+          wrapperClassName: m = "",
+          countryButtonClassName: f = "",
+          flagClassName: x = "",
+          dialCodeClassName: h = "",
+          chevronClassName: p = "",
+          dropdownClassName: b = "",
+          optionClassName: g = "",
+          activeOptionClassName: v = "",
+          optionFlagClassName: w = "",
+          optionCodeClassName: y = "",
+          optionDialClassName: j = "",
+          dividerClassName: N = "",
+          inputClassName: $ = "",
+          errorClassName: k = "",
+          placeholder: C,
+          showCountryName: S = !1,
+          ...E
+        },
+        I,
+      ) {
+        let R = (0, t.useRef)(null),
+          [T, L] = (0, t.useState)(() => d.find((e) => e.code === i) || d[0]),
+          [A, B] = (0, t.useState)(!1),
+          U = l.startsWith(T.dial) ? l.slice(T.dial.length).trim() : l;
+        return (
+          (0, t.useEffect)(() => {
+            let e = (e) => {
+              R.current && (R.current.contains(e.target) || B(!1));
+            };
+            return (
+              window.addEventListener("pointerdown", e),
+              () => {
+                window.removeEventListener("pointerdown", e);
+              }
+            );
+          }, []),
+          (0, r.jsxs)("div", {
+            ref: R,
+            className: n("w-full", m),
+            children: [
+              (0, r.jsxs)("div", {
+                className: n(
+                  "flex h-14 items-center rounded-full border bg-white/15 transition-all",
+                  "border-white/20 focus-within:border-[#ff5f00]",
+                  c && "border-red-400 focus-within:border-red-400",
+                  u,
+                ),
+                children: [
+                  (0, r.jsxs)("div", {
+                    className: "relative shrink-0",
+                    children: [
+                      (0, r.jsxs)("button", {
+                        type: "button",
+                        onClick: () => B((e) => !e),
+                        className: n(
+                          "flex h-full cursor-pointer items-center gap-1 pl-4 pr-2 text-sm text-gray-700 transition-colors hover:text-gray-900",
+                          f,
+                        ),
+                        "aria-expanded": A,
+                        "aria-haspopup": "listbox",
+                        children: [
+                          (0, r.jsx)("span", {
+                            className: n("text-base", x),
+                            children: T.flag,
+                          }),
+                          (0, r.jsx)("span", {
+                            className: n("font-normal text-sm", h),
+                            children: T.dial,
+                          }),
+                          (0, r.jsx)("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            width: "12",
+                            height: "12",
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            strokeWidth: "2",
+                            strokeLinecap: "round",
+                            strokeLinejoin: "round",
+                            className: n(
+                              "transition-transform duration-200",
+                              A && "rotate-180",
+                              p,
+                            ),
+                            children: (0, r.jsx)("path", { d: "m6 9 6 6 6-6" }),
+                          }),
+                        ],
+                      }),
+                      A &&
+                        (0, r.jsx)("div", {
+                          role: "listbox",
+                          className: n(
+                            "absolute left-0 top-full z-50 mt-2 max-h-52 min-w-48 rounded-md border border-gray-200 bg-white  py-1",
+                            b,
+                          ),
+                          children: (0, r.jsx)("div", {
+                            className: "overflow-y-auto max-h-48",
+                            onWheelCapture: (e) => e.stopPropagation(),
+                            children: d.map((e) => {
+                              let t = T.code === e.code;
+                              return (0, r.jsxs)(
+                                "button",
+                                {
+                                  type: "button",
+                                  role: "option",
+                                  "aria-selected": t,
+                                  onClick: () => {
+                                    (L(e), B(!1), s?.(`${e.dial} ${U}`.trim()));
+                                  },
+                                  className: n(
+                                    "flex w-full cursor-pointer items-center gap-2 px-4 py-2 text-left text-sm text-black! transition-colors hover:bg-gray-50",
+                                    g,
+                                    t && n("font-medium text-orange-500", v),
+                                  ),
+                                  children: [
+                                    (0, r.jsx)("span", {
+                                      className: n("", w),
+                                      children: e.flag,
+                                    }),
+                                    (0, r.jsx)("span", {
+                                      className: n("", y),
+                                      children: S ? e.name : e.code,
+                                    }),
+                                    (0, r.jsx)("span", {
+                                      className: n("ml-auto text-gray-400", j),
+                                      children: e.dial,
+                                    }),
+                                  ],
+                                },
+                                `${e.code}-${e.dial}`,
+                              );
+                            }),
+                          }),
+                        }),
+                    ],
+                  }),
+                  (0, r.jsx)("span", {
+                    className: n("h-6 w-px shrink-0 bg-gray-200", N),
+                  }),
+                  (0, r.jsx)("input", {
+                    ref: I,
+                    id: e,
+                    type: "tel",
+                    value: U,
+                    onChange: (e) => {
+                      let r = e.target.value.replace(/[^\d\s\-()]/g, "");
+                      s?.(`${T.dial} ${r}`.trim());
+                    },
+                    placeholder: C ?? (!1 === a ? "" : a),
+                    autoComplete: "tel",
+                    className: n(
+                      "h-full flex-1 rounded-r-full bg-transparent! pl-4 pr-5 text-sm text-gray-800 outline-none placeholder:text-gray-700 placeholder:text-sm",
+                      $,
+                    ),
+                    "aria-invalid": !!c || void 0,
+                    "aria-describedby": c ? `${e}-error` : void 0,
+                    ...E,
+                  }),
+                ],
+              }),
+              c &&
+                (0, r.jsx)("p", {
+                  id: `${e}-error`,
+                  className: n("ml-4 mt-1 text-xs text-red-500", k),
+                  children: c,
+                }),
+            ],
+          })
+        );
+      }),
+      d = (0, t.forwardRef)(function (
+        {
+          id: e,
+          checked: t,
+          onChange: a,
+          label: l,
+          error: s,
+          accentColor: o = "bg-orange-500",
+          ...n
+        },
+        i,
+      ) {
+        return (0, r.jsxs)("div", {
+          className: "w-full",
+          children: [
+            (0, r.jsxs)("div", {
+              className: "flex items-center gap-3",
+              children: [
+                (0, r.jsx)("button", {
+                  ref: i,
+                  type: "button",
+                  id: e,
+                  role: "checkbox",
+                  "aria-checked": t,
+                  onClick: () => a && a(!t),
+                  className: `
+ shrink-0 w-5 h-5 rounded border-2 transition-all duration-200
+ flex items-center justify-center cursor-pointer
+ ${t ? `${o} border-transparent` : "bg-white border-gray-400 hover:border-gray-600"}
+ `,
+                  "aria-invalid": !!s || void 0,
+                  "aria-describedby": s ? `${e}-error` : void 0,
+                  ...n,
+                  children:
+                    t &&
+                    (0, r.jsx)("svg", {
+                      xmlns: "http://www.w3.org/2000/svg",
+                      viewBox: "0 0 12 12",
+                      fill: "none",
+                      className: "w-3 h-3",
+                      children: (0, r.jsx)("path", {
+                        d: "M2 6l3 3 5-5",
+                        stroke: "white",
+                        strokeWidth: "1.8",
+                        strokeLinecap: "round",
+                        strokeLinejoin: "round",
+                      }),
+                    }),
+                }),
+                l &&
+                  (0, r.jsx)("div", {
+                    className:
+                      "text-sm text-gray-600 font-light leading-snug select-none",
+                    children: l,
+                  }),
+              ],
+            }),
+            s &&
+              (0, r.jsx)("p", {
+                id: `${e}-error`,
+                className: "mt-1 ml-8 text-xs text-red-500",
+                children: s,
+              }),
+          ],
+        });
+      });
+    var c = e.i(71215);
+    let u = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    function m(e) {
+      let r = {};
+      for (let t of e)
+        "checkbox" === t.type ? (r[t.name] = !1) : (t.type, (r[t.name] = ""));
+      return r;
+    }
+    e.s(
+      [
+        "default",
+        0,
+        function ({
+          fields: e = [],
+          onSubmit: o,
+          schema: n,
+          submitLabel: f = "Submit",
+          loadingLabel: x = "Sending...",
+          successMessage: h = " Form submitted successfully!",
+          errorMessage: p = " Error sending message. Please try again.",
+          accentColor: b = "#111111",
+          textColor: g = "#111111",
+          inputBackgroundColor: v = "#ffffff",
+          fieldBorderColor: w = "#e5e7eb",
+          inputRoundedness: y = 28,
+          duration: j = 0.3,
+        }) {
+          let [N, $] = (0, t.useState)(() => m(e)),
+            [k, C] = (0, t.useState)({}),
+            [S, E] = (0, t.useState)(!1),
+            [I, R] = (0, t.useState)(!1),
+            [T, L] = (0, t.useState)(!1),
+            A = (0, t.useId)().replace(/:/g, ""),
+            B = `contact-form-${A}`,
+            U = (0, t.useRef)(null),
+            P = (0, t.useCallback)((e, r) => {
+              $((t) => ({ ...t, [e]: r }));
+            }, []),
+            F = (0, t.useCallback)((e) => {
+              C((r) => {
+                if (!r[e]) return r;
+                let t = { ...r };
+                return (delete t[e], t);
+              });
+            }, []),
+            W = (0, t.useCallback)((e, r) => {
+              let t =
+                e.required && ("" === r || !1 === r || null == r)
+                  ? `${"string" == typeof e.label ? e.label.replace("*", "") : "This field"} is required.`
+                  : "email" === e.type && r && !u.test(r)
+                    ? "Invalid email address."
+                    : "phone" === e.type && r && r.replace(/\D/g, "").length < 7
+                      ? "Invalid phone number."
+                      : void 0;
+              return t || (e.validate ? e.validate(r) : void 0);
+            }, []),
+            D = (0, t.useCallback)(() => {
+              let r = {};
+              if (n) {
+                let e = n.safeParse(N);
+                if (e.success) return (C(r), { valid: !0, data: e.data });
+                for (let t of e.error.issues) {
+                  let e = t.path[0];
+                  null == e || r[e] || (r[e] = t.message);
+                }
+              } else
+                for (let t of e) {
+                  let e = W(t, N[t.name]);
+                  e && (r[t.name] = e);
+                }
+              return (C(r), { valid: 0 === Object.keys(r).length, data: N });
+            }, [e, N, W, n]),
+            q = (0, t.useCallback)(
+              async (r) => {
+                r.preventDefault();
+                let { valid: t, data: a } = D();
+                if (t) {
+                  (E(!0), L(!1));
+                  try {
+                    (await o(a), R(!0), $(m(e)), setTimeout(() => R(!1), 7e3));
+                  } catch {
+                    (L(!0), setTimeout(() => L(!1), 7e3));
+                  } finally {
+                    E(!1);
+                  }
+                }
+              },
+              [e, D, o],
+            );
+          return (0, r.jsxs)("section", {
+            className: "h-full w-full",
+            id: B,
+            style: {
+              "--form-accent": b,
+              "--form-text": g,
+              "--form-input-bg": v,
+              "--form-field-border": w,
+              "--form-input-radius": `${Math.max(0, Number(y) || 0)}px`,
+              "--form-duration": `${Math.max(0.05, Number(j) || 0.3)}s`,
+            },
+            children: [
+              (0, r.jsx)("style", {
+                children: `
+ #${B} input,
+ #${B} textarea,
+ #${B} select,
+ #${B} [role="button"][aria-invalid],
+ #${B} button[id] {
+   background-color: var(--form-input-bg);
+   border-color: var(--form-field-border);
+   border-radius: var(--form-input-radius);
+   color: var(--form-text);
+   transition-duration: var(--form-duration);
+ }
+ #${B} input:focus,
+ #${B} textarea:focus,
+ #${B} button[id]:focus {
+   border-color: #ff5f00;
+ }
+ #${B} .text-gray-700,
+ #${B} .text-gray-600 {
+   color: var(--form-text);
+ }
+ #${B} [role="checkbox"][aria-checked="true"] {
+   background-color: var(--form-accent);
+   border-color: var(--form-accent);
+ }
+ `,
+              }),
+              (0, r.jsx)("div", {
+                className: "w-full h-full",
+                children: (0, r.jsx)("div", {
+                  className: "w-full flex flex-col gap-[2vw]",
+                  children: (0, r.jsxs)("form", {
+                    ref: U,
+                    autoComplete: "off",
+                    className:
+                      "space-y-[1.2vw] max-md:space-y-[4vw] max-[1025px]:space-y-[4vw]",
+                    onSubmit: q,
+                    children: [
+                      e.map((e) =>
+                        ((e) => {
+                          let {
+                              name: t,
+                              type: o,
+                              label: n,
+                              options: c,
+                              rows: u,
+                              defaultCountry: m,
+                            } = e,
+                            f = N[t],
+                            x = k[t],
+                            h = (e) => {
+                              (P(t, e), F(t));
+                            };
+                          switch (o) {
+                            case "textarea":
+                              return (0, r.jsx)(
+                                l,
+                                {
+                                  id: t,
+                                  label: n,
+                                  rows: u,
+                                  value: f,
+                                  onChange: (e) => h(e.target.value),
+                                  error: x,
+                                },
+                                t,
+                              );
+                            case "select":
+                              return (0, r.jsx)(
+                                s,
+                                {
+                                  id: t,
+                                  label: n,
+                                  options: c || [],
+                                  value: f,
+                                  onChange: (e) => h(e.target.value),
+                                  error: x,
+                                },
+                                t,
+                              );
+                            case "phone":
+                              return (0, r.jsx)(
+                                i,
+                                {
+                                  id: t,
+                                  label: n,
+                                  value: f,
+                                  onChange: (e) => h(e),
+                                  defaultCountry: m || "IN",
+                                  error: x,
+                                },
+                                t,
+                              );
+                            case "checkbox":
+                              return (0, r.jsx)(
+                                d,
+                                {
+                                  id: t,
+                                  label: n,
+                                  checked: !!f,
+                                  onChange: (e) => h(e),
+                                  error: x,
+                                },
+                                t,
+                              );
+                            default:
+                              return (0, r.jsx)(
+                                a,
+                                {
+                                  id: t,
+                                  label: n,
+                                  type: o || "text",
+                                  value: f,
+                                  onChange: (e) => h(e.target.value),
+                                  error: x,
+                                },
+                                t,
+                              );
+                          }
+                        })(e),
+                      ),
+                      (0, r.jsx)("button", {
+                        type: "submit",
+                        disabled: S,
+                        className: "hidden",
+                        "aria-hidden": "true",
+                        tabIndex: -1,
+                      }),
+                      (0, r.jsx)("div", {
+                        className:
+                          "flex items-center justify-start  max-md:mt-[10vw]",
+                        children: (0, r.jsx)(c.default, {
+                          btnText: S ? x : f,
+                          href: "#",
+                          textClassName:
+                            "text-[1.2vw] max-md:text-[4vw] max-[1025px]:text-[2.5vw]",
+                          "aria-disabled": S,
+                          onClick: (e) => {
+                            (e.preventDefault(),
+                              S || U.current?.requestSubmit());
+                          },
+                          className:
+                            "mt-[2vw] max-md:mt-0 max-[1025px]:mt-[3vw]",
+                          bgColor: `linear-gradient(to right, ${b}, #E61416)`,
+                          dotColor: "#ffffff",
+                          textColor: "#ffffff",
+                          hoverTextColor: "#111111",
+                        }),
+                      }),
+                      I &&
+                        (0, r.jsx)("p", {
+                          className: "text-green-600 text-sm mt-2",
+                          children: h,
+                        }),
+                      T &&
+                        (0, r.jsx)("p", {
+                          className: "text-red-600 text-sm mt-2",
+                          children: p,
+                        }),
+                    ],
+                  }),
+                }),
+              }),
+            ],
+          });
+        },
+      ],
+      40146,
+    );
+  },
+  97554,
+  function (e) {
+    e.n(e.i(40146));
+  },
+]);

@@ -1,0 +1,1115 @@
+{
+  "targetUrl": "https://elena-voss-portfolio-template-v3.21st.app/",
+  "capturedAt": "2026-10-30T09:04:58.809Z",
+  "totalRequests": 48,
+  "uniqueUrls": [
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+      "method": "GET",
+      "resourceType": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "size": 76859
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "text/javascript;charset=UTF-8",
+      "size": 31853
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2dn814cx9q_gy.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "size": 3319
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3s6nzrbk-8mnv.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 5598
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0h2qsuyze9ds1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 14377
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0lbsfuw32mhg-.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 53361
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/1gp3fy3xhglqx.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 160210
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "status": 200,
+      "contentType": "font/woff2",
+      "size": 20196
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2i7tjb2l-wn62.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 43483
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3i70kutwraqmh.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 70167
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/227kwhsrjlnp4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 228922
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3450qyhportkm.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 34015
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/hero-bg-full-img.0ymicntlhm1vj.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 108430
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/20mf4hhw25dv9.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "size": 51649
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/turbopack-45026wnz98ivb.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 9652
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/42rc0wabyru76.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 112273
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2m2cyqvl-o39e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 132463
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 84232
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 4610
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 77598
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 324542
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 110506
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/cdn-cgi/rum?",
+      "method": "POST",
+      "resourceType": "xhr",
+      "status": 204,
+      "contentType": "text/plain",
+      "size": 0
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 4804
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1636
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 5802
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 5172
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1134
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1476
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-3.25i3vd2ma4kps.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 68520
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-5.1p4twu_lvqrj9.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 27634
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-1.1n9zd7_gpp9li.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 8912
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-4.0mqg9hibqoxgk.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 46106
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-2.2mihuvuv56utd.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 41614
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/footer-bg.2y6ggh6bp2suk.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 3062
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/facebook.28b69odb44qoi.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 944
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/linkedIn.3zxx2oqth41cz.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 1515
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/instagram.44_o2mpfxt9wp.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 2092
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/twitter.0pg43yq6t12uk.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 2428
+    }
+  ],
+  "allRequests": [
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+      "method": "GET",
+      "resourceType": "document",
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "size": 76859
+    },
+    {
+      "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "text/javascript;charset=UTF-8",
+      "size": 31853
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2dn814cx9q_gy.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "size": 3319
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3s6nzrbk-8mnv.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 5598
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0h2qsuyze9ds1.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 14377
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0lbsfuw32mhg-.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 53361
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/1gp3fy3xhglqx.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 160210
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "status": 200,
+      "contentType": "font/woff2",
+      "size": 20196
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2i7tjb2l-wn62.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 43483
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3i70kutwraqmh.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 70167
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/227kwhsrjlnp4.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 228922
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3450qyhportkm.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 34015
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/hero-bg-full-img.0ymicntlhm1vj.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 108430
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/20mf4hhw25dv9.css",
+      "method": "GET",
+      "resourceType": "stylesheet",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "size": 51649
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/turbopack-45026wnz98ivb.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 9652
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/42rc0wabyru76.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 112273
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2m2cyqvl-o39e.js",
+      "method": "GET",
+      "resourceType": "script",
+      "status": 200,
+      "contentType": "application/javascript; charset=utf-8",
+      "size": 132463
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 84232
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 4610
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "status": 405,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 0
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2",
+      "method": "GET",
+      "resourceType": "font",
+      "status": 200,
+      "contentType": "font/woff2",
+      "size": 20196
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 77598
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 324542
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 110506
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/cdn-cgi/rum?",
+      "method": "POST",
+      "resourceType": "xhr",
+      "status": 204,
+      "contentType": "text/plain",
+      "size": 0
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 4804
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "status": 405,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 0
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1636
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 5802
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 5172
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1134
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 1476
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-3.25i3vd2ma4kps.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 68520
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-5.1p4twu_lvqrj9.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 27634
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-1.1n9zd7_gpp9li.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 8912
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-4.0mqg9hibqoxgk.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 46106
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-2.2mihuvuv56utd.webp",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "application/octet-stream",
+      "size": 41614
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/footer-bg.2y6ggh6bp2suk.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 3062
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/facebook.28b69odb44qoi.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 944
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/linkedIn.3zxx2oqth41cz.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 1515
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/instagram.44_o2mpfxt9wp.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 2092
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/twitter.0pg43yq6t12uk.svg",
+      "method": "GET",
+      "resourceType": "image",
+      "status": 200,
+      "contentType": "image/svg+xml",
+      "size": 2428
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/",
+      "method": "HEAD",
+      "resourceType": "fetch",
+      "status": 405,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 0
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/og-image.webp",
+      "method": "GET (probed)",
+      "resourceType": "probed_asset",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 14
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/favicon.ico",
+      "method": "GET (probed)",
+      "resourceType": "probed_asset",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 14
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/elena-voss.svg",
+      "method": "GET (probed)",
+      "resourceType": "probed_asset",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 14
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/hero-bg-full-img.webp",
+      "method": "GET (probed)",
+      "resourceType": "probed_asset",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 14
+    },
+    {
+      "url": "https://elena-voss-portfolio-template-v3.21st.app/footer-bg.svg",
+      "method": "GET (probed)",
+      "resourceType": "probed_asset",
+      "status": 404,
+      "contentType": "text/plain;charset=UTF-8",
+      "size": 14
+    }
+  ],
+  "domAssetReferences": {
+    "imgs": [
+      {
+        "src": "/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+        "alt": "Logo",
+        "width": "338",
+        "height": "172"
+      },
+      {
+        "src": "/_next/static/media/hero-bg-full-img.0ymicntlhm1vj.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/hero-bg-full-img.0ymicntlhm1vj.webp",
+        "alt": "hero-img",
+        "width": "1142",
+        "height": "1378"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "alt": "portfolio-img",
+        "width": "700",
+        "height": "500"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "alt": "portfolio-img",
+        "width": "800",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "alt": "portfolio-img",
+        "width": "800",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "alt": "portfolio-img",
+        "width": "800",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "alt": "portfolio-img",
+        "width": "800",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-1.006uvpvyjl7kz.webp",
+        "alt": "awards-image",
+        "width": "600",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-2.2ys49j7gkfz7j.webp",
+        "alt": "awards-image",
+        "width": "600",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-3.04bada5ydkt1h.webp",
+        "alt": "awards-image",
+        "width": "600",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/portfolio-img-4.0wnkqlz-f5rcj.webp",
+        "alt": "awards-image",
+        "width": "600",
+        "height": "400"
+      },
+      {
+        "src": "/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+        "alt": "Google logo",
+        "width": "157",
+        "height": "53"
+      },
+      {
+        "src": "/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+        "alt": "Adobe logo",
+        "width": "76",
+        "height": "66"
+      },
+      {
+        "src": "/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+        "alt": "JP logo",
+        "width": "212",
+        "height": "45"
+      },
+      {
+        "src": "/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+        "alt": "Pinterest logo",
+        "width": "243",
+        "height": "93"
+      },
+      {
+        "src": "/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+        "alt": "IBM logo",
+        "width": "137",
+        "height": "137"
+      },
+      {
+        "src": "/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+        "alt": "Intel logo",
+        "width": "132",
+        "height": "52"
+      },
+      {
+        "src": "/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-1.2x6o6jq8f5_bm.webp",
+        "alt": "Google logo",
+        "width": "157",
+        "height": "53"
+      },
+      {
+        "src": "/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-2.1l6jm5-3cnwvg.webp",
+        "alt": "Adobe logo",
+        "width": "76",
+        "height": "66"
+      },
+      {
+        "src": "/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-3.0-x8av3q__ih4.webp",
+        "alt": "JP logo",
+        "width": "212",
+        "height": "45"
+      },
+      {
+        "src": "/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-4.1tgn231h0a-zf.webp",
+        "alt": "Pinterest logo",
+        "width": "243",
+        "height": "93"
+      },
+      {
+        "src": "/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-5.1h0spsdpfo9zr.webp",
+        "alt": "IBM logo",
+        "width": "137",
+        "height": "137"
+      },
+      {
+        "src": "/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/clients-6.1_xtm6aakyuxq.webp",
+        "alt": "Intel logo",
+        "width": "132",
+        "height": "52"
+      },
+      {
+        "src": "/_next/static/media/testimonial-1.1n9zd7_gpp9li.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-1.1n9zd7_gpp9li.webp",
+        "alt": "Maria Jones",
+        "width": "120",
+        "height": "120"
+      },
+      {
+        "src": "/_next/static/media/testimonial-5.1p4twu_lvqrj9.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-5.1p4twu_lvqrj9.webp",
+        "alt": "Marcus Reed",
+        "width": "120",
+        "height": "120"
+      },
+      {
+        "src": "/_next/static/media/testimonial-3.25i3vd2ma4kps.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-3.25i3vd2ma4kps.webp",
+        "alt": "Priya Nair",
+        "width": "120",
+        "height": "120"
+      },
+      {
+        "src": "/_next/static/media/testimonial-4.0mqg9hibqoxgk.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-4.0mqg9hibqoxgk.webp",
+        "alt": "Daniel Ortiz",
+        "width": "120",
+        "height": "120"
+      },
+      {
+        "src": "/_next/static/media/testimonial-2.2mihuvuv56utd.webp",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/testimonial-2.2mihuvuv56utd.webp",
+        "alt": "Hannah Kim",
+        "width": "120",
+        "height": "120"
+      },
+      {
+        "src": "/_next/static/media/footer-bg.2y6ggh6bp2suk.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/footer-bg.2y6ggh6bp2suk.svg",
+        "alt": "Footer Background",
+        "width": "1920",
+        "height": "900"
+      },
+      {
+        "src": "/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/elena-voss.1bwgasvm4oh6t.svg",
+        "alt": "Logo",
+        "width": "338",
+        "height": "172"
+      },
+      {
+        "src": "/_next/static/media/facebook.28b69odb44qoi.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/facebook.28b69odb44qoi.svg",
+        "alt": "Facebook",
+        "width": "10",
+        "height": "19"
+      },
+      {
+        "src": "/_next/static/media/instagram.44_o2mpfxt9wp.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/instagram.44_o2mpfxt9wp.svg",
+        "alt": "Instagram",
+        "width": "21",
+        "height": "21"
+      },
+      {
+        "src": "/_next/static/media/linkedIn.3zxx2oqth41cz.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/linkedIn.3zxx2oqth41cz.svg",
+        "alt": "LinkedIn",
+        "width": "18",
+        "height": "18"
+      },
+      {
+        "src": "/_next/static/media/twitter.0pg43yq6t12uk.svg",
+        "currentSrc": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/media/twitter.0pg43yq6t12uk.svg",
+        "alt": "Twitter",
+        "width": "17",
+        "height": "17"
+      }
+    ],
+    "metas": [
+      {
+        "name": null,
+        "property": null,
+        "content": null
+      },
+      {
+        "name": "viewport",
+        "property": null,
+        "content": "width=device-width, initial-scale=1"
+      },
+      {
+        "name": "description",
+        "property": null,
+        "content": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations."
+      },
+      {
+        "name": null,
+        "property": "og:title",
+        "content": "Elena Voss - Creative Web Designer Portfolio Template"
+      },
+      {
+        "name": null,
+        "property": "og:description",
+        "content": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations."
+      },
+      {
+        "name": null,
+        "property": "og:image",
+        "content": "http://localhost:3000/_next/static/media/og-image.0cl-731jabrer.webp"
+      },
+      {
+        "name": null,
+        "property": "og:image:width",
+        "content": "1280"
+      },
+      {
+        "name": null,
+        "property": "og:image:height",
+        "content": "720"
+      },
+      {
+        "name": null,
+        "property": "og:image:alt",
+        "content": "Elena Voss - Creative Web Designer Portfolio Template"
+      },
+      {
+        "name": "twitter:card",
+        "property": null,
+        "content": "summary_large_image"
+      },
+      {
+        "name": "twitter:title",
+        "property": null,
+        "content": "Elena Voss - Creative Web Designer Portfolio Template"
+      },
+      {
+        "name": "twitter:description",
+        "property": null,
+        "content": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations."
+      },
+      {
+        "name": "twitter:image",
+        "property": null,
+        "content": "http://localhost:3000/_next/static/media/og-image.0cl-731jabrer.webp"
+      },
+      {
+        "name": "twitter:image:alt",
+        "property": null,
+        "content": "Elena Voss - Creative Web Designer Portfolio Template"
+      },
+      {
+        "name": "twitter:image:width",
+        "property": null,
+        "content": "1280"
+      },
+      {
+        "name": "twitter:image:height",
+        "property": null,
+        "content": "720"
+      },
+      {
+        "name": "next-size-adjust",
+        "property": null,
+        "content": ""
+      }
+    ],
+    "links": [
+      {
+        "rel": "preload",
+        "href": "/_next/static/media/3a11180d498b75c0-s.p.2028s2bhlck6k.woff2",
+        "as": "font",
+        "type": "font/woff2"
+      },
+      {
+        "rel": "preload",
+        "href": "/_next/static/media/hero-bg-full-img.0ymicntlhm1vj.webp",
+        "as": "image",
+        "type": null
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/_next/static/chunks/20mf4hhw25dv9.css",
+        "as": null,
+        "type": null
+      },
+      {
+        "rel": "stylesheet",
+        "href": "/_next/static/chunks/2dn814cx9q_gy.css",
+        "as": null,
+        "type": null
+      },
+      {
+        "rel": "preload",
+        "href": "/_next/static/chunks/3s6nzrbk-8mnv.js",
+        "as": "script",
+        "type": null
+      }
+    ]
+  }
+}

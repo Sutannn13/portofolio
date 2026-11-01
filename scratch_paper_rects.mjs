@@ -1,0 +1,21 @@
+﻿import { chromium } from 'playwright';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 } })).newPage();
+await page.goto('http://localhost:3000', { waitUntil: 'load', timeout: 120000 });
+await page.waitForSelector('.preloader-root', { state: 'detached', timeout: 45000 }).catch(() => {});
+await page.waitForTimeout(1200);
+const tech = page.locator('#credentials .folder-card').nth(1);
+await tech.scrollIntoViewIfNeeded();
+await tech.click();
+await page.waitForTimeout(900);
+const dump = await tech.evaluate((el) => [...el.querySelectorAll('.folder-paper')].map((p) => {
+  const inner = p.firstElementChild;
+  const r = document.createRange();
+  r.selectNodeContents(inner);
+  const rects = [...r.getClientRects()].map((x) => ({ x: Math.round(x.x), y: Math.round(x.y), w: Math.round(x.width), h: Math.round(x.height) }));
+  const pr = p.getBoundingClientRect();
+  const ps = getComputedStyle(p);
+  return { text: p.textContent.trim(), paper: { x: Math.round(pr.x), y: Math.round(pr.y), w: Math.round(pr.width), h: Math.round(pr.height) }, z: ps.zIndex, rects, innerOverflow: getComputedStyle(inner).overflow, innerRect: JSON.stringify(inner.getBoundingClientRect()) };
+}));
+console.log(JSON.stringify(dump, null, 1));
+await browser.close();

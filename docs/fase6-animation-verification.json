@@ -1,0 +1,135 @@
+{
+  "timestamp": "2026-10-30T10:49:06.890Z",
+  "runtime": {
+    "hasLenis": true,
+    "lenisVersion": "1.3.26",
+    "htmlHasLenisClass": true,
+    "headerOpacity": "0",
+    "heroMaskReveal": "51.913479%"
+  },
+  "heroIntro": {
+    "t0_runtime": {
+      "hasLenis": true,
+      "lenisVersion": "1.3.26",
+      "htmlHasLenisClass": true,
+      "headerOpacity": "0",
+      "heroMaskReveal": "51.913479%"
+    },
+    "t2_runtime": {
+      "headerOpacity": "1"
+    }
+  },
+  "interactions": {
+    "modal": {
+      "isOpen": true,
+      "titleText": "Get in Touch",
+      "inputs": [
+        "name",
+        "email",
+        "subject",
+        "phone",
+        "message"
+      ]
+    },
+    "faq": [
+      {
+        "expanded": "false",
+        "text": "Who is Elena Voss and what kind of projects do you take?"
+      },
+      {
+        "expanded": "true",
+        "text": "How quickly can you deliver a complete website for my business?"
+      },
+      {
+        "expanded": "false",
+        "text": "Do you work with existing design systems and content management platforms?"
+      },
+      {
+        "expanded": "false",
+        "text": "What design standards do you follow consistently?"
+      },
+      {
+        "expanded": "false",
+        "text": "How do you stay current with emerging design trends and innovations each year?"
+      }
+    ],
+    "testimonials": {
+      "activeName": "Marcus Reed",
+      "activeAvatarLabel": "Show testimonial from Marcus Reed"
+    }
+  },
+  "videoDiffs": [
+    {
+      "scrollPos": 0,
+      "referenceFile": "reference/scroll-1440/scroll-00000.png",
+      "diffPixels": 321398,
+      "totalPixels": 1296000,
+      "diffPercent": "24.7992%",
+      "diffRatio": 0.2479922839506173
+    },
+    {
+      "scrollPos": 2000,
+      "referenceFile": "reference/scroll-1440/scroll-02000.png",
+      "diffPixels": 435831,
+      "totalPixels": 1296000,
+      "diffPercent": "33.6289%",
+      "diffRatio": 0.3362893518518518
+    },
+    {
+      "scrollPos": 4000,
+      "referenceFile": "reference/scroll-1440/scroll-04000.png",
+      "diffPixels": 931956,
+      "totalPixels": 1296000,
+      "diffPercent": "71.9102%",
+      "diffRatio": 0.7191018518518518
+    },
+    {
+      "scrollPos": 6000,
+      "referenceFile": "reference/scroll-1440/scroll-06000.png",
+      "diffPixels": 173166,
+      "totalPixels": 1296000,
+      "diffPercent": "13.3616%",
+      "diffRatio": 0.13361574074074073
+    },
+    {
+      "scrollPos": 8000,
+      "referenceFile": "reference/scroll-1440/scroll-08000.png",
+      "diffPixels": 20014,
+      "totalPixels": 1296000,
+      "diffPercent": "1.5443%",
+      "diffRatio": 0.015442901234567902
+    },
+    {
+      "scrollPos": 10000,
+      "referenceFile": "reference/scroll-1440/scroll-10000.png",
+      "diffPixels": 31880,
+      "totalPixels": 1296000,
+      "diffPercent": "2.4599%",
+      "diffRatio": 0.024598765432098765
+    },
+    {
+      "scrollPos": 12000,
+      "referenceFile": "reference/scroll-1440/scroll-12000.png",
+      "diffPixels": 57399,
+      "totalPixels": 1296000,
+      "diffPercent": "4.4289%",
+      "diffRatio": 0.04428935185185185
+    },
+    {
+      "scrollPos": 14000,
+      "referenceFile": "reference/scroll-1440/scroll-14000.png",
+      "diffPixels": 40845,
+      "totalPixels": 1296000,
+      "diffPercent": "3.1516%",
+      "diffRatio": 0.031516203703703706
+    },
+    {
+      "scrollPos": 14707,
+      "referenceFile": "reference/scroll-1440/scroll-14707.png",
+      "diffPixels": 55742,
+      "totalPixels": 1296000,
+      "diffPercent": "4.3011%",
+      "diffRatio": 0.0430108024691358
+    }
+  ]
+}

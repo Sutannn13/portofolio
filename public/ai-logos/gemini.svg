@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" fill="none">
+  <defs>
+    <filter id="glow-gemini" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="70" result="blur" />
+    </filter>
+    <radialGradient id="radGlow-gemini" cx="70%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#4285f4" stop-opacity="0.38" />
+      <stop offset="50%" stop-color="#4285f4" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#08080c" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="borderGrad-gemini" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285f4" stop-opacity="0.55" />
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.14" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <pattern id="grid-gemini" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="rgba(255,255,255,0.035)" stroke-width="1" />
+    </pattern>
+    <linearGradient id="iconGrad-gemini" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4285f4" />
+      <stop offset="50%" stop-color="#9b72cb" />
+      <stop offset="100%" stop-color="#d96570" />
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Base -->
+  <rect width="700" height="500" rx="24" fill="#08080c" />
+  <rect width="700" height="500" rx="24" fill="url(#grid-gemini)" />
+
+  <!-- Ambient Glow -->
+  <circle cx="520" cy="170" r="270" fill="url(#radGlow-gemini)" filter="url(#glow-gemini)" />
+  <circle cx="140" cy="370" r="180" fill="#4285f4" fill-opacity="0.07" filter="url(#glow-gemini)" />
+
+  <!-- Border -->
+  <rect x="1.5" y="1.5" width="697" height="497" rx="23" stroke="url(#borderGrad-gemini)" stroke-width="1.5" fill="none" />
+
+  <!-- Header Pill & Meta -->
+  <g transform="translate(44, 44)">
+    <rect width="220" height="32" rx="16" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)" stroke-width="1" />
+    <circle cx="18" cy="16" r="4.5" fill="#4285f4" />
+    <text x="32" y="20.5" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.4" fill="#e5e7eb">MULTIMODAL INTELLIGENCE</text>
+  </g>
+
+  <g transform="translate(656, 44)">
+    <text text-anchor="end" y="21" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1" fill="rgba(255,255,255,0.45)">1M CONTEXT · NATIVE MULTIMODAL</text>
+  </g>
+
+  <!-- Central Brand Presentation -->
+  <g transform="translate(50, 142)">
+    <rect width="124" height="124" rx="24" fill="#101016" stroke="url(#borderGrad-gemini)" stroke-width="1.5" />
+    <g transform="translate(62, 62)">
+      <g transform="translate(-30, -30) scale(0.6)">
+      <path fill="url(#iconGrad-gemini)" d="M50 0C50 27.614 27.614 50 0 50C27.614 50 50 72.386 50 100C50 72.386 72.386 50 100 50C72.386 50 50 27.614 50 0Z"/>
+    </g>
+    </g>
+
+    <g transform="translate(156, 26)">
+      <text font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="700" fill="#ffffff" letter-spacing="-0.5">Google Gemini</text>
+      <text y="36" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="400" fill="rgba(255,255,255,0.65)">Gemini 2.5 Flash &amp; Pro · Ultra</text>
+      <text y="62" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#4285f4" letter-spacing="0.3">Deep Multimodal &amp; 1M+ Long Context</text>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="44" y1="375" x2="656" y2="375" stroke="rgba(255,255,255,0.08)" stroke-width="1" />
+
+  <!-- Bottom Metric Strip -->
+  <g transform="translate(44, 405)">
+    <g transform="translate(0, 0)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(255,255,255,0.4)">CAPABILITY</text>
+      <text y="24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Gemini 2.5 Pro &amp; Flash</text>
+    </g>
+    <g transform="translate(215, 0)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(255,255,255,0.4)">ARCHITECTURE</text>
+      <text y="24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#ffffff">Native Audio &amp; Vision</text>
+    </g>
+    <g transform="translate(435, 0)">
+      <text font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="1.2" fill="rgba(255,255,255,0.4)">INTEGRATION</text>
+      <text y="24" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="600" fill="#4285f4">Google AI SDK</text>
+    </g>
+  </g>
+</svg>

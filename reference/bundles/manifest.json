@@ -1,0 +1,114 @@
+[
+  {
+    "url": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092",
+    "localPath": "reference\\bundles\\vce701823e78c4301a35b7e07294d87301792088814092",
+    "bytes": 31853,
+    "mapUrl": "https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092.map",
+    "mapStatus": 200,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2dn814cx9q_gy.css",
+    "localPath": "reference\\bundles\\2dn814cx9q_gy.css",
+    "bytes": 3319,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2dn814cx9q_gy.css.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3s6nzrbk-8mnv.js",
+    "localPath": "reference\\bundles\\3s6nzrbk-8mnv.js",
+    "bytes": 5598,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3s6nzrbk-8mnv.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0h2qsuyze9ds1.js",
+    "localPath": "reference\\bundles\\0h2qsuyze9ds1.js",
+    "bytes": 14377,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0h2qsuyze9ds1.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0lbsfuw32mhg-.js",
+    "localPath": "reference\\bundles\\0lbsfuw32mhg-.js",
+    "bytes": 53361,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/0lbsfuw32mhg-.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/1gp3fy3xhglqx.js",
+    "localPath": "reference\\bundles\\1gp3fy3xhglqx.js",
+    "bytes": 160210,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/1gp3fy3xhglqx.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2i7tjb2l-wn62.js",
+    "localPath": "reference\\bundles\\2i7tjb2l-wn62.js",
+    "bytes": 43483,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2i7tjb2l-wn62.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3i70kutwraqmh.js",
+    "localPath": "reference\\bundles\\3i70kutwraqmh.js",
+    "bytes": 70167,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3i70kutwraqmh.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/227kwhsrjlnp4.js",
+    "localPath": "reference\\bundles\\227kwhsrjlnp4.js",
+    "bytes": 228922,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/227kwhsrjlnp4.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3450qyhportkm.js",
+    "localPath": "reference\\bundles\\3450qyhportkm.js",
+    "bytes": 34015,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/3450qyhportkm.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/20mf4hhw25dv9.css",
+    "localPath": "reference\\bundles\\20mf4hhw25dv9.css",
+    "bytes": 51649,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/20mf4hhw25dv9.css.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/turbopack-45026wnz98ivb.js",
+    "localPath": "reference\\bundles\\turbopack-45026wnz98ivb.js",
+    "bytes": 9652,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/turbopack-45026wnz98ivb.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/42rc0wabyru76.js",
+    "localPath": "reference\\bundles\\42rc0wabyru76.js",
+    "bytes": 112273,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/42rc0wabyru76.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  },
+  {
+    "url": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2m2cyqvl-o39e.js",
+    "localPath": "reference\\bundles\\2m2cyqvl-o39e.js",
+    "bytes": 132463,
+    "mapUrl": "https://elena-voss-portfolio-template-v3.21st.app/_next/static/chunks/2m2cyqvl-o39e.js.map",
+    "mapStatus": 404,
+    "hasSourceMap": false
+  }
+]

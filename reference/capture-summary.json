@@ -1,0 +1,73 @@
+{
+  "capturedAt": "2026-10-30T09:19:32.577Z",
+  "videos": [
+    "reference/videos/load-and-scroll-1440.webm",
+    "reference/videos/load-and-scroll-390.webm"
+  ],
+  "fullpage": [
+    {
+      "file": "reference/fullpage-1440.png",
+      "sizeBytes": 2302369
+    },
+    {
+      "file": "reference/fullpage-1024.png",
+      "sizeBytes": 1982464
+    },
+    {
+      "file": "reference/fullpage-768.png",
+      "sizeBytes": 1654611
+    },
+    {
+      "file": "reference/fullpage-390.png",
+      "sizeBytes": 855717
+    }
+  ],
+  "scroll1440Count": 38,
+  "scroll390Count": 35,
+  "hoverStates": [
+    {
+      "file": "reference/hover-states/awards-item-hover.png",
+      "sizeBytes": 175397
+    },
+    {
+      "file": "reference/hover-states/faq-item-2-open.png",
+      "sizeBytes": 79349
+    },
+    {
+      "file": "reference/hover-states/faq-item-closed.png",
+      "sizeBytes": 59001
+    },
+    {
+      "file": "reference/hover-states/faq-item-open.png",
+      "sizeBytes": 82706
+    },
+    {
+      "file": "reference/hover-states/get-in-touch-default.png",
+      "sizeBytes": 21405
+    },
+    {
+      "file": "reference/hover-states/get-in-touch-hover.png",
+      "sizeBytes": 21906
+    },
+    {
+      "file": "reference/hover-states/project-card-default.png",
+      "sizeBytes": 1211003
+    },
+    {
+      "file": "reference/hover-states/project-card-hover.png",
+      "sizeBytes": 1211003
+    },
+    {
+      "file": "reference/hover-states/service-item-default.png",
+      "sizeBytes": 119038
+    },
+    {
+      "file": "reference/hover-states/service-item-hover.png",
+      "sizeBytes": 115752
+    },
+    {
+      "file": "reference/hover-states/work-with-me-card-hover.png",
+      "sizeBytes": 66218
+    }
+  ]
+}

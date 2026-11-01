@@ -1,0 +1,849 @@
+{
+  "timestamp": "2026-10-30T11:00:42.278Z",
+  "metadata": {
+    "title": "Elena Voss - Creative Web Designer Portfolio Template",
+    "description": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations.",
+    "favicon": "/favicon.ico?favicon.117ezoe8m31dk.ico",
+    "ogTitle": "Elena Voss - Creative Web Designer Portfolio Template",
+    "ogDescription": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations.",
+    "ogImage": "https://elena-voss-portfolio-template-v3.21st.app/og-image.webp",
+    "ogImageWidth": "1280",
+    "ogImageHeight": "720",
+    "twitterCard": "summary_large_image",
+    "twitterTitle": "Elena Voss - Creative Web Designer Portfolio Template",
+    "twitterDescription": "A single-page portfolio template for creative web designers - award-winning work, services, testimonials, and client showcase, built with GSAP scroll animations.",
+    "twitterImage": "https://elena-voss-portfolio-template-v3.21st.app/og-image.webp"
+  },
+  "intermediateBreakpoints": {
+    "600": {
+      "viewportWidth": 600,
+      "docWidth": 600,
+      "scrollWidth": 600,
+      "bodyWidth": 600,
+      "hasHorizontalOverflow": false,
+      "sections": [
+        {
+          "id": "header",
+          "width": 600,
+          "height": 104
+        },
+        {
+          "id": "hero",
+          "width": 600,
+          "height": 2700
+        },
+        {
+          "id": "portfolio",
+          "width": 600,
+          "height": 3240
+        },
+        {
+          "id": "work-with-me",
+          "width": 600,
+          "height": 1565
+        },
+        {
+          "id": "services",
+          "width": 600,
+          "height": 2475
+        },
+        {
+          "id": "awards",
+          "width": 600,
+          "height": 799
+        },
+        {
+          "id": "clientblur",
+          "width": 600,
+          "height": 2160
+        },
+        {
+          "id": "testimonials",
+          "width": 600,
+          "height": 1108
+        },
+        {
+          "id": "section",
+          "width": 600,
+          "height": 1071
+        },
+        {
+          "id": "footer",
+          "width": 600,
+          "height": 925
+        }
+      ],
+      "screenshot": "reference/local-fase7/intermediate/fullpage-600.png"
+    },
+    "900": {
+      "viewportWidth": 900,
+      "docWidth": 900,
+      "scrollWidth": 900,
+      "bodyWidth": 900,
+      "hasHorizontalOverflow": false,
+      "sections": [
+        {
+          "id": "header",
+          "width": 900,
+          "height": 126
+        },
+        {
+          "id": "hero",
+          "width": 900,
+          "height": 2700
+        },
+        {
+          "id": "portfolio",
+          "width": 900,
+          "height": 3240
+        },
+        {
+          "id": "work-with-me",
+          "width": 900,
+          "height": 1762
+        },
+        {
+          "id": "services",
+          "width": 900,
+          "height": 2475
+        },
+        {
+          "id": "awards",
+          "width": 900,
+          "height": 847
+        },
+        {
+          "id": "clientblur",
+          "width": 900,
+          "height": 2160
+        },
+        {
+          "id": "testimonials",
+          "width": 900,
+          "height": 1018
+        },
+        {
+          "id": "section",
+          "width": 900,
+          "height": 1091
+        },
+        {
+          "id": "footer",
+          "width": 900,
+          "height": 802
+        }
+      ],
+      "screenshot": "reference/local-fase7/intermediate/fullpage-900.png"
+    },
+    "1100": {
+      "viewportWidth": 1100,
+      "docWidth": 1100,
+      "scrollWidth": 1100,
+      "bodyWidth": 1100,
+      "hasHorizontalOverflow": false,
+      "sections": [
+        {
+          "id": "header",
+          "width": 1100,
+          "height": 72
+        },
+        {
+          "id": "hero",
+          "width": 1100,
+          "height": 2700
+        },
+        {
+          "id": "portfolio",
+          "width": 1100,
+          "height": 3240
+        },
+        {
+          "id": "work-with-me",
+          "width": 1100,
+          "height": 920
+        },
+        {
+          "id": "services",
+          "width": 1100,
+          "height": 2475
+        },
+        {
+          "id": "awards",
+          "width": 1100,
+          "height": 808
+        },
+        {
+          "id": "clientblur",
+          "width": 1100,
+          "height": 2160
+        },
+        {
+          "id": "testimonials",
+          "width": 1100,
+          "height": 768
+        },
+        {
+          "id": "section",
+          "width": 1100,
+          "height": 971
+        },
+        {
+          "id": "footer",
+          "width": 1100,
+          "height": 632
+        }
+      ],
+      "screenshot": "reference/local-fase7/intermediate/fullpage-1100.png"
+    },
+    "1280": {
+      "viewportWidth": 1280,
+      "docWidth": 1280,
+      "scrollWidth": 1280,
+      "bodyWidth": 1280,
+      "hasHorizontalOverflow": false,
+      "sections": [
+        {
+          "id": "header",
+          "width": 1280,
+          "height": 83
+        },
+        {
+          "id": "hero",
+          "width": 1280,
+          "height": 2700
+        },
+        {
+          "id": "portfolio",
+          "width": 1280,
+          "height": 3240
+        },
+        {
+          "id": "work-with-me",
+          "width": 1280,
+          "height": 1070
+        },
+        {
+          "id": "services",
+          "width": 1280,
+          "height": 2475
+        },
+        {
+          "id": "awards",
+          "width": 1280,
+          "height": 940
+        },
+        {
+          "id": "clientblur",
+          "width": 1280,
+          "height": 2160
+        },
+        {
+          "id": "testimonials",
+          "width": 1280,
+          "height": 886
+        },
+        {
+          "id": "section",
+          "width": 1280,
+          "height": 1028
+        },
+        {
+          "id": "footer",
+          "width": 1280,
+          "height": 684
+        }
+      ],
+      "screenshot": "reference/local-fase7/intermediate/fullpage-1280.png"
+    }
+  },
+  "scrollDiffSummary": {
+    "390": [
+      {
+        "y": 0,
+        "file": "scroll-00000.png",
+        "diffPixels": 64530,
+        "totalPixels": 329160,
+        "diffPercent": "19.6044%",
+        "diffRatio": 0.19604447685016405
+      },
+      {
+        "y": 400,
+        "file": "scroll-00400.png",
+        "diffPixels": 62135,
+        "totalPixels": 329160,
+        "diffPercent": "18.8768%",
+        "diffRatio": 0.18876838011909103
+      },
+      {
+        "y": 800,
+        "file": "scroll-00800.png",
+        "diffPixels": 113133,
+        "totalPixels": 329160,
+        "diffPercent": "34.3702%",
+        "diffRatio": 0.34370215092963907
+      },
+      {
+        "y": 1200,
+        "file": "scroll-01200.png",
+        "diffPixels": 170687,
+        "totalPixels": 329160,
+        "diffPercent": "51.8553%",
+        "diffRatio": 0.5185532871551829
+      },
+      {
+        "y": 1600,
+        "file": "scroll-01600.png",
+        "diffPixels": 184624,
+        "totalPixels": 329160,
+        "diffPercent": "56.0894%",
+        "diffRatio": 0.5608943978612225
+      },
+      {
+        "y": 2000,
+        "file": "scroll-02000.png",
+        "diffPixels": 112508,
+        "totalPixels": 329160,
+        "diffPercent": "34.1803%",
+        "diffRatio": 0.3418033782962693
+      },
+      {
+        "y": 2400,
+        "file": "scroll-02400.png",
+        "diffPixels": 165002,
+        "totalPixels": 329160,
+        "diffPercent": "50.1282%",
+        "diffRatio": 0.5012820512820513
+      },
+      {
+        "y": 2800,
+        "file": "scroll-02800.png",
+        "diffPixels": 275335,
+        "totalPixels": 329160,
+        "diffPercent": "83.6478%",
+        "diffRatio": 0.8364777008141937
+      },
+      {
+        "y": 3200,
+        "file": "scroll-03200.png",
+        "diffPixels": 300591,
+        "totalPixels": 329160,
+        "diffPercent": "91.3206%",
+        "diffRatio": 0.9132063434196136
+      },
+      {
+        "y": 3600,
+        "file": "scroll-03600.png",
+        "diffPixels": 294557,
+        "totalPixels": 329160,
+        "diffPercent": "89.4875%",
+        "diffRatio": 0.8948748329080083
+      },
+      {
+        "y": 4000,
+        "file": "scroll-04000.png",
+        "diffPixels": 300379,
+        "totalPixels": 329160,
+        "diffPercent": "91.2562%",
+        "diffRatio": 0.9125622797423746
+      },
+      {
+        "y": 4400,
+        "file": "scroll-04400.png",
+        "diffPixels": 280918,
+        "totalPixels": 329160,
+        "diffPercent": "85.3439%",
+        "diffRatio": 0.8534390569935594
+      },
+      {
+        "y": 4800,
+        "file": "scroll-04800.png",
+        "diffPixels": 265603,
+        "totalPixels": 329160,
+        "diffPercent": "80.6912%",
+        "diffRatio": 0.806911532385466
+      },
+      {
+        "y": 5200,
+        "file": "scroll-05200.png",
+        "diffPixels": 155121,
+        "totalPixels": 329160,
+        "diffPercent": "47.1263%",
+        "diffRatio": 0.47126321545752825
+      },
+      {
+        "y": 5600,
+        "file": "scroll-05600.png",
+        "diffPixels": 61475,
+        "totalPixels": 329160,
+        "diffPercent": "18.6763%",
+        "diffRatio": 0.18676327621825253
+      },
+      {
+        "y": 6000,
+        "file": "scroll-06000.png",
+        "diffPixels": 24319,
+        "totalPixels": 329160,
+        "diffPercent": "7.3882%",
+        "diffRatio": 0.07388200267347186
+      },
+      {
+        "y": 6400,
+        "file": "scroll-06400.png",
+        "diffPixels": 33523,
+        "totalPixels": 329160,
+        "diffPercent": "10.1844%",
+        "diffRatio": 0.10184408798152873
+      },
+      {
+        "y": 6800,
+        "file": "scroll-06800.png",
+        "diffPixels": 20319,
+        "totalPixels": 329160,
+        "diffPercent": "6.1730%",
+        "diffRatio": 0.06172985781990521
+      },
+      {
+        "y": 7200,
+        "file": "scroll-07200.png",
+        "diffPixels": 52779,
+        "totalPixels": 329160,
+        "diffPercent": "16.0345%",
+        "diffRatio": 0.1603445133065986
+      },
+      {
+        "y": 7600,
+        "file": "scroll-07600.png",
+        "diffPixels": 6205,
+        "totalPixels": 329160,
+        "diffPercent": "1.8851%",
+        "diffRatio": 0.018851014704095274
+      },
+      {
+        "y": 8000,
+        "file": "scroll-08000.png",
+        "diffPixels": 7320,
+        "totalPixels": 329160,
+        "diffPercent": "2.2238%",
+        "diffRatio": 0.022238425082026978
+      },
+      {
+        "y": 8400,
+        "file": "scroll-08400.png",
+        "diffPixels": 14047,
+        "totalPixels": 329160,
+        "diffPercent": "4.2675%",
+        "diffRatio": 0.0426752946895127
+      },
+      {
+        "y": 8800,
+        "file": "scroll-08800.png",
+        "diffPixels": 15988,
+        "totalPixels": 329160,
+        "diffPercent": "4.8572%",
+        "diffRatio": 0.048572122979705916
+      },
+      {
+        "y": 9200,
+        "file": "scroll-09200.png",
+        "diffPixels": 14503,
+        "totalPixels": 329160,
+        "diffPercent": "4.4061%",
+        "diffRatio": 0.044060639202819295
+      },
+      {
+        "y": 9600,
+        "file": "scroll-09600.png",
+        "diffPixels": 16217,
+        "totalPixels": 329160,
+        "diffPercent": "4.9268%",
+        "diffRatio": 0.04926783327257261
+      },
+      {
+        "y": 10000,
+        "file": "scroll-10000.png",
+        "diffPixels": 1985,
+        "totalPixels": 329160,
+        "diffPercent": "0.6031%",
+        "diffRatio": 0.006030501883582453
+      },
+      {
+        "y": 10400,
+        "file": "scroll-10400.png",
+        "diffPixels": 9375,
+        "totalPixels": 329160,
+        "diffPercent": "2.8482%",
+        "diffRatio": 0.028481589500546845
+      },
+      {
+        "y": 10800,
+        "file": "scroll-10800.png",
+        "diffPixels": 15047,
+        "totalPixels": 329160,
+        "diffPercent": "4.5713%",
+        "diffRatio": 0.045713330902904366
+      },
+      {
+        "y": 11200,
+        "file": "scroll-11200.png",
+        "diffPixels": 33697,
+        "totalPixels": 329160,
+        "diffPercent": "10.2373%",
+        "diffRatio": 0.10237270628265889
+      },
+      {
+        "y": 11600,
+        "file": "scroll-11600.png",
+        "diffPixels": 35570,
+        "totalPixels": 329160,
+        "diffPercent": "10.8063%",
+        "diffRatio": 0.10806294811034148
+      },
+      {
+        "y": 12000,
+        "file": "scroll-12000.png",
+        "diffPixels": 33206,
+        "totalPixels": 329160,
+        "diffPercent": "10.0881%",
+        "diffRatio": 0.10088103050188359
+      },
+      {
+        "y": 12400,
+        "file": "scroll-12400.png",
+        "diffPixels": 32118,
+        "totalPixels": 329160,
+        "diffPercent": "9.7576%",
+        "diffRatio": 0.09757564710171346
+      },
+      {
+        "y": 12800,
+        "file": "scroll-12800.png",
+        "diffPixels": 40198,
+        "totalPixels": 329160,
+        "diffPercent": "12.2123%",
+        "diffRatio": 0.1221229797059181
+      },
+      {
+        "y": 13200,
+        "file": "scroll-13200.png",
+        "diffPixels": 21013,
+        "totalPixels": 329160,
+        "diffPercent": "6.3838%",
+        "diffRatio": 0.06383825495199903
+      },
+      {
+        "y": 13212,
+        "file": "scroll-13212.png",
+        "diffPixels": 2426,
+        "totalPixels": 329160,
+        "diffPercent": "0.7370%",
+        "diffRatio": 0.007370275853688176
+      }
+    ],
+    "1440": [
+      {
+        "y": 0,
+        "file": "scroll-00000.png",
+        "diffPixels": 321948,
+        "totalPixels": 1296000,
+        "diffPercent": "24.8417%",
+        "diffRatio": 0.24841666666666667
+      },
+      {
+        "y": 400,
+        "file": "scroll-00400.png",
+        "diffPixels": 313115,
+        "totalPixels": 1296000,
+        "diffPercent": "24.1601%",
+        "diffRatio": 0.24160108024691357
+      },
+      {
+        "y": 800,
+        "file": "scroll-00800.png",
+        "diffPixels": 405402,
+        "totalPixels": 1296000,
+        "diffPercent": "31.2810%",
+        "diffRatio": 0.31281018518518516
+      },
+      {
+        "y": 1200,
+        "file": "scroll-01200.png",
+        "diffPixels": 579141,
+        "totalPixels": 1296000,
+        "diffPercent": "44.6868%",
+        "diffRatio": 0.44686805555555553
+      },
+      {
+        "y": 1600,
+        "file": "scroll-01600.png",
+        "diffPixels": 669731,
+        "totalPixels": 1296000,
+        "diffPercent": "51.6768%",
+        "diffRatio": 0.5167677469135803
+      },
+      {
+        "y": 2000,
+        "file": "scroll-02000.png",
+        "diffPixels": 435583,
+        "totalPixels": 1296000,
+        "diffPercent": "33.6098%",
+        "diffRatio": 0.3360979938271605
+      },
+      {
+        "y": 2400,
+        "file": "scroll-02400.png",
+        "diffPixels": 546572,
+        "totalPixels": 1296000,
+        "diffPercent": "42.1738%",
+        "diffRatio": 0.42173765432098764
+      },
+      {
+        "y": 2800,
+        "file": "scroll-02800.png",
+        "diffPixels": 1011939,
+        "totalPixels": 1296000,
+        "diffPercent": "78.0817%",
+        "diffRatio": 0.7808171296296297
+      },
+      {
+        "y": 3200,
+        "file": "scroll-03200.png",
+        "diffPixels": 1199035,
+        "totalPixels": 1296000,
+        "diffPercent": "92.5181%",
+        "diffRatio": 0.9251813271604938
+      },
+      {
+        "y": 3600,
+        "file": "scroll-03600.png",
+        "diffPixels": 1058082,
+        "totalPixels": 1296000,
+        "diffPercent": "81.6421%",
+        "diffRatio": 0.8164212962962963
+      },
+      {
+        "y": 4000,
+        "file": "scroll-04000.png",
+        "diffPixels": 931956,
+        "totalPixels": 1296000,
+        "diffPercent": "71.9102%",
+        "diffRatio": 0.7191018518518518
+      },
+      {
+        "y": 4400,
+        "file": "scroll-04400.png",
+        "diffPixels": 1058088,
+        "totalPixels": 1296000,
+        "diffPercent": "81.6426%",
+        "diffRatio": 0.8164259259259259
+      },
+      {
+        "y": 4800,
+        "file": "scroll-04800.png",
+        "diffPixels": 858645,
+        "totalPixels": 1296000,
+        "diffPercent": "66.2535%",
+        "diffRatio": 0.6625347222222222
+      },
+      {
+        "y": 5200,
+        "file": "scroll-05200.png",
+        "diffPixels": 874483,
+        "totalPixels": 1296000,
+        "diffPercent": "67.4755%",
+        "diffRatio": 0.6747554012345679
+      },
+      {
+        "y": 5600,
+        "file": "scroll-05600.png",
+        "diffPixels": 534845,
+        "totalPixels": 1296000,
+        "diffPercent": "41.2689%",
+        "diffRatio": 0.41268904320987654
+      },
+      {
+        "y": 6000,
+        "file": "scroll-06000.png",
+        "diffPixels": 173166,
+        "totalPixels": 1296000,
+        "diffPercent": "13.3616%",
+        "diffRatio": 0.13361574074074073
+      },
+      {
+        "y": 6400,
+        "file": "scroll-06400.png",
+        "diffPixels": 25319,
+        "totalPixels": 1296000,
+        "diffPercent": "1.9536%",
+        "diffRatio": 0.019536265432098767
+      },
+      {
+        "y": 6800,
+        "file": "scroll-06800.png",
+        "diffPixels": 3283,
+        "totalPixels": 1296000,
+        "diffPercent": "0.2533%",
+        "diffRatio": 0.002533179012345679
+      },
+      {
+        "y": 7200,
+        "file": "scroll-07200.png",
+        "diffPixels": 2241,
+        "totalPixels": 1296000,
+        "diffPercent": "0.1729%",
+        "diffRatio": 0.0017291666666666666
+      },
+      {
+        "y": 7600,
+        "file": "scroll-07600.png",
+        "diffPixels": 14278,
+        "totalPixels": 1296000,
+        "diffPercent": "1.1017%",
+        "diffRatio": 0.011016975308641975
+      },
+      {
+        "y": 8000,
+        "file": "scroll-08000.png",
+        "diffPixels": 20014,
+        "totalPixels": 1296000,
+        "diffPercent": "1.5443%",
+        "diffRatio": 0.015442901234567902
+      },
+      {
+        "y": 8400,
+        "file": "scroll-08400.png",
+        "diffPixels": 23784,
+        "totalPixels": 1296000,
+        "diffPercent": "1.8352%",
+        "diffRatio": 0.018351851851851852
+      },
+      {
+        "y": 8800,
+        "file": "scroll-08800.png",
+        "diffPixels": 23400,
+        "totalPixels": 1296000,
+        "diffPercent": "1.8056%",
+        "diffRatio": 0.018055555555555554
+      },
+      {
+        "y": 9200,
+        "file": "scroll-09200.png",
+        "diffPixels": 21170,
+        "totalPixels": 1296000,
+        "diffPercent": "1.6335%",
+        "diffRatio": 0.016334876543209878
+      },
+      {
+        "y": 9600,
+        "file": "scroll-09600.png",
+        "diffPixels": 22876,
+        "totalPixels": 1296000,
+        "diffPercent": "1.7651%",
+        "diffRatio": 0.017651234567901235
+      },
+      {
+        "y": 10000,
+        "file": "scroll-10000.png",
+        "diffPixels": 31880,
+        "totalPixels": 1296000,
+        "diffPercent": "2.4599%",
+        "diffRatio": 0.024598765432098765
+      },
+      {
+        "y": 10400,
+        "file": "scroll-10400.png",
+        "diffPixels": 56928,
+        "totalPixels": 1296000,
+        "diffPercent": "4.3926%",
+        "diffRatio": 0.043925925925925924
+      },
+      {
+        "y": 10800,
+        "file": "scroll-10800.png",
+        "diffPixels": 19316,
+        "totalPixels": 1296000,
+        "diffPercent": "1.4904%",
+        "diffRatio": 0.014904320987654322
+      },
+      {
+        "y": 11200,
+        "file": "scroll-11200.png",
+        "diffPixels": 12941,
+        "totalPixels": 1296000,
+        "diffPercent": "0.9985%",
+        "diffRatio": 0.009985339506172839
+      },
+      {
+        "y": 11600,
+        "file": "scroll-11600.png",
+        "diffPixels": 28083,
+        "totalPixels": 1296000,
+        "diffPercent": "2.1669%",
+        "diffRatio": 0.02166898148148148
+      },
+      {
+        "y": 12000,
+        "file": "scroll-12000.png",
+        "diffPixels": 57623,
+        "totalPixels": 1296000,
+        "diffPercent": "4.4462%",
+        "diffRatio": 0.04446219135802469
+      },
+      {
+        "y": 12400,
+        "file": "scroll-12400.png",
+        "diffPixels": 73861,
+        "totalPixels": 1296000,
+        "diffPercent": "5.6992%",
+        "diffRatio": 0.056991512345679014
+      },
+      {
+        "y": 12800,
+        "file": "scroll-12800.png",
+        "diffPixels": 70887,
+        "totalPixels": 1296000,
+        "diffPercent": "5.4697%",
+        "diffRatio": 0.05469675925925926
+      },
+      {
+        "y": 13200,
+        "file": "scroll-13200.png",
+        "diffPixels": 47936,
+        "totalPixels": 1296000,
+        "diffPercent": "3.6988%",
+        "diffRatio": 0.036987654320987655
+      },
+      {
+        "y": 13600,
+        "file": "scroll-13600.png",
+        "diffPixels": 46448,
+        "totalPixels": 1296000,
+        "diffPercent": "3.5840%",
+        "diffRatio": 0.03583950617283951
+      },
+      {
+        "y": 14000,
+        "file": "scroll-14000.png",
+        "diffPixels": 40845,
+        "totalPixels": 1296000,
+        "diffPercent": "3.1516%",
+        "diffRatio": 0.031516203703703706
+      },
+      {
+        "y": 14400,
+        "file": "scroll-14400.png",
+        "diffPixels": 39691,
+        "totalPixels": 1296000,
+        "diffPercent": "3.0626%",
+        "diffRatio": 0.030625771604938273
+      },
+      {
+        "y": 14707,
+        "file": "scroll-14707.png",
+        "diffPixels": 55742,
+        "totalPixels": 1296000,
+        "diffPercent": "4.3011%",
+        "diffRatio": 0.0430108024691358
+      }
+    ]
+  }
+}

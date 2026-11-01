@@ -1,0 +1,17 @@
+﻿import { chromium } from 'playwright';
+import fs from 'node:fs';
+const browser = await chromium.launch();
+const page = await (await browser.newContext({ viewport: { width: 1280, height: 900 } })).newPage();
+await page.goto('https://21st.dev/@romanvasnev/components/icon-folder', { waitUntil: 'networkidle', timeout: 120000 });
+await page.waitForTimeout(4000);
+const text = await page.evaluate(() => document.body.innerText);
+console.log('--- PAGE TEXT ---');
+console.log(text.slice(0, 2500));
+const codes = await page.evaluate(() => [...document.querySelectorAll('pre, code')].map(e => e.textContent).filter(t => t && t.length > 200).slice(0, 5));
+console.log('--- CODE BLOCKS:', codes.length, '---');
+codes.forEach((c, i) => console.log(`### block ${i} len=${c.length}\n` + c.slice(0, 800)));
+const html = await page.content();
+fs.writeFileSync('scratch_21st.html', html);
+console.log('html saved len', html.length, 'has IconFolder', html.includes('IconFolder'), 'has folderPath', html.includes('folderPath'));
+await page.screenshot({ path: 'reference/verify-cert-folders/21st-icon-folder.png', fullPage: false });
+await browser.close();
