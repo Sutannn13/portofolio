@@ -30,6 +30,8 @@ function CloseButton({ onClick }: { onClick: () => void }) {
 
 export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
   const [phase, setPhase] = useState<Phase>('closed');
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
   const lenis = useLenis();
   const panelRef = useRef<HTMLDivElement | null>(null);
   const lastFocusRef = useRef<HTMLElement | null>(null);
@@ -57,6 +59,8 @@ export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
     if (phase !== 'closing') return;
     const timer = window.setTimeout(() => {
       setPhase('closed');
+      setStatus('idle');
+      setErrorMessage('');
       lastFocusRef.current?.focus?.({ preventScroll: true });
     }, CLOSE_MS);
     return () => window.clearTimeout(timer);
@@ -75,12 +79,52 @@ export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
 
   const contextValue = useMemo(() => ({ openModal }), [openModal]);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
-    console.log('Get in touch form submitted:', data);
-    closeModal();
+    setStatus('submitting');
+    setErrorMessage('');
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+
+      if (response.ok || response.status === 200 || response.status === 303) {
+        setStatus('success');
+        form.reset();
+        setTimeout(() => {
+          closeModal();
+        }, 2200);
+      } else {
+        if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+          console.warn('Simulated Netlify form submission in local environment');
+          setStatus('success');
+          form.reset();
+          setTimeout(() => {
+            closeModal();
+          }, 2200);
+          return;
+        }
+        throw new Error(`Status ${response.status}`);
+      }
+    } catch (err) {
+      console.error('Form submission error:', err);
+      if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
+        setStatus('success');
+        form.reset();
+        setTimeout(() => {
+          closeModal();
+        }, 2200);
+        return;
+      }
+      setStatus('error');
+      setErrorMessage('Terjadi kendala saat mengirim pesan. Silakan coba lagi atau kirim langsung ke sutanarliejohan@gmail.com.');
+    }
   };
 
   return (
@@ -122,64 +166,108 @@ export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
                 </p>
               </div>
               <div className="get-in-touch-form">
-                <form onSubmit={handleSubmit} className="flex flex-col gap-4 text-white">
-                  <div>
-                    <label className="block text-sm mb-1 text-white/80">Your Name*</label>
-                    <input
-                      type="text"
-                      name="name"
-                      required
-                      placeholder="Jane Doe"
-                      className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
-                    />
+                {status === 'success' ? (
+                  <div className="flex flex-col items-center justify-center py-12 px-4 text-center gap-4">
+                    <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
+                      <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                      </svg>
+                    </div>
+                    <div className="space-y-1">
+                      <h3 className="text-2xl font-bold text-white">Message Sent!</h3>
+                      <p className="text-white/70 text-sm max-w-sm">
+                        Terima kasih sudah menghubungi! Pesan kamu berhasil dikirim ke Gmail saya dan akan segera saya balas.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <label className="block text-sm mb-1 text-white/80">Email Address*</label>
-                    <input
-                      type="email"
-                      name="email"
-                      required
-                      placeholder="jane@example.com"
-                      className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm mb-1 text-white/80">Subject*</label>
-                    <input
-                      type="text"
-                      name="subject"
-                      required
-                      placeholder="Project Inquiry"
-                      className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm mb-1 text-white/80">Phone Number*</label>
-                    <input
-                      type="tel"
-                      name="phone"
-                      required
-                      placeholder="+1 (555) 000-0000"
-                      className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm mb-1 text-white/80">Your Message*</label>
-                    <textarea
-                      name="message"
-                      required
-                      rows={3}
-                      placeholder="Tell me about your project..."
-                      className="w-full px-5 py-3 rounded-2xl bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D] resize-none"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="mt-2 mb-2 w-full py-3.5 rounded-full bg-[#F16B0D] hover:bg-[#E61416] transition-colors font-medium text-white cursor-pointer"
+                ) : (
+                  <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    onSubmit={handleSubmit}
+                    className="flex flex-col gap-4 text-white"
                   >
-                    Send
-                  </button>
-                </form>
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p className="hidden">
+                      <label>
+                        Don’t fill this out if you are human: <input name="bot-field" />
+                      </label>
+                    </p>
+                    <div>
+                      <label className="block text-sm mb-1 text-white/80">Your Name*</label>
+                      <input
+                        type="text"
+                        name="name"
+                        required
+                        placeholder="Jane Doe"
+                        className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm mb-1 text-white/80">Email Address*</label>
+                      <input
+                        type="email"
+                        name="email"
+                        required
+                        placeholder="jane@example.com"
+                        className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm mb-1 text-white/80">Subject*</label>
+                      <input
+                        type="text"
+                        name="subject"
+                        required
+                        placeholder="Project Inquiry"
+                        className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm mb-1 text-white/80">Phone Number*</label>
+                      <input
+                        type="tel"
+                        name="phone"
+                        required
+                        placeholder="+62 812-3456-7890"
+                        className="w-full px-5 py-3 rounded-full bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D]"
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm mb-1 text-white/80">Your Message*</label>
+                      <textarea
+                        name="message"
+                        required
+                        rows={3}
+                        placeholder="Tell me about your project or role..."
+                        className="w-full px-5 py-3 rounded-2xl bg-white/15 border border-white/15 text-white placeholder-white/40 focus:outline-none focus:border-[#F16B0D] resize-none"
+                      />
+                    </div>
+
+                    {errorMessage && (
+                      <p className="text-red-400 text-sm text-center bg-red-500/10 border border-red-500/20 py-2 px-3 rounded-lg">
+                        {errorMessage}
+                      </p>
+                    )}
+
+                    <button
+                      type="submit"
+                      disabled={status === 'submitting'}
+                      className="mt-2 mb-2 w-full py-3.5 rounded-full bg-[#F16B0D] hover:bg-[#E61416] transition-colors font-medium text-white cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    >
+                      {status === 'submitting' ? (
+                        <>
+                          <span className="inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                          <span>Sending...</span>
+                        </>
+                      ) : (
+                        <span>Send</span>
+                      )}
+                    </button>
+                  </form>
+                )}
               </div>
             </div>
           </div>

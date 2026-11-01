@@ -21,13 +21,13 @@ interface AwardItem {
 const AWARDS: AwardItem[] = [
   {
     title: 'Full-Stack Engineer Intern',
-    meta: 'FEB 2026 - PRESENT - CONNEXTION TECH (LETS AFK)',
+    meta: 'FEB 2026 - JUL 2026 - CONNEXTION TECH (LETS AFK)',
     imgSrc: '/experiences/lets-afk.png',
     fit: 'cover',
   },
   {
     title: 'IT Support & Systems Intern',
-    meta: '3 MONTHS INTERNSHIP - KEMENAG KOTA DEPOK (GDC)',
+    meta: 'AUG 2026 - OCT 2026 - KEMENAG KOTA DEPOK (GDC)',
     imgSrc: '/experiences/kemenag-depok-official.png',
     fit: 'cover',
   },

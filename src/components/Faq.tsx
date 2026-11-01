@@ -11,29 +11,29 @@ if (typeof window !== 'undefined') {
 
 const FAQS = [
   {
-    question: 'Who is Johann and what kind of projects do you take?',
+    question: 'Who is Johann and what kind of engineering projects do you build?',
     answer:
-      'I am an independent digital designer who helps businesses create, launch, and optimize digital experiences seamlessly. I specialize in responsive web design, modern UX principles, and conversion-driven visual strategies while ensuring accessibility, performance, and refined aesthetics.',
+      'I am a Full-Stack & Software Engineer passionate about developing scalable web applications, real-time architectures, and interactive digital products. I combine robust backend systems (TypeScript, Node.js, Python, Laravel) with refined, high-performance user interfaces (Next.js, React, Tailwind CSS, GSAP).',
   },
   {
-    question: 'How quickly can you deliver a complete website for my business?',
+    question: 'Why should a recruiter or engineering team hire you?',
     answer:
-      'Most projects launch in as little as 48 hours for smaller sites, with larger multi-page builds typically wrapping within two to three weeks depending on scope, content readiness, and how many revision rounds are needed.',
+      'I bridge technical depth with strong product and UX sensibility. Beyond writing clean, maintainable code, I bring hands-on experience shipping real-world software during internships and project collaborations. I adapt rapidly to existing codebases, communicate proactively, and focus on delivering measurable impact from day one.',
   },
   {
-    question: 'Do you work with existing design systems and content management platforms?',
+    question: 'What is your core tech stack and development workflow?',
     answer:
-      'Yes - I regularly work inside established design systems and popular CMS platforms alike, adapting to whatever your team already has in place rather than forcing a rebuild from scratch.',
+      'My primary stack covers TypeScript, Next.js/React, Tailwind CSS, and GSAP on the frontend, alongside Node.js, Python, Laravel, and SQL/NoSQL databases on the backend. I rely on modern Git workflows, component-driven design systems, RESTful API design, and performance profiling to ensure every codebase is production-ready.',
   },
   {
-    question: 'What design standards do you follow consistently?',
+    question: 'What engineering standards and best practices do you follow?',
     answer:
-      'Every project follows WCAG accessibility guidelines, semantic markup, and performance budgets from day one, alongside a consistent typographic and spacing system so the final product feels cohesive across every screen.',
+      'Every project adheres to clean architecture, strict TypeScript typing, OWASP security principles, and WCAG accessibility standards. I optimize for Core Web Vitals, prevent redundant re-renders, leverage server-side caching, and write modular, self-documenting code built for long-term scalability.',
   },
   {
-    question: 'How do you stay current with emerging design trends and innovations each year?',
+    question: 'How do you keep growing and staying ahead with emerging technologies?',
     answer:
-      'I dedicate time each month to hands-on experimentation with new interaction patterns, tooling, and frameworks, plus regular study of award-winning work, so the craft behind every project keeps pace with where the web is heading.',
+      'Software engineering is a fast-paced discipline, and continuous learning is embedded in my daily routine. I actively build open-source experiments on GitHub, explore AI tooling and agentic systems, participate in developer communities, and study industry-leading architectures to continually sharpen my engineering craft.',
   },
 ];
 

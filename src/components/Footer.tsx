@@ -1,12 +1,13 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import StaggerButton from './StaggerButton';
 import { useGetInTouchModal } from './GetInTouchModal';
+import VaporizeTextCycle, { Tag } from './ui/vapour-text-effect';
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
@@ -99,14 +100,16 @@ export default function Footer() {
           className="rounded-4xl bg-black/5 border border-white/30 backdrop-blur-2xl px-12 py-12 flex flex-col gap-20 justify-between max-[1025px]:flex-col max-[1025px]:items-center max-[1025px]:gap-10 max-[1025px]:px-8 max-[1025px]:py-15 max-md:px-6 max-md:gap-8"
         >
           <div className="flex justify-between items-start gap-24 footer-content max-[1025px]:gap-10 max-md:gap-16 max-[1025px]:flex-col-reverse max-[1025px]:items-center">
-            <Image
-              src="/johann.svg"
-              width={338}
-              height={172}
-              alt="Johann Logo"
-              loading="lazy"
-              className="w-[22vw] max-[1025px]:w-[34vw] max-md:w-[46vw]"
-            />
+            <div className="flex items-center justify-start max-[1025px]:justify-center w-full">
+              <Image
+                src="/johann.svg"
+                width={234}
+                height={77}
+                alt="Johann Logo"
+                loading="lazy"
+                className="w-[20vw] max-[1025px]:w-[32vw] max-md:w-[44vw] h-auto object-contain"
+              />
+            </div>
             <div className="flex flex-col gap-[2vw] items-end max-[1025px]:items-center max-[1025px]:text-center max-md:gap-[7vw]">
               <p className="text-[3.4vw] text-end w-[75%] leading-[1.15] max-[1025px]:text-[5vw] max-[1025px]:w-full max-[1025px]:text-center max-md:text-[7.5vw]">
                 Ready to Bring Your Vision to Life?
@@ -172,18 +175,28 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex justify-between py-8 pt-12 text-lg text-foreground max-md:flex-col max-md:gap-2 max-md:text-sm max-md:text-center max-md:py-6 max-md:pt-8">
-          <p>
-            Copyright{' '}
-            <Link
-              href="https://vault.hyperiux.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              ©
-            </Link>{' '}
-            Johann Design 2026
-          </p>
+        <div className="flex items-center justify-center py-8 pt-8 pb-12 sm:pb-8 text-foreground max-md:py-6 max-md:pb-12 w-full">
+          <div className="w-[300px] sm:w-[320px] h-9 flex items-center justify-center">
+            <VaporizeTextCycle
+              texts={["Copyright © Johann Design 2026"]}
+              font={{
+                fontFamily: '"Host Grotesk", sans-serif',
+                fontSize: "15px",
+                fontWeight: 400,
+              }}
+              color="rgba(255, 255, 255, 0.7)"
+              spread={4}
+              density={6}
+              animation={{
+                vaporizeDuration: 2,
+                fadeInDuration: 1,
+                waitDuration: 4,
+              }}
+              direction="left-to-right"
+              alignment="center"
+              tag={Tag.P}
+            />
+          </div>
         </div>
       </div>
     </footer>
