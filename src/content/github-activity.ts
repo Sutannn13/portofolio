@@ -34,6 +34,7 @@ export interface GitHubActivityEvent {
   repoName: string;
   repoUrl: string;
   detail: string | null;
+  sha?: string | null;
   createdAt: string;
 }
 
@@ -816,97 +817,157 @@ export const VERIFIED_GITHUB_FALLBACK: GitHubDashboardData = {
   }
 ],
   events: [
-  {
-    "id": "18313667399",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "Ebony-Vinyl/dsh-our-free-model",
-    "repoUrl": "https://github.com/Ebony-Vinyl/dsh-our-free-model",
-    "detail": null,
-    "createdAt": "2026-10-27T06:32:35Z"
-  },
-  {
-    "id": "18293321546",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "JoasASantos/REA-Prompts",
-    "repoUrl": "https://github.com/JoasASantos/REA-Prompts",
-    "detail": null,
-    "createdAt": "2026-10-27T00:33:22Z"
-  },
-  {
-    "id": "18144551414",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "itzluthfi/Farm-Acc-ChatGPT-K-12-Teachers",
-    "repoUrl": "https://github.com/itzluthfi/Farm-Acc-ChatGPT-K-12-Teachers",
-    "detail": null,
-    "createdAt": "2026-10-25T07:11:14Z"
-  },
-  {
-    "id": "17840494190",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "togg53192-cmd/jailbreaks",
-    "repoUrl": "https://github.com/togg53192-cmd/jailbreaks",
-    "detail": null,
-    "createdAt": "2026-10-21T17:43:02Z"
-  },
-  {
-    "id": "17805237131",
-    "type": "ForkEvent",
-    "action": "Forked repository",
-    "repoName": "fatidaprilian/templatebsi",
-    "repoUrl": "https://github.com/fatidaprilian/templatebsi",
-    "detail": "Sutannn13/templatebsi-fork",
-    "createdAt": "2026-10-21T11:07:33Z"
-  },
-  {
-    "id": "17699331907",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "RudyCity/superagent",
-    "repoUrl": "https://github.com/RudyCity/superagent",
-    "detail": null,
-    "createdAt": "2026-10-20T10:59:58Z"
-  },
-  {
-    "id": "17483551713",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "azrinaldi/gemini-stealth-bridge",
-    "repoUrl": "https://github.com/azrinaldi/gemini-stealth-bridge",
-    "detail": null,
-    "createdAt": "2026-10-17T14:45:18Z"
-  },
-  {
-    "id": "17288457707",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "firecrawl/firecrawl",
-    "repoUrl": "https://github.com/firecrawl/firecrawl",
-    "detail": null,
-    "createdAt": "2026-10-15T10:28:41Z"
-  },
-  {
-    "id": "16698140970",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "d4ncboz/museai",
-    "repoUrl": "https://github.com/d4ncboz/museai",
-    "detail": null,
-    "createdAt": "2026-10-08T03:25:07Z"
-  },
-  {
-    "id": "16608246388",
-    "type": "WatchEvent",
-    "action": "Starred repository",
-    "repoName": "morluto/rea",
-    "repoUrl": "https://github.com/morluto/rea",
-    "detail": null,
-    "createdAt": "2026-10-07T05:00:46Z"
-  }
-],
+    {
+      id: 'evt-fork-templatebsi',
+      type: 'ForkEvent',
+      action: 'Forked repository',
+      repoName: 'fatidaprilian/templatebsi',
+      repoUrl: 'https://github.com/Sutannn13/templatebsi-fork',
+      detail: 'Sutannn13/templatebsi-fork',
+      sha: null,
+      createdAt: '2026-10-21T11:07:33Z',
+    },
+    {
+      id: 'cmt-a55492e',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/templatebsi-fork',
+      repoUrl: 'https://github.com/Sutannn13/templatebsi-fork/commit/a55492e',
+      detail: 'feat: adjust page number header-ascent and footer-descent per section 2.4',
+      sha: 'a55492e',
+      createdAt: '2026-10-20T12:54:10Z',
+    },
+    {
+      id: 'cmt-ef34564',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/templatebsi-fork',
+      repoUrl: 'https://github.com/Sutannn13/templatebsi-fork/commit/ef34564',
+      detail: 'feat: update list markers and indentation rules for lists and enums',
+      sha: 'ef34564',
+      createdAt: '2026-10-20T12:32:51Z',
+    },
+    {
+      id: 'cmt-82136a1',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/templatebsi-fork',
+      repoUrl: 'https://github.com/Sutannn13/templatebsi-fork/commit/82136a1',
+      detail: 'fix(cli): resolve line endings, executable mode, and conflict handling',
+      sha: '82136a1',
+      createdAt: '2026-10-20T09:53:19Z',
+    },
+    {
+      id: 'cmt-2ca8e50',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/templatebsi-fork',
+      repoUrl: 'https://github.com/Sutannn13/templatebsi-fork/commit/2ca8e50',
+      detail: 'fix: align template with Buku Pedoman PKL UBSI 2026 specifications',
+      sha: '2ca8e50',
+      createdAt: '2026-10-15T04:04:25Z',
+    },
+    {
+      id: 'cmt-0810e8d',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/mau-s-kitchen',
+      repoUrl: 'https://github.com/Sutannn13/mau-s-kitchen/commit/0810e8d',
+      detail: 'chore(repo): keep internal files local and fix copy feedback',
+      sha: '0810e8d',
+      createdAt: '2026-09-08T15:20:27Z',
+    },
+    {
+      id: 'cmt-8e19ee5',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/mau-s-kitchen',
+      repoUrl: 'https://github.com/Sutannn13/mau-s-kitchen/commit/8e19ee5',
+      detail: 'merge(main): align staging after repository cleanup',
+      sha: '8e19ee5',
+      createdAt: '2026-09-08T14:44:59Z',
+    },
+    {
+      id: 'cmt-067a08e',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/mau-s-kitchen',
+      repoUrl: 'https://github.com/Sutannn13/mau-s-kitchen/commit/067a08e',
+      detail: 'fix(ui): show one copy success check',
+      sha: '067a08e',
+      createdAt: '2026-09-08T14:33:47Z',
+    },
+    {
+      id: 'cmt-6baf44c',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/mau-s-kitchen',
+      repoUrl: 'https://github.com/Sutannn13/mau-s-kitchen/commit/6baf44c',
+      detail: 'fix(staging): verify deployments behind Cloudflare Access (#1)',
+      sha: '6baf44c',
+      createdAt: '2026-09-08T11:43:47Z',
+    },
+    {
+      id: 'cmt-4a1e612',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/press-release-auto-generate',
+      repoUrl: 'https://github.com/Sutannn13/press-release-auto-generate/commit/4a1e612',
+      detail: 'Remove login requirement for seamless generation flow',
+      sha: '4a1e612',
+      createdAt: '2026-08-19T07:45:55Z',
+    },
+    {
+      id: 'cmt-777965d',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/press-release-auto-generate',
+      repoUrl: 'https://github.com/Sutannn13/press-release-auto-generate/commit/777965d',
+      detail: 'Fix Render free tier blueprint & web service routing',
+      sha: '777965d',
+      createdAt: '2026-08-18T20:19:32Z',
+    },
+    {
+      id: 'cmt-ee6e659',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/press-release-auto-generate',
+      repoUrl: 'https://github.com/Sutannn13/press-release-auto-generate/commit/ee6e659',
+      detail: 'Update Gemini configuration for latest model integrations',
+      sha: 'ee6e659',
+      createdAt: '2026-08-18T19:49:56Z',
+    },
+    {
+      id: 'cmt-773112a',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/bot-discord-2',
+      repoUrl: 'https://github.com/Sutannn13/bot-discord-2/commit/773112a',
+      detail: 'feat: tier tampilan (owner/admin/mod/member) + badge & gelar level',
+      sha: '773112a',
+      createdAt: '2026-07-16T06:17:03Z',
+    },
+    {
+      id: 'cmt-2927cb5',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/bot-discord-2',
+      repoUrl: 'https://github.com/Sutannn13/bot-discord-2/commit/2927cb5',
+      detail: 'feat: upgrade roles security, sp system, and add timeout commands',
+      sha: '2927cb5',
+      createdAt: '2026-07-11T13:26:01Z',
+    },
+    {
+      id: 'cmt-2fd20ac',
+      type: 'CommitEvent',
+      action: 'Committed to',
+      repoName: 'Sutannn13/bot-discord-2',
+      repoUrl: 'https://github.com/Sutannn13/bot-discord-2/commit/2fd20ac',
+      detail: 'Pin Node 22 di Railway (fix: native WebSocket not found)',
+      sha: '2fd20ac',
+      createdAt: '2026-07-07T09:58:58Z',
+    },
+  ],
   contributions: buildFallbackContributions(),
   languages: [
     { language: 'TypeScript', count: 14, percentage: 54, color: LANGUAGE_COLORS.TypeScript },
@@ -969,172 +1030,274 @@ interface RawGitHubEvent {
     ref?: string;
     ref_type?: string;
     size?: number;
-    commits?: Array<{ message?: string }>;
+    commits?: Array<{ message?: string; sha?: string }>;
     forkee?: { full_name?: string };
     pull_request?: { title?: string };
   };
 }
 
-export async function fetchGitHubDashboardData(): Promise<GitHubDashboardData> {
-  try {
-    const [userRes, reposRes, eventsRes, contribRes] = await Promise.allSettled([
-      fetch(`https://api.github.com/users/${GITHUB_USERNAME}`, { cache: 'no-store' }),
-      fetch(`https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=pushed&per_page=100&type=owner`, { cache: 'no-store' }),
-      fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=30`, { cache: 'no-store' }),
-      fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=last`, { cache: 'no-store' }),
-    ]);
+const CACHE_STORAGE_KEY = 'johann_gh_telemetry_cache_v3';
+const CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes
 
-    const userJson =
-      userRes.status === 'fulfilled' && userRes.value.ok ? await userRes.value.json() : null;
-    const reposJson: RawGitHubRepo[] | null =
-      reposRes.status === 'fulfilled' && reposRes.value.ok ? await reposRes.value.json() : null;
-    const eventsJson: RawGitHubEvent[] | null =
-      eventsRes.status === 'fulfilled' && eventsRes.value.ok ? await eventsRes.value.json() : null;
-    const contribJson =
-      contribRes.status === 'fulfilled' && contribRes.value.ok ? await contribRes.value.json() : null;
+let memoryCachedData: { data: GitHubDashboardData; timestamp: number } | null = null;
+let inFlightPromise: Promise<GitHubDashboardData> | null = null;
 
-    if (!userJson && !reposJson && !contribJson) {
-      return VERIFIED_GITHUB_FALLBACK;
-    }
-
-    const profile: GitHubUserProfile = userJson
-      ? {
-          login: userJson.login || VERIFIED_GITHUB_FALLBACK.profile.login,
-          name: userJson.name || VERIFIED_GITHUB_FALLBACK.profile.name,
-          avatarUrl: userJson.avatar_url || VERIFIED_GITHUB_FALLBACK.profile.avatarUrl,
-          htmlUrl: userJson.html_url || VERIFIED_GITHUB_FALLBACK.profile.htmlUrl,
-          bio: (userJson.bio || VERIFIED_GITHUB_FALLBACK.profile.bio).trim(),
-          company: userJson.company || VERIFIED_GITHUB_FALLBACK.profile.company,
-          blog: userJson.blog || VERIFIED_GITHUB_FALLBACK.profile.blog,
-          publicRepos:
-            typeof userJson.public_repos === 'number'
-              ? userJson.public_repos
-              : VERIFIED_GITHUB_FALLBACK.profile.publicRepos,
-          followers:
-            typeof userJson.followers === 'number'
-              ? userJson.followers
-              : VERIFIED_GITHUB_FALLBACK.profile.followers,
-          following:
-            typeof userJson.following === 'number'
-              ? userJson.following
-              : VERIFIED_GITHUB_FALLBACK.profile.following,
-        }
-      : VERIFIED_GITHUB_FALLBACK.profile;
-
-    let repositories = VERIFIED_GITHUB_FALLBACK.repositories;
-    let totalStars = VERIFIED_GITHUB_FALLBACK.totalStars;
-    let totalForks = VERIFIED_GITHUB_FALLBACK.totalForks;
-    let languages = VERIFIED_GITHUB_FALLBACK.languages;
-
-    if (Array.isArray(reposJson) && reposJson.length > 0) {
-      totalStars = reposJson.reduce((acc, r) => acc + (r.stargazers_count || 0), 0);
-      totalForks = reposJson.reduce((acc, r) => acc + (r.forks_count || 0), 0);
-
-      const langCounter: Record<string, number> = {};
-      let totalWithLang = 0;
-      for (const r of reposJson) {
-        if (!r.language) continue;
-        const key = r.language === 'Blade' || r.language === 'PHP' ? 'Blade / PHP' : r.language;
-        langCounter[key] = (langCounter[key] || 0) + 1;
-        totalWithLang += 1;
-      }
-
-      if (totalWithLang > 0) {
-        languages = Object.entries(langCounter)
-          .sort((a, b) => b[1] - a[1])
-          .slice(0, 6)
-          .map(([lang, count]) => ({
-            language: lang,
-            count,
-            percentage: Math.max(1, Math.round((count / totalWithLang) * 100)),
-            color:
-              lang === 'Blade / PHP'
-                ? LANGUAGE_COLORS.Blade
-                : LANGUAGE_COLORS[lang] || LANGUAGE_COLORS.Other,
-          }));
-      }
-
-      repositories = reposJson.slice(0, 16).map((r) => ({
-        id: r.id,
-        name: r.name,
-        fullName: r.full_name,
-        description: r.description || null,
-        language: r.language || null,
-        stars: r.stargazers_count || 0,
-        forks: r.forks_count || 0,
-        pushedAt: r.pushed_at,
-        updatedAt: r.updated_at,
-        htmlUrl: r.html_url,
-        homepage: r.homepage || null,
-        topics: r.topics || [],
-        isFork: Boolean(r.fork),
-      }));
-    }
-
-    let events = VERIFIED_GITHUB_FALLBACK.events;
-    if (Array.isArray(eventsJson) && eventsJson.length > 0) {
-      events = eventsJson.slice(0, 14).map((ev) => {
-        let action = 'Activity on';
-        let detail: string | null = null;
-        if (ev.type === 'WatchEvent') {
-          action = 'Starred repository';
-        } else if (ev.type === 'ForkEvent') {
-          action = 'Forked repository';
-          detail = ev.payload?.forkee?.full_name || null;
-        } else if (ev.type === 'PushEvent') {
-          const count = ev.payload?.commits?.length || ev.payload?.size || 1;
-          action = count > 1 ? `Pushed ${count} commits to` : 'Pushed commit to';
-          detail =
-            ev.payload?.commits?.[0]?.message?.split('\n')[0] ||
-            (ev.payload?.ref ? ev.payload.ref.replace('refs/heads/', 'branch: ') : null);
-        } else if (ev.type === 'CreateEvent') {
-          action = `Created ${ev.payload?.ref_type || 'resource'} in`;
-          detail = ev.payload?.ref || null;
-        } else if (ev.type === 'PullRequestEvent') {
-          action = `${ev.payload?.action === 'opened' ? 'Opened' : 'Updated'} pull request in`;
-          detail = ev.payload?.pull_request?.title || null;
-        }
-        const repoName = ev.repo?.name || GITHUB_USERNAME;
-        return {
-          id: String(ev.id),
-          type: ev.type,
-          action,
-          repoName,
-          repoUrl: `https://github.com/${repoName}`,
-          detail,
-          createdAt: ev.created_at,
-        };
-      });
-    }
-
-    let contributions = VERIFIED_GITHUB_FALLBACK.contributions;
-    let totalContributionsLastYear = VERIFIED_GITHUB_FALLBACK.totalContributionsLastYear;
-    if (contribJson && Array.isArray(contribJson.contributions) && contribJson.contributions.length > 0) {
-      contributions = contribJson.contributions.map((c: { date: string; count: number; level: number }) => ({
-        date: c.date,
-        count: c.count || 0,
-        level: Math.min(4, Math.max(0, c.level || 0)) as 0 | 1 | 2 | 3 | 4,
-      }));
-      if (typeof contribJson.total?.lastYear === 'number') {
-        totalContributionsLastYear = contribJson.total.lastYear;
-      } else {
-        totalContributionsLastYear = contributions.reduce((acc, d) => acc + d.count, 0);
-      }
-    }
-
-    return {
-      profile,
-      totalStars,
-      totalForks,
-      totalContributionsLastYear,
-      repositories,
-      events,
-      contributions,
-      languages,
-      syncedAt: new Date().toISOString(),
-      isLive: true,
-    };
-  } catch {
-    return VERIFIED_GITHUB_FALLBACK;
+function readCachedTelemetry(): GitHubDashboardData | null {
+  const now = Date.now();
+  if (memoryCachedData && now - memoryCachedData.timestamp < CACHE_TTL_MS) {
+    return memoryCachedData.data;
   }
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = window.localStorage.getItem(CACHE_STORAGE_KEY);
+    if (!raw) return null;
+    const parsed = JSON.parse(raw) as { data?: GitHubDashboardData; timestamp?: number };
+    if (parsed?.data && typeof parsed.timestamp === 'number' && now - parsed.timestamp < CACHE_TTL_MS) {
+      memoryCachedData = { data: parsed.data, timestamp: parsed.timestamp };
+      return parsed.data;
+    }
+  } catch {
+    // Ignore storage access errors
+  }
+  return null;
+}
+
+function writeCachedTelemetry(data: GitHubDashboardData) {
+  const now = Date.now();
+  memoryCachedData = { data, timestamp: now };
+  if (typeof window === 'undefined') return;
+  try {
+    window.localStorage.setItem(CACHE_STORAGE_KEY, JSON.stringify({ data, timestamp: now }));
+  } catch {
+    // Ignore storage quota errors
+  }
+}
+
+export async function fetchGitHubDashboardData(forceRefresh = false): Promise<GitHubDashboardData> {
+  if (!forceRefresh) {
+    const cached = readCachedTelemetry();
+    if (cached) return cached;
+  }
+
+  if (inFlightPromise) return inFlightPromise;
+
+  inFlightPromise = (async (): Promise<GitHubDashboardData> => {
+    try {
+      // 1. Pre-check /rate_limit (always returns 200 OK, never 403, and costs 0 quota)
+      // alongside the public contributions proxy (also 200 OK with no GitHub rate limit).
+      const [rateRes, contribRes] = await Promise.allSettled([
+        fetch('https://api.github.com/rate_limit', { cache: 'no-store' }),
+        fetch(`https://github-contributions-api.jogruber.de/v4/${GITHUB_USERNAME}?y=last`, {
+          cache: 'no-store',
+        }),
+      ]);
+
+      const rateJson =
+        rateRes.status === 'fulfilled' && rateRes.value.ok ? await rateRes.value.json() : null;
+      const remainingQuota: number =
+        rateJson?.resources?.core?.remaining ?? rateJson?.rate?.remaining ?? 0;
+
+      const contribJson =
+        contribRes.status === 'fulfilled' && contribRes.value.ok
+          ? await contribRes.value.json()
+          : null;
+
+      let userJson = null;
+      let reposJson: RawGitHubRepo[] | null = null;
+      let eventsJson: RawGitHubEvent[] | null = null;
+
+      // Only query core GitHub REST endpoints when quota is available (>= 4 remaining)
+      // so the browser never receives a 403 Forbidden response in DevTools Console.
+      if (remainingQuota >= 4) {
+        const [userRes, reposRes, eventsRes] = await Promise.allSettled([
+          fetch(`https://api.github.com/users/${GITHUB_USERNAME}`, { cache: 'no-store' }),
+          fetch(
+            `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=pushed&per_page=100&type=owner`,
+            { cache: 'no-store' }
+          ),
+          fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public?per_page=30`, {
+            cache: 'no-store',
+          }),
+        ]);
+
+        userJson =
+          userRes.status === 'fulfilled' && userRes.value.ok ? await userRes.value.json() : null;
+        reposJson =
+          reposRes.status === 'fulfilled' && reposRes.value.ok ? await reposRes.value.json() : null;
+        eventsJson =
+          eventsRes.status === 'fulfilled' && eventsRes.value.ok
+            ? await eventsRes.value.json()
+            : null;
+      }
+
+      if (!userJson && !reposJson && !contribJson) {
+        return VERIFIED_GITHUB_FALLBACK;
+      }
+
+      const profile: GitHubUserProfile = userJson
+        ? {
+            login: userJson.login || VERIFIED_GITHUB_FALLBACK.profile.login,
+            name: userJson.name || VERIFIED_GITHUB_FALLBACK.profile.name,
+            avatarUrl: userJson.avatar_url || VERIFIED_GITHUB_FALLBACK.profile.avatarUrl,
+            htmlUrl: userJson.html_url || VERIFIED_GITHUB_FALLBACK.profile.htmlUrl,
+            bio: (userJson.bio || VERIFIED_GITHUB_FALLBACK.profile.bio).trim(),
+            company: userJson.company || VERIFIED_GITHUB_FALLBACK.profile.company,
+            blog: userJson.blog || VERIFIED_GITHUB_FALLBACK.profile.blog,
+            publicRepos:
+              typeof userJson.public_repos === 'number'
+                ? userJson.public_repos
+                : VERIFIED_GITHUB_FALLBACK.profile.publicRepos,
+            followers:
+              typeof userJson.followers === 'number'
+                ? userJson.followers
+                : VERIFIED_GITHUB_FALLBACK.profile.followers,
+            following:
+              typeof userJson.following === 'number'
+                ? userJson.following
+                : VERIFIED_GITHUB_FALLBACK.profile.following,
+          }
+        : VERIFIED_GITHUB_FALLBACK.profile;
+
+      let repositories = VERIFIED_GITHUB_FALLBACK.repositories;
+      let totalStars = VERIFIED_GITHUB_FALLBACK.totalStars;
+      let totalForks = VERIFIED_GITHUB_FALLBACK.totalForks;
+      let languages = VERIFIED_GITHUB_FALLBACK.languages;
+
+      if (Array.isArray(reposJson) && reposJson.length > 0) {
+        totalStars = reposJson.reduce((acc, r) => acc + (r.stargazers_count || 0), 0);
+        totalForks = reposJson.reduce((acc, r) => acc + (r.forks_count || 0), 0);
+
+        const langCounter: Record<string, number> = {};
+        let totalWithLang = 0;
+        for (const r of reposJson) {
+          if (!r.language) continue;
+          const key = r.language === 'Blade' || r.language === 'PHP' ? 'Blade / PHP' : r.language;
+          langCounter[key] = (langCounter[key] || 0) + 1;
+          totalWithLang += 1;
+        }
+
+        if (totalWithLang > 0) {
+          languages = Object.entries(langCounter)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 6)
+            .map(([lang, count]) => ({
+              language: lang,
+              count,
+              percentage: Math.max(1, Math.round((count / totalWithLang) * 100)),
+              color:
+                lang === 'Blade / PHP'
+                  ? LANGUAGE_COLORS.Blade
+                  : LANGUAGE_COLORS[lang] || LANGUAGE_COLORS.Other,
+            }));
+        }
+
+        repositories = reposJson.slice(0, 16).map((r) => ({
+          id: r.id,
+          name: r.name,
+          fullName: r.full_name,
+          description: r.description || null,
+          language: r.language || null,
+          stars: r.stargazers_count || 0,
+          forks: r.forks_count || 0,
+          pushedAt: r.pushed_at,
+          updatedAt: r.updated_at,
+          htmlUrl: r.html_url,
+          homepage: r.homepage || null,
+          topics: r.topics || [],
+          isFork: Boolean(r.fork),
+        }));
+      }
+
+      let events = VERIFIED_GITHUB_FALLBACK.events;
+      if (Array.isArray(eventsJson) && eventsJson.length > 0) {
+        const liveNonWatch = eventsJson
+          .filter((ev) => ev.type !== 'WatchEvent')
+          .slice(0, 10)
+          .map((ev) => {
+            let action = 'Activity on';
+            let detail: string | null = null;
+            let sha: string | null = null;
+            if (ev.type === 'ForkEvent') {
+              action = 'Forked repository';
+              detail = ev.payload?.forkee?.full_name || null;
+            } else if (ev.type === 'PushEvent') {
+              const count = ev.payload?.commits?.length || ev.payload?.size || 1;
+              action = count > 1 ? `Pushed ${count} commits to` : 'Committed to';
+              detail =
+                ev.payload?.commits?.[0]?.message?.split('\n')[0] ||
+                (ev.payload?.ref ? ev.payload.ref.replace('refs/heads/', 'branch: ') : null);
+              sha = ev.payload?.commits?.[0]?.sha?.substring(0, 7) || null;
+            } else if (ev.type === 'CreateEvent') {
+              action = `Created ${ev.payload?.ref_type || 'resource'} in`;
+              detail = ev.payload?.ref || null;
+            } else if (ev.type === 'PullRequestEvent') {
+              action = `${ev.payload?.action === 'opened' ? 'Opened' : 'Updated'} pull request in`;
+              detail = ev.payload?.pull_request?.title || null;
+            }
+            const repoName = ev.repo?.name || GITHUB_USERNAME;
+            return {
+              id: String(ev.id),
+              type: ev.type,
+              action,
+              repoName,
+              repoUrl: `https://github.com/${repoName}`,
+              detail,
+              sha,
+              createdAt: ev.created_at,
+            };
+          });
+
+        if (liveNonWatch.length > 0) {
+          const liveIds = new Set(liveNonWatch.map((e) => e.id));
+          events = [
+            ...liveNonWatch,
+            ...VERIFIED_GITHUB_FALLBACK.events.filter((e) => !liveIds.has(e.id)),
+          ];
+        }
+      }
+
+      let contributions = VERIFIED_GITHUB_FALLBACK.contributions;
+      let totalContributionsLastYear = VERIFIED_GITHUB_FALLBACK.totalContributionsLastYear;
+      if (
+        contribJson &&
+        Array.isArray(contribJson.contributions) &&
+        contribJson.contributions.length > 0
+      ) {
+        contributions = contribJson.contributions.map(
+          (c: { date: string; count: number; level: number }) => ({
+            date: c.date,
+            count: c.count || 0,
+            level: Math.min(4, Math.max(0, c.level || 0)) as 0 | 1 | 2 | 3 | 4,
+          })
+        );
+        if (typeof contribJson.total?.lastYear === 'number') {
+          totalContributionsLastYear = contribJson.total.lastYear;
+        } else {
+          totalContributionsLastYear = contributions.reduce((acc, d) => acc + d.count, 0);
+        }
+      }
+
+      const result: GitHubDashboardData = {
+        profile,
+        totalStars,
+        totalForks,
+        totalContributionsLastYear,
+        repositories,
+        events,
+        contributions,
+        languages,
+        syncedAt: new Date().toISOString(),
+        isLive: Boolean(userJson || reposJson || contribJson),
+      };
+
+      writeCachedTelemetry(result);
+      return result;
+    } catch {
+      return VERIFIED_GITHUB_FALLBACK;
+    } finally {
+      inFlightPromise = null;
+    }
+  })();
+
+  return inFlightPromise;
 }

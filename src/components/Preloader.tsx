@@ -33,7 +33,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
 
   useEffect(() => {
     lenisRef.current = lenis;
-    if (lenis && !unlockedRef.current) lenis.stop();
+    if (lenis && !unlockedRef.current && !hasPlayedOnce) lenis.stop();
   }, [lenis]);
 
   useEffect(() => {
@@ -41,9 +41,10 @@ export default function Preloader({ onComplete }: PreloaderProps) {
   }, [onComplete]);
 
   useEffect(() => {
-    if (skip) {
-      // Returning via page transition: no loader, just start the Hero intro
-      // once sibling effects (Hero's listener) have been attached.
+    if (skip || hasPlayedOnce) {
+      unlockedRef.current = true;
+      setPhase(3);
+      lenisRef.current?.start();
       const t = setTimeout(() => {
         window.dispatchEvent(new CustomEvent('preloader:complete'));
         completeRef.current?.();
@@ -101,7 +102,7 @@ export default function Preloader({ onComplete }: PreloaderProps) {
       clearTimeout(doneTimer);
       lenisRef.current?.start();
     };
-  }, []);
+  }, [skip]);
 
   if (phase === 3) return null;
 

@@ -11,6 +11,8 @@ export interface StringLineProps {
 let audioCtx: AudioContext | null = null;
 let masterGain: GainNode | null = null;
 let convolverGain: GainNode | null = null;
+let userGestureUnlocked = false;
+let gestureListenersAttached = false;
 const NOTES = [146.83, 164.81, 196, 220, 261.63, 293.66, 329.63, 392];
 const FORMANTS = [
   { frequency: 100, q: 1.2, gain: 0.5 },
@@ -18,8 +20,20 @@ const FORMANTS = [
 ];
 let noteIndex = 0;
 
+function hasUserActivation(): boolean {
+  if (userGestureUnlocked) return true;
+  if (typeof navigator !== 'undefined' && 'userActivation' in navigator) {
+    const ua = (navigator as Navigator & { userActivation?: { hasBeenActive?: boolean } }).userActivation;
+    if (ua?.hasBeenActive) {
+      userGestureUnlocked = true;
+      return true;
+    }
+  }
+  return false;
+}
+
 function initAudioContext(): AudioContext | null {
-  if (typeof window === 'undefined') return null;
+  if (typeof window === 'undefined' || !hasUserActivation()) return null;
   if (!audioCtx) {
     const AudioCtxClass =
       window.AudioContext ||
@@ -57,14 +71,29 @@ function initAudioContext(): AudioContext | null {
 }
 
 export function unlockAudio() {
+  userGestureUnlocked = true;
   const ctx = initAudioContext();
   if (ctx && ctx.state === 'suspended') {
     ctx.resume().catch(() => {});
   }
 }
 
+function ensureGlobalGestureUnlocker() {
+  if (typeof window === 'undefined' || gestureListenersAttached || userGestureUnlocked) return;
+  gestureListenersAttached = true;
+  const validEvents = ['pointerdown', 'keydown', 'touchstart', 'mousedown'] as const;
+  const onFirstGesture = () => {
+    userGestureUnlocked = true;
+    unlockAudio();
+    validEvents.forEach((evt) => window.removeEventListener(evt, onFirstGesture));
+  };
+  validEvents.forEach((evt) =>
+    window.addEventListener(evt, onFirstGesture, { passive: true, once: true })
+  );
+}
+
 async function playKarplusStrong(displacement: number) {
-  if (typeof window === 'undefined') return;
+  if (typeof window === 'undefined' || !hasUserActivation()) return;
   const ctx = initAudioContext();
   if (!ctx || !masterGain || !convolverGain) return;
 
@@ -72,7 +101,7 @@ async function playKarplusStrong(displacement: number) {
     try {
       await ctx.resume();
     } catch {
-      // Ignore policy errors until explicit user gesture
+      return;
     }
   }
 
@@ -189,14 +218,9 @@ export default function StringLine({
   const phaseRef = useRef(Math.PI / 2);
   const [reducedMotion, setReducedMotion] = useState(false);
 
-  // Global user gesture unlocker to allow Web Audio API playback
+  // Global user gesture unlocker to allow Web Audio API playback only after valid user activation
   useEffect(() => {
-    const handleGesture = () => unlockAudio();
-    const events = ['pointerdown', 'touchstart', 'mousedown', 'keydown', 'wheel', 'scroll', 'mousemove', 'pointermove'];
-    events.forEach((evt) => window.addEventListener(evt, handleGesture, { passive: true }));
-    return () => {
-      events.forEach((evt) => window.removeEventListener(evt, handleGesture));
-    };
+    ensureGlobalGestureUnlocker();
   }, []);
 
   useEffect(() => {
@@ -269,7 +293,6 @@ export default function StringLine({
             reducedMotion
               ? undefined
               : () => {
-                  unlockAudio();
                   if (rafRef.current != null) {
                     cancelAnimationFrame(rafRef.current);
                     phaseRef.current = Math.PI / 2;

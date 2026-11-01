@@ -6,9 +6,7 @@ import gsap from 'gsap';
 import Copy from './Copy';
 import StringLine from './StringLine';
 import Footer from './Footer';
-import StaggerButton from './StaggerButton';
 import HoldChargeButton from './HoldChargeButton';
-import { useGetInTouchModal } from './GetInTouchModal';
 import { usePagePullTransition } from './PagePullTransition';
 import {
   fetchGitHubDashboardData,
@@ -16,44 +14,57 @@ import {
   VERIFIED_GITHUB_FALLBACK,
   type ContributionDay,
   type GitHubDashboardData,
+  type GitHubRepository,
 } from '@/content/github-activity';
+import SegmentedControl, { type TabOption } from './SegmentedControl';
 
-type EventFilter = 'all' | 'code' | 'stars';
+export type RepoTab = 'all' | 'code' | 'commits';
+
+const REPO_TABS: readonly TabOption<RepoTab>[] = [
+  { id: 'all', label: 'All' },
+  { id: 'code', label: 'Code & Forks' },
+  { id: 'commits', label: 'Commits' },
+];
+
+function hashCode(str: string): number {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return hash;
+}
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
 export default function GitHubActivityView() {
-  const { openModal } = useGetInTouchModal();
-  const { triggerPagePull } = usePagePullTransition();
+  const { triggerPagePull, isPulling } = usePagePullTransition();
 
   const [data, setData] = useState<GitHubDashboardData>(VERIFIED_GITHUB_FALLBACK);
   const [isRefreshing, setIsRefreshing] = useState<boolean>(true);
   const [refreshError, setRefreshError] = useState<string | null>(null);
   const [selectedDay, setSelectedDay] = useState<ContributionDay | null>(null);
-  const [eventFilter, setEventFilter] = useState<EventFilter>('all');
+  const [activeTab, setActiveTab] = useState<RepoTab>('all');
   const [langFilter, setLangFilter] = useState<string>('All');
   const [repoQuery, setRepoQuery] = useState<string>('');
 
   const heroRef = useRef<HTMLDivElement | null>(null);
 
-  const loadLiveTelemetry = useCallback(async () => {
+  const loadLiveTelemetry = useCallback(async (forceRefresh = false) => {
     setIsRefreshing(true);
     setRefreshError(null);
     try {
-      const liveData = await fetchGitHubDashboardData();
+      const liveData = await fetchGitHubDashboardData(forceRefresh);
       setData(liveData);
-      if (!liveData.isLive) {
-        setRefreshError('GitHub API rate limit reached; showing verified repository snapshot.');
-      }
     } catch {
-      setRefreshError('Network error while contacting GitHub API; showing verified snapshot.');
+      setRefreshError('Showing verified repository snapshot.');
     } finally {
       setIsRefreshing(false);
     }
   }, []);
 
   useEffect(() => {
-    loadLiveTelemetry();
+    loadLiveTelemetry(false);
   }, [loadLiveTelemetry]);
 
   useEffect(() => {
@@ -127,11 +138,21 @@ export default function GitHubActivityView() {
 
   const filteredEvents = useMemo(() => {
     return data.events.filter((ev) => {
-      if (eventFilter === 'all') return true;
-      if (eventFilter === 'stars') return ev.type === 'WatchEvent';
-      return ev.type !== 'WatchEvent';
+      // Exclude WatchEvent (starred repos) completely from latest activity
+      if (ev.type === 'WatchEvent') return false;
+
+      if (activeTab === 'commits') {
+        // Commits tab: only show commit & push events
+        return ev.type === 'PushEvent' || ev.type === 'CommitEvent';
+      }
+      if (activeTab === 'code') {
+        // Code & Forks tab: show repository forks and creations
+        return ev.type === 'ForkEvent' || ev.type === 'CreateEvent';
+      }
+      // 'all' tab: all real development events
+      return true;
     });
-  }, [data.events, eventFilter]);
+  }, [data.events, activeTab]);
 
   const availableLanguages = useMemo(() => {
     const set = new Set<string>(['All']);
@@ -143,16 +164,45 @@ export default function GitHubActivityView() {
 
   const filteredRepositories = useMemo(() => {
     const q = repoQuery.trim().toLowerCase();
-    return data.repositories.filter((r) => {
+
+    // 1. Choose base repository pool by activeTab
+    let baseList: GitHubRepository[] = [];
+    if (activeTab === 'commits') {
+      const activeCommitRepos = new Set([
+        'sutannn13/templatebsi-fork',
+        'templatebsi-fork',
+        'sutannn13/mau-s-kitchen',
+        'mau-s-kitchen',
+        'sutannn13/press-release-auto-generate',
+        'press-release-auto-generate',
+        'sutannn13/bot-discord-2',
+        'bot-discord-2',
+        'sutannn13/skillmatch.ai',
+        'skillmatch.ai',
+      ]);
+      baseList = data.repositories.filter(
+        (r) =>
+          activeCommitRepos.has(r.fullName.toLowerCase()) ||
+          activeCommitRepos.has(r.name.toLowerCase()) ||
+          !r.isFork
+      );
+    } else {
+      // 'all' and 'code' tab: all repositories
+      baseList = data.repositories;
+    }
+
+    // 2. Filter by search query and language
+    return baseList.filter((r) => {
       const matchesLang = langFilter === 'All' || r.language === langFilter;
       const matchesQuery =
         !q ||
         r.name.toLowerCase().includes(q) ||
         (r.description && r.description.toLowerCase().includes(q)) ||
-        (r.language && r.language.toLowerCase().includes(q));
+        (r.language && r.language.toLowerCase().includes(q)) ||
+        r.fullName.toLowerCase().includes(q);
       return matchesLang && matchesQuery;
     });
-  }, [data.repositories, langFilter, repoQuery]);
+  }, [activeTab, data.repositories, langFilter, repoQuery]);
 
   const currentlyBuilding = useMemo(() => {
     return data.repositories.slice(0, 3);
@@ -208,7 +258,7 @@ export default function GitHubActivityView() {
           </span>
           <button
             type="button"
-            onClick={loadLiveTelemetry}
+            onClick={() => loadLiveTelemetry(true)}
             disabled={isRefreshing}
             className="ml-2 cursor-pointer rounded-full bg-white/10 px-2.5 py-0.5 font-mono text-[11px] text-white transition-colors hover:bg-[#F16B0D] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D] disabled:opacity-50"
           >
@@ -221,22 +271,11 @@ export default function GitHubActivityView() {
             size="compact"
             label="Back to Portfolio"
             holdMs={2000}
-            ariaLabel="Hold 2 seconds to return to portfolio"
-            onComplete={() => triggerPagePull('/', 'back')}
+            disabled={isPulling}
+            allowQuickClick
+            ariaLabel="Return to portfolio"
+            onComplete={() => triggerPagePull('/', 'back', 'PORTFOLIO SHOWCASE')}
           />
-
-          <div className="max-sm:hidden">
-            <StaggerButton
-              btnText="Get in Touch"
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                openModal();
-              }}
-              variant="charge"
-              textClassName="font-medium text-[1vw] max-[1025px]:text-[2.4vw]"
-            />
-          </div>
         </div>
       </header>
 
@@ -288,7 +327,7 @@ export default function GitHubActivityView() {
                 </a>
                 <button
                   type="button"
-                  onClick={loadLiveTelemetry}
+                  onClick={() => loadLiveTelemetry(true)}
                   className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-4 font-mono text-xs text-white/75 transition-colors hover:border-white/40 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D] md:hidden"
                 >
                   <span>{isRefreshing ? 'Syncing...' : 'Refresh Feed'}</span>
@@ -595,94 +634,97 @@ export default function GitHubActivityView() {
                   </h2>
                 </div>
 
-                <div
-                  role="tablist"
-                  aria-label="Filter GitHub events"
-                  className="flex items-center gap-1 rounded-full bg-white/[0.04] p-1"
-                >
-                  {(
-                    [
-                      { id: 'all', label: 'All' },
-                      { id: 'code', label: 'Code & Forks' },
-                      { id: 'stars', label: 'Starred' },
-                    ] as const
-                  ).map((tab) => (
-                    <button
-                      key={tab.id}
-                      type="button"
-                      role="tab"
-                      aria-selected={eventFilter === tab.id}
-                      onClick={() => setEventFilter(tab.id)}
-                      className={`cursor-pointer rounded-full px-3 py-1 font-mono text-xs transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D] ${
-                        eventFilter === tab.id
-                          ? 'bg-[#F16B0D] text-white'
-                          : 'text-white/55 hover:text-white'
-                      }`}
-                    >
-                      {tab.label}
-                    </button>
-                  ))}
-                </div>
+                <SegmentedControl
+                  tabs={REPO_TABS}
+                  activeTab={activeTab}
+                  onChange={(tabId) => setActiveTab(tabId)}
+                  ariaLabel="Filter GitHub activity and repositories"
+                />
               </div>
 
               <div className="rounded-[28px] bg-[#0d0d10] p-6 max-md:p-4">
-                {filteredEvents.length === 0 ? (
-                  <div className="py-12 text-center">
-                    <p className="text-sm text-white/60">
-                      No recent events in this filter category.
-                    </p>
-                    <button
-                      type="button"
-                      onClick={() => setEventFilter('all')}
-                      className="mt-3 cursor-pointer rounded-full bg-white/10 px-4 py-1.5 font-mono text-xs text-white hover:bg-[#F16B0D] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D]"
-                    >
-                      Show All Events
-                    </button>
-                  </div>
-                ) : (
-                  <ul className="divide-y divide-white/8">
-                    {filteredEvents.map((ev) => (
-                      <li key={ev.id} className="py-3.5 first:pt-1 last:pb-1">
-                        <a
-                          href={ev.repoUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="gh-row group flex items-start justify-between gap-4 no-underline focus-visible:outline-none"
-                        >
-                          <div className="flex items-start gap-3.5">
-                            <span
-                              aria-hidden="true"
-                              className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/[0.05] font-mono text-xs text-[#F16B0D] transition-colors group-hover:bg-[#F16B0D] group-hover:text-white"
-                            >
-                              {ev.type === 'WatchEvent'
-                                ? '★'
-                                : ev.type === 'ForkEvent'
-                                ? '⑂'
-                                : '↗'}
-                            </span>
-                            <div>
-                              <p className="text-sm text-white/90 transition-colors group-hover:text-[#F16B0D]">
-                                <span className="text-white/55">{ev.action}</span>{' '}
-                                <span className="font-medium text-white group-hover:text-[#F16B0D]">
-                                  {ev.repoName}
-                                </span>
-                              </p>
-                              {ev.detail && (
-                                <p className="mt-0.5 line-clamp-1 font-mono text-xs text-white/45">
-                                  {ev.detail}
+                <div key={activeTab} className="tab-content-enter">
+                  {filteredEvents.length === 0 ? (
+                    <div className="py-12 text-center">
+                      <p className="text-sm text-white/60">
+                        {activeTab === 'commits'
+                          ? 'No commit history records found in this view.'
+                          : 'No recent events in this filter category.'}
+                      </p>
+                      <button
+                        type="button"
+                        onClick={() => setActiveTab('all')}
+                        className="mt-3 cursor-pointer rounded-full bg-white/10 px-4 py-1.5 font-mono text-xs text-white hover:bg-[#F16B0D] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D]"
+                      >
+                        Show All
+                      </button>
+                    </div>
+                  ) : (
+                    <ul className="divide-y divide-white/8">
+                      {filteredEvents.map((ev) => (
+                        <li key={ev.id} className="py-3.5 first:pt-1 last:pb-1">
+                          <a
+                            href={ev.repoUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="gh-row group flex items-start justify-between gap-4 no-underline focus-visible:outline-none"
+                          >
+                            <div className="flex items-start gap-3.5 min-w-0">
+                              <span
+                                aria-hidden="true"
+                                className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/[0.05] font-mono text-xs text-[#F16B0D] transition-colors group-hover:bg-[#F16B0D] group-hover:text-white"
+                              >
+                                {ev.type === 'ForkEvent' ? (
+                                  '⑂'
+                                ) : ev.type === 'PushEvent' || ev.type === 'CommitEvent' ? (
+                                  <svg
+                                    width="13"
+                                    height="13"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="1.8"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    aria-hidden="true"
+                                  >
+                                    <circle cx="8" cy="8" r="3" />
+                                    <line x1="8" y1="1" x2="8" y2="5" />
+                                    <line x1="8" y1="11" x2="8" y2="15" />
+                                  </svg>
+                                ) : (
+                                  '↗'
+                                )}
+                              </span>
+                              <div className="min-w-0">
+                                <p className="text-sm text-white/90 transition-colors group-hover:text-[#F16B0D] truncate">
+                                  <span className="text-white/55">{ev.action}</span>{' '}
+                                  <span className="font-medium text-white group-hover:text-[#F16B0D]">
+                                    {ev.repoName}
+                                  </span>
                                 </p>
-                              )}
+                                {ev.detail && (
+                                  <p className="mt-0.5 flex flex-wrap items-center gap-1.5 font-mono text-xs text-white/50">
+                                    {ev.sha && (
+                                      <span className="rounded bg-white/10 px-1.5 py-0.5 font-mono text-[10.5px] text-[#F16B0D] shrink-0">
+                                        {ev.sha}
+                                      </span>
+                                    )}
+                                    <span className="line-clamp-1">{ev.detail}</span>
+                                  </p>
+                                )}
+                              </div>
                             </div>
-                          </div>
 
-                          <span className="shrink-0 font-mono text-[11px] text-white/40">
-                            {formatRelativeTime(ev.createdAt)}
-                          </span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                            <span className="shrink-0 font-mono text-[11px] text-white/40">
+                              {formatRelativeTime(ev.createdAt)}
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
               </div>
             </div>
 
@@ -693,7 +735,11 @@ export default function GitHubActivityView() {
                     Repositories
                   </p>
                   <h2 className="mt-1 text-[2.2vw] font-normal tracking-tight text-white max-[1025px]:text-3xl max-md:text-2xl">
-                    Active Repositories
+                    {activeTab === 'commits'
+                      ? 'Active Contributor Repositories'
+                      : activeTab === 'code'
+                      ? 'Code & Fork Repositories'
+                      : 'Active Repositories'}
                   </h2>
                 </div>
 
@@ -730,74 +776,102 @@ export default function GitHubActivityView() {
                 <StringLine strokeColor="rgba(255, 255, 255, 0.35)" strokeWidth={1} />
               </div>
 
-              {filteredRepositories.length === 0 ? (
-                <div className="py-14 text-center">
-                  <p className="text-base text-white/65">
-                    No repositories match &ldquo;{repoQuery}&rdquo; in {langFilter}.
-                  </p>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setRepoQuery('');
-                      setLangFilter('All');
-                    }}
-                    className="mt-4 cursor-pointer rounded-full bg-[#F16B0D] px-5 py-2 text-xs font-medium text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#070707]"
-                  >
-                    Reset Repository Filters
-                  </button>
-                </div>
-              ) : (
-                <div>
-                  {filteredRepositories.slice(0, 10).map((repo) => (
-                    <a
-                      key={repo.id}
-                      href={repo.htmlUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="gh-row group flex flex-col justify-between gap-3 border-b border-white/8 py-5 text-white no-underline transition-colors focus-visible:outline-none sm:flex-row sm:items-center"
+              <div key={activeTab} className="tab-content-enter">
+                {filteredRepositories.length === 0 ? (
+                  <div className="py-14 text-center">
+                    <p className="text-base text-white/65">
+                      No repositories match &ldquo;{repoQuery}&rdquo; in {langFilter}.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setRepoQuery('');
+                        setLangFilter('All');
+                        setActiveTab('all');
+                      }}
+                      className="mt-4 cursor-pointer rounded-full bg-[#F16B0D] px-5 py-2 text-xs font-medium text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F16B0D] focus-visible:ring-offset-2 focus-visible:ring-offset-[#070707]"
                     >
-                      <div className="max-w-xl">
-                        <div className="flex items-center gap-3">
-                          <h3 className="text-xl font-normal tracking-tight text-white transition-colors group-hover:text-[#F16B0D] sm:text-2xl">
-                            {repo.name}
-                          </h3>
-                          {repo.stars > 0 && (
-                            <span className="rounded-full bg-white/[0.06] px-2.5 py-0.5 font-mono text-xs text-[#F16B0D]">
-                              ★ {repo.stars}
-                            </span>
-                          )}
-                          {repo.forks > 0 && (
-                            <span className="rounded-full bg-white/[0.06] px-2.5 py-0.5 font-mono text-xs text-white/60">
-                              ⑂ {repo.forks}
-                            </span>
+                      Reset Repository Filters
+                    </button>
+                  </div>
+                ) : (
+                  <div>
+                    {filteredRepositories.slice(0, 10).map((repo) => (
+                      <a
+                        key={repo.id}
+                        href={repo.htmlUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="gh-row group flex flex-col justify-between gap-3 border-b border-white/8 py-5 text-white no-underline transition-colors focus-visible:outline-none sm:flex-row sm:items-center"
+                      >
+                        <div className="max-w-xl">
+                          <div className="flex items-center gap-3">
+                            <h3 className="text-xl font-normal tracking-tight text-white transition-colors group-hover:text-[#F16B0D] sm:text-2xl">
+                              {repo.name}
+                            </h3>
+                            {repo.stars > 0 && (
+                              <span className="rounded-full bg-white/[0.06] px-2.5 py-0.5 font-mono text-xs text-[#F16B0D]">
+                                ★ {repo.stars}
+                              </span>
+                            )}
+                            {repo.forks > 0 && (
+                              <span className="rounded-full bg-white/[0.06] px-2.5 py-0.5 font-mono text-xs text-white/60">
+                                ⑂ {repo.forks}
+                              </span>
+                            )}
+                            {repo.isFork && (
+                              <span className="rounded-full bg-white/[0.06] px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-white/50">
+                                Fork
+                              </span>
+                            )}
+                          </div>
+                          {repo.description && (
+                            <p className="mt-1.5 line-clamp-1 text-sm text-white/55">
+                              {repo.description}
+                            </p>
                           )}
                         </div>
-                        {repo.description && (
-                          <p className="mt-1.5 line-clamp-1 text-sm text-white/55">
-                            {repo.description}
-                          </p>
-                        )}
-                      </div>
 
-                      <div className="flex shrink-0 items-center gap-4 font-mono text-xs text-white/50">
-                        {repo.language && (
-                          <span className="rounded-full bg-white/[0.04] px-3 py-1 text-white/80">
-                            {repo.language}
+                        <div className="flex shrink-0 items-center gap-4 font-mono text-xs text-white/50">
+                          {repo.language && (
+                            <span className="rounded-full bg-white/[0.04] px-3 py-1 text-white/80">
+                              {repo.language}
+                            </span>
+                          )}
+                          <span>{formatRelativeTime(repo.pushedAt)}</span>
+                          <span
+                            aria-hidden="true"
+                            className="inline-block text-white/35 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#F16B0D]"
+                          >
+                            &rarr;
                           </span>
-                        )}
-                        <span>{formatRelativeTime(repo.pushedAt)}</span>
-                        <span
-                          aria-hidden="true"
-                          className="inline-block text-white/35 transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#F16B0D]"
-                        >
-                          &rarr;
-                        </span>
-                      </div>
-                    </a>
-                  ))}
-                </div>
-              )}
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
+          </div>
+
+          <div className="mt-[4vw] flex flex-col items-center justify-between gap-6 rounded-[28px] border border-white/10 bg-[#0d0d10] p-[2.6vw] sm:flex-row max-[1025px]:p-7 max-md:mt-8 max-md:p-5">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.22em] text-[#F16B0D]">
+                Navigation // Return
+              </p>
+              <p className="mt-1.5 text-xl font-normal tracking-tight text-white sm:text-2xl">
+                Ready to return to the main portfolio showcase?
+              </p>
+            </div>
+            <HoldChargeButton
+              size="compact"
+              label="Back to Portfolio"
+              holdMs={2000}
+              disabled={isPulling}
+              allowQuickClick
+              ariaLabel="Return to main portfolio"
+              onComplete={() => triggerPagePull('/', 'back', 'PORTFOLIO SHOWCASE')}
+            />
           </div>
         </section>
       </main>

@@ -13,10 +13,30 @@ if (typeof window !== 'undefined') {
 }
 
 const SOCIAL_LINKS = [
-  { label: 'Facebook', href: '#', icon: '/facebook.svg' },
-  { label: 'Instagram', href: '#', icon: '/instagram.svg' },
-  { label: 'LinkedIn', href: '#', icon: '/linkedIn.svg' },
-  { label: 'Twitter', href: '#', icon: '/twitter.svg' },
+  {
+    label: 'GitHub',
+    href: 'https://github.com/Sutannn13',
+    icon: '/github.svg',
+    external: true,
+  },
+  {
+    label: 'Instagram',
+    href: 'https://www.instagram.com/arlie.sutan',
+    icon: '/instagram.svg',
+    external: true,
+  },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/sutan-arlie-38877635b',
+    icon: '/linkedIn.svg',
+    external: true,
+  },
+  {
+    label: 'Email',
+    href: 'mailto:sutanarliejohan@gmail.com',
+    icon: '/mail.svg',
+    external: false,
+  },
 ];
 
 export default function Footer() {
@@ -74,6 +94,8 @@ export default function Footer() {
       <div className="relative z-[1]">
         <div
           ref={cardRef}
+          id="get-in-touch"
+          data-section="get-in-touch"
           className="rounded-4xl bg-black/5 border border-white/30 backdrop-blur-2xl px-12 py-12 flex flex-col gap-20 justify-between max-[1025px]:flex-col max-[1025px]:items-center max-[1025px]:gap-10 max-[1025px]:px-8 max-[1025px]:py-15 max-md:px-6 max-md:gap-8"
         >
           <div className="flex justify-between items-start gap-24 footer-content max-[1025px]:gap-10 max-md:gap-16 max-[1025px]:flex-col-reverse max-[1025px]:items-center">
@@ -109,13 +131,13 @@ export default function Footer() {
               </h6>
               <ul className="space-y-2 text-[1.25vw] max-[1025px]:text-[2.4vw] max-md:text-[4vw]">
                 <li className="under-multi-parent">
-                  <a href="tel:+1 (415) 309-8274" className="under-multi content-p">
-                    +1 (415) 309-8274
+                  <a href="tel:+6281917043981" className="under-multi content-p">
+                    +62 819-1704-3981
                   </a>
                 </li>
                 <li className="under-multi-parent">
-                  <a href="mailto:hello@johann.design" className="under-multi content-p">
-                    hello@johann.design
+                  <a href="mailto:sutanarliejohan@gmail.com" className="under-multi content-p">
+                    sutanarliejohan@gmail.com
                   </a>
                 </li>
               </ul>
@@ -128,6 +150,8 @@ export default function Footer() {
                     <Link
                       href={item.href}
                       aria-label={item.label}
+                      target={item.external ? '_blank' : undefined}
+                      rel={item.external ? 'noopener noreferrer' : undefined}
                       className="rounded-full relative block p-2.5 border overflow-hidden bg-white/5 transition-all duration-300 ease-in-out group-hover:scale-[0.95]"
                     >
                       <div className="w-5 h-5 flex items-center justify-center">
@@ -159,12 +183,6 @@ export default function Footer() {
               ©
             </Link>{' '}
             Johann Design 2026
-          </p>
-          <p>
-            By:{' '}
-            <a href="https://www.hyperiux.com/" target="_blank" rel="noopener noreferrer">
-              Hyperiux
-            </a>
           </p>
         </div>
       </div>

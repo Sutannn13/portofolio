@@ -31,6 +31,22 @@ export default function GitHubActivityTrigger() {
     };
   }, []);
 
+  useEffect(() => {
+    const resetTriggerCard = () => {
+      setProgress(0);
+      const el = cardRef.current;
+      if (el) {
+        el.style.setProperty('--tilt-x', '0deg');
+        el.style.setProperty('--tilt-y', '0deg');
+      }
+    };
+    if (!isPulling) {
+      resetTriggerCard();
+    }
+    window.addEventListener('ppt:arrive', resetTriggerCard);
+    return () => window.removeEventListener('ppt:arrive', resetTriggerCard);
+  }, [isPulling]);
+
   const handleCardMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     const el = cardRef.current;
     if (!el) return;
@@ -92,28 +108,28 @@ export default function GitHubActivityTrigger() {
             </p>
 
             {/* Verified Live Telemetry Readout */}
-            <div className="mt-[2.8vw] grid w-full grid-cols-3 gap-6 border-t border-white/10 pt-[2vw] max-[1025px]:mt-8 max-[1025px]:pt-6 max-md:gap-4">
-              <div>
-                <p className="font-mono text-[0.72vw] uppercase tracking-[0.2em] text-white/40 max-[1025px]:text-[11px]">
+            <div className="mt-[2.8vw] grid w-full grid-cols-3 gap-2.5 sm:gap-6 border-t border-white/10 pt-[2vw] max-[1025px]:mt-8 max-[1025px]:pt-6 max-md:gap-2.5 max-md:pt-5">
+              <div className="flex flex-col justify-between rounded-2xl bg-white/[0.03] p-3 border border-white/5 sm:rounded-none sm:bg-transparent sm:p-0 sm:border-0 min-w-0">
+                <span className="font-mono text-[9.5px] leading-snug sm:text-[11px] lg:text-[0.72vw] uppercase tracking-[0.06em] sm:tracking-[0.16em] lg:tracking-[0.2em] text-white/45 min-h-[2.4em] sm:min-h-0 flex items-start">
                   Contributions (1Y)
-                </p>
-                <p className="mt-1 text-[2.4vw] font-medium leading-none tracking-tight text-white max-[1025px]:text-3xl max-md:text-2xl">
+                </span>
+                <p className="mt-2 sm:mt-1 text-2xl sm:text-3xl lg:text-[2.4vw] font-medium leading-none tracking-tight text-white">
                   {data.totalContributionsLastYear}
                 </p>
               </div>
-              <div>
-                <p className="font-mono text-[0.72vw] uppercase tracking-[0.2em] text-white/40 max-[1025px]:text-[11px]">
+              <div className="flex flex-col justify-between rounded-2xl bg-white/[0.03] p-3 border border-white/5 sm:rounded-none sm:bg-transparent sm:p-0 sm:border-0 min-w-0">
+                <span className="font-mono text-[9.5px] leading-snug sm:text-[11px] lg:text-[0.72vw] uppercase tracking-[0.06em] sm:tracking-[0.16em] lg:tracking-[0.2em] text-white/45 min-h-[2.4em] sm:min-h-0 flex items-start">
                   Public Repos
-                </p>
-                <p className="mt-1 text-[2.4vw] font-medium leading-none tracking-tight text-white max-[1025px]:text-3xl max-md:text-2xl">
+                </span>
+                <p className="mt-2 sm:mt-1 text-2xl sm:text-3xl lg:text-[2.4vw] font-medium leading-none tracking-tight text-white">
                   {data.profile.publicRepos}
                 </p>
               </div>
-              <div>
-                <p className="font-mono text-[0.72vw] uppercase tracking-[0.2em] text-white/40 max-[1025px]:text-[11px]">
+              <div className="flex flex-col justify-between rounded-2xl bg-white/[0.03] p-3 border border-white/5 sm:rounded-none sm:bg-transparent sm:p-0 sm:border-0 min-w-0">
+                <span className="font-mono text-[9.5px] leading-snug sm:text-[11px] lg:text-[0.72vw] uppercase tracking-[0.06em] sm:tracking-[0.16em] lg:tracking-[0.2em] text-white/45 min-h-[2.4em] sm:min-h-0 flex items-start">
                   Stars Earned
-                </p>
-                <p className="mt-1 text-[2.4vw] font-medium leading-none tracking-tight text-[#F16B0D] max-[1025px]:text-3xl max-md:text-2xl">
+                </span>
+                <p className="mt-2 sm:mt-1 text-2xl sm:text-3xl lg:text-[2.4vw] font-medium leading-none tracking-tight text-[#F16B0D]">
                   {data.totalStars}
                 </p>
               </div>

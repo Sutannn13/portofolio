@@ -4,7 +4,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Copy from './Copy';
 import TechText from './TechText';
 import { useLenis } from 'lenis/react';
 
@@ -104,6 +103,8 @@ const PORTFOLIO_MOBILE = [
   '/ai-pure-icons/zhipu.png',
 ];
 
+let hasHeroIntroPlayedOnce = false;
+
 export default function Hero() {
   const heroRef = useRef<HTMLElement | null>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -111,14 +112,15 @@ export default function Hero() {
   const textParallaxRef = useRef<HTMLDivElement | null>(null);
   const line1Ref = useRef<HTMLDivElement | null>(null);
   const line2Ref = useRef<HTMLDivElement | null>(null);
+  const subCopyRef = useRef<HTMLDivElement | null>(null);
   const revealImgRef = useRef<HTMLDivElement | null>(null);
   const marqueeRef = useRef<HTMLDivElement | null>(null);
   const introRunRef = useRef(false);
 
   const [isMobile, setIsMobile] = useState(false);
-  const [startH1, setStartH1] = useState(false);
-  const [startH2, setStartH2] = useState(false);
-  const [startSub, setStartSub] = useState(false);
+  const [skipIntroAnim, setSkipIntroAnim] = useState(() => hasHeroIntroPlayedOnce);
+  const [startH1, setStartH1] = useState(() => hasHeroIntroPlayedOnce);
+  const [startH2, setStartH2] = useState(() => hasHeroIntroPlayedOnce);
 
   const lenis = useLenis();
   const lenisRef = useRef(lenis);
@@ -143,18 +145,58 @@ export default function Hero() {
   }, []);
 
   useEffect(() => {
-    lenis?.stop();
+    if (!hasHeroIntroPlayedOnce) {
+      lenis?.stop();
+    } else {
+      lenis?.start();
+    }
   }, [lenis]);
 
   // Choreographed Intro Timeline (synchronized with Preloader silk curtain lift)
   useEffect(() => {
     let tl: gsap.core.Timeline | null = null;
 
+    const restoreInstantHero = () => {
+      introRunRef.current = true;
+      hasHeroIntroPlayedOnce = true;
+      setSkipIntroAnim(true);
+      if (containerRef.current) gsap.set(containerRef.current, { scale: 1 });
+      if (line1Ref.current) gsap.set(line1Ref.current, { opacity: 1, y: 0 });
+      if (line2Ref.current) gsap.set(line2Ref.current, { opacity: 1, y: 0 });
+      if (subCopyRef.current) gsap.set(subCopyRef.current, { opacity: 1, y: 0 });
+      if (revealImgRef.current) {
+        revealImgRef.current.style.setProperty('--reveal', '130%');
+        gsap.set(revealImgRef.current, { opacity: 1, scale: 1, y: 0 });
+      }
+      setStartH1(true);
+      setStartH2(true);
+      const headerEl = document.getElementById('header');
+      if (headerEl) {
+        gsap.set(headerEl, { yPercent: 0, opacity: 1 });
+      }
+      lenisRef.current?.start();
+      requestAnimationFrame(() => ScrollTrigger.refresh());
+    };
+
+    if (hasHeroIntroPlayedOnce) {
+      restoreInstantHero();
+      const onArrive = () => {
+        restoreInstantHero();
+      };
+      window.addEventListener('ppt:arrive', onArrive);
+      return () => {
+        window.removeEventListener('ppt:arrive', onArrive);
+      };
+    }
+
     if (line1Ref.current) {
       gsap.set(line1Ref.current, { opacity: 0, y: 28 });
     }
     if (line2Ref.current) {
       gsap.set(line2Ref.current, { opacity: 0, y: 28 });
+    }
+    if (subCopyRef.current) {
+      gsap.set(subCopyRef.current, { opacity: 0, y: 20 });
     }
     if (revealImgRef.current) {
       gsap.set(revealImgRef.current, { opacity: 0, scale: 1.055, y: 44 });
@@ -163,6 +205,7 @@ export default function Hero() {
     const startHeroIntro = () => {
       if (introRunRef.current) return;
       introRunRef.current = true;
+      hasHeroIntroPlayedOnce = true;
 
       const revealObj = { reveal: 8 };
       revealImgRef.current?.style.setProperty('--reveal', '8%');
@@ -216,8 +259,17 @@ export default function Hero() {
           },
           0.30
         )
-        // 4. Right editorial sub-copy line split reveal
-        .call(() => setStartSub(true), undefined, 0.42)
+        // 4. Right editorial sub-copy reveal
+        .to(
+          subCopyRef.current,
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.05,
+            ease: 'expo.out',
+          },
+          0.42
+        )
         // 5. Top navigation bar settles down
         .call(
           () => {
@@ -240,31 +292,20 @@ export default function Hero() {
         );
     };
 
-    const viaTransition = Boolean((window as typeof window & { __pptInFlight?: boolean }).__pptInFlight);
-    const arrived = Boolean((window as typeof window & { __pptArrived?: boolean }).__pptArrived);
-
-    if (viaTransition && !arrived) {
-      // Page mounted under the transition overlay: its arrival event owns the intro.
-      window.addEventListener('ppt:arrive', startHeroIntro);
-    } else {
-      window.addEventListener('preloader:complete', startHeroIntro);
-    }
+    window.addEventListener('preloader:complete', startHeroIntro);
+    window.addEventListener('ppt:arrive', startHeroIntro);
 
     const fallbackTimer = setTimeout(() => {
       if (!introRunRef.current) {
         startHeroIntro();
       }
-    }, 5500);
+    }, 3500);
 
     return () => {
       window.removeEventListener('preloader:complete', startHeroIntro);
       window.removeEventListener('ppt:arrive', startHeroIntro);
       clearTimeout(fallbackTimer);
       tl?.kill();
-      introRunRef.current = false;
-      setStartH1(false);
-      setStartH2(false);
-      setStartSub(false);
     };
   }, []);
 
@@ -411,7 +452,7 @@ export default function Hero() {
                 dashLength={4}
                 dashGap={2}
                 specks={16}
-                intro={startH1 ? 'type' : 'none'}
+                intro={skipIntroAnim ? 'none' : startH1 ? 'type' : 'none'}
                 introDuration={1.45}
                 clickKick
                 draggable
@@ -434,7 +475,7 @@ export default function Hero() {
                 dashLength={4}
                 dashGap={2}
                 specks={12}
-                intro={startH2 ? 'assemble' : 'none'}
+                intro={skipIntroAnim ? 'none' : startH2 ? 'assemble' : 'none'}
                 introDuration={1.65}
                 clickKick
                 draggable
@@ -443,21 +484,20 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="w-[12%] min-w-[140px] flex flex-col justify-between text-end text-[1.25vw] leading-[1.15] py-[2vw] max-[1025px]:w-[50%] max-[1025px]:text-[3.5vw] max-[1025px]:text-start max-[1025px]:flex-col-reverse max-md:text-[4.5vw] max-md:gap-[7vw] max-[1025px]:gap-20 max-md:py-0">
-            <Copy splitBy="lines" start={startSub} animateOnScroll={false}>
-              <p className="text-white">
-                Scalable Web &
-                <br />
-                AI Systems
-              </p>
-            </Copy>
-            <Copy splitBy="lines" start={startSub} animateOnScroll={false}>
-              <p className="text-white">
-                Full-Stack &
-                <br />
-                <span className="whitespace-nowrap">Software Engineer</span>
-              </p>
-            </Copy>
+          <div
+            ref={subCopyRef}
+            className="w-[12%] min-w-[140px] flex flex-col justify-between text-end text-[1.25vw] leading-[1.15] py-[2vw] max-[1025px]:w-[50%] max-[1025px]:text-[3.5vw] max-[1025px]:text-start max-[1025px]:flex-col-reverse max-md:text-[4.5vw] max-md:gap-[7vw] max-[1025px]:gap-20 max-md:py-0 will-change-[transform,opacity]"
+          >
+            <p className="text-white">
+              Scalable Web &
+              <br />
+              AI Systems
+            </p>
+            <p className="text-white">
+              Full-Stack &
+              <br />
+              <span className="whitespace-nowrap">Software Engineer</span>
+            </p>
           </div>
         </div>
 
@@ -499,6 +539,7 @@ export default function Hero() {
                     width={256}
                     height={256}
                     unoptimized
+                    loading="eager"
                     className="w-full h-full object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)]"
                   />
                 </div>
@@ -523,6 +564,7 @@ export default function Hero() {
                     width={256}
                     height={256}
                     unoptimized
+                    loading="eager"
                     className="w-full h-full object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)]"
                   />
                 </div>
@@ -544,6 +586,7 @@ export default function Hero() {
                     width={256}
                     height={256}
                     unoptimized
+                    loading="eager"
                     className="w-full h-full object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)]"
                   />
                 </div>

@@ -20,6 +20,8 @@ export interface HoldChargeButtonProps {
   ariaLabel?: string;
   /** Optional observer for charge progress (drives host-side visuals). */
   onProgress?: (progress: number) => void;
+  /** Allow a quick tap/click (<350ms) to trigger completion (enabled by default for compact back buttons). */
+  allowQuickClick?: boolean;
 }
 
 export default function HoldChargeButton({
@@ -35,6 +37,7 @@ export default function HoldChargeButton({
   className = '',
   ariaLabel,
   onProgress,
+  allowQuickClick,
 }: HoldChargeButtonProps) {
   const [progress, setProgress] = useState(0); // 0 to 1
   const [isHolding, setIsHolding] = useState(false);
@@ -42,11 +45,15 @@ export default function HoldChargeButton({
   const [hintMessage, setHintMessage] = useState<string>(hintIdle ?? '');
 
   const rafRef = useRef<number | null>(null);
+  const resetTimerRef = useRef<number | null>(null);
   const holdStartRef = useRef<number | null>(null);
+  const pointerDownAtRef = useRef<number>(0);
   const startProgressRef = useRef<number>(0);
   const completedRef = useRef<boolean>(false);
   const progressRef = useRef<number>(0);
   const onProgressRef = useRef(onProgress);
+
+  const quickClickEnabled = allowQuickClick ?? size === 'compact';
 
   useEffect(() => {
     onProgressRef.current = onProgress;
@@ -66,14 +73,49 @@ export default function HoldChargeButton({
     }
   }, []);
 
-  useEffect(() => cancelRaf, [cancelRaf]);
+  const clearResetTimer = useCallback(() => {
+    if (resetTimerRef.current !== null) {
+      window.clearTimeout(resetTimerRef.current);
+      resetTimerRef.current = null;
+    }
+  }, []);
 
-  // Cancel any in-flight charge when the button becomes disabled externally.
-  useEffect(() => {
-    if (!disabled) return;
+  const resetButtonState = useCallback(() => {
     cancelRaf();
+    clearResetTimer();
     holdStartRef.current = null;
-  }, [disabled, cancelRaf]);
+    startProgressRef.current = 0;
+    completedRef.current = false;
+    emitProgress(0);
+    setIsHolding(false);
+    setIsCompleted(false);
+    setHintMessage(hintIdle ?? '');
+  }, [cancelRaf, clearResetTimer, emitProgress, hintIdle]);
+
+  useEffect(() => {
+    return () => {
+      cancelRaf();
+      clearResetTimer();
+    };
+  }, [cancelRaf, clearResetTimer]);
+
+  // Reset state whenever transition finishes or when disabled toggles back to false.
+  useEffect(() => {
+    if (disabled) {
+      cancelRaf();
+      holdStartRef.current = null;
+      return;
+    }
+    if (completedRef.current || progressRef.current >= 1) {
+      resetButtonState();
+    }
+  }, [disabled, cancelRaf, resetButtonState]);
+
+  useEffect(() => {
+    const onArrive = () => resetButtonState();
+    window.addEventListener('ppt:arrive', onArrive);
+    return () => window.removeEventListener('ppt:arrive', onArrive);
+  }, [resetButtonState]);
 
   const activelyHolding = isHolding && !disabled;
 
@@ -109,21 +151,34 @@ export default function HoldChargeButton({
     if (completedRef.current) return;
     completedRef.current = true;
     cancelRaf();
+    clearResetTimer();
     emitProgress(1);
     setIsHolding(false);
     setIsCompleted(true);
     setHintMessage(hintDone ?? hintIdle ?? '');
     onComplete();
-  }, [cancelRaf, emitProgress, onComplete, hintDone, hintIdle]);
+
+    // Auto-reset behind the page transition curtain so returning to this page never leaves it locked.
+    resetTimerRef.current = window.setTimeout(() => {
+      resetButtonState();
+    }, 650);
+  }, [cancelRaf, clearResetTimer, emitProgress, onComplete, hintDone, hintIdle, resetButtonState]);
 
   const startHold = useCallback(() => {
-    if (completedRef.current || disabled) return;
+    if (disabled) return;
+    if (completedRef.current) {
+      completedRef.current = false;
+      progressRef.current = 0;
+      setIsCompleted(false);
+    }
     cancelRaf();
+    clearResetTimer();
+    pointerDownAtRef.current = performance.now();
     setIsHolding(true);
     setHintMessage(hintActive ?? hintIdle ?? '');
     const durationMs = Math.max(1, holdMs);
 
-    const initialProg = progressRef.current;
+    const initialProg = progressRef.current >= 0.99 ? 0 : progressRef.current;
     startProgressRef.current = initialProg;
     const remainingRatio = Math.max(0.05, 1 - initialProg);
     const targetDuration = durationMs * remainingRatio;
@@ -144,18 +199,26 @@ export default function HoldChargeButton({
     };
 
     rafRef.current = requestAnimationFrame(stepHold);
-  }, [cancelRaf, handleChargeComplete, disabled, holdMs, hintActive, hintIdle, emitProgress]);
+  }, [cancelRaf, clearResetTimer, handleChargeComplete, disabled, holdMs, hintActive, hintIdle, emitProgress]);
 
   const stopHold = useCallback(() => {
     if (completedRef.current) return;
     if (!isHolding && progressRef.current === 0) return;
+    const heldElapsed = performance.now() - pointerDownAtRef.current;
     setIsHolding(false);
     holdStartRef.current = null;
+
+    // Friendly touch: if compact back button was tapped quickly (<350ms) or user reached >=92% of hold, complete!
+    if ((quickClickEnabled && heldElapsed > 10 && heldElapsed < 360) || progressRef.current >= 0.92) {
+      handleChargeComplete();
+      return;
+    }
+
     if (progressRef.current < 1) {
       setHintMessage(hintReleased ?? hintIdle ?? '');
       startDrain();
     }
-  }, [isHolding, startDrain, hintReleased, hintIdle]);
+  }, [isHolding, quickClickEnabled, handleChargeComplete, startDrain, hintReleased, hintIdle]);
 
   const chars = Array.from(label);
   const percentValue = Math.round(progress * 100);
@@ -170,15 +233,33 @@ export default function HoldChargeButton({
         type="button"
         aria-label={
           ariaLabel ??
-          `${label} — hold ${Math.round(holdMs / 1000)} seconds to activate`
+          `${label} - hold ${Math.round(holdMs / 1000)} seconds to activate`
         }
         disabled={disabled}
         onPointerDown={(e) => {
           if (e.button !== 0 && e.pointerType === 'mouse') return;
+          try {
+            e.currentTarget.setPointerCapture(e.pointerId);
+          } catch {
+            // Ignore pointer capture errors on synthetic events
+          }
           startHold();
         }}
-        onPointerUp={stopHold}
-        onPointerLeave={stopHold}
+        onPointerUp={(e) => {
+          try {
+            if (e.currentTarget.hasPointerCapture(e.pointerId)) {
+              e.currentTarget.releasePointerCapture(e.pointerId);
+            }
+          } catch {
+            // Ignore
+          }
+          stopHold();
+        }}
+        onClick={() => {
+          if (quickClickEnabled && !disabled && !completedRef.current) {
+            handleChargeComplete();
+          }
+        }}
         onPointerCancel={stopHold}
         onContextMenu={(e) => {
           if (isHolding) e.preventDefault();
@@ -234,16 +315,8 @@ export default function HoldChargeButton({
           }}
         />
 
-        {/* Left indicator: radial ring (hero) or back arrow (compact) */}
-        {isCompact ? (
-          <span
-            aria-hidden="true"
-            className="relative z-20 shrink-0 text-base leading-none transition-colors duration-150"
-            style={{ color: progress > 0.05 ? '#0a0a0a' : '#ffffff' }}
-          >
-            &larr;
-          </span>
-        ) : (
+        {/* Left indicator: radial ring (hero only; compact has no icon) */}
+        {!isCompact && (
           <span
             aria-hidden="true"
             className="relative z-20 flex h-7 w-7 shrink-0 items-center justify-center"
