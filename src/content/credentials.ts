@@ -7,6 +7,12 @@ export interface Certification {
 
 export const CERTS: Certification[] = [
   {
+    title: 'Dicoding - Spec-Driven Development dengan Kiro',
+    meta: '2026 - DICODING INDONESIA (2VX3VK1J4PYQ)',
+    imgSrc: '/certificates/dicoding-spec-driven-kiro.jpg',
+    fit: 'contain',
+  },
+  {
     title: 'Juara 2 - IT Bootcamp UBSI Jabar',
     meta: '2025 - SOFTWARE DEVELOPMENT (TRASH POINT)',
     imgSrc: '/certificates/juara-2-it-bootcamp.jpg',

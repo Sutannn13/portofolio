@@ -5,6 +5,11 @@ import { useLenis } from 'lenis/react';
 
 const CLOSE_MS = 340;
 
+// Web3Forms access key is public by design — it only routes to the verified inbox.
+// Kept in a bundled default so the form works without any Vercel env setup.
+const WEB3FORMS_KEY =
+  process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'f4f9af01-e819-4d8f-a523-6f670d5c07a6';
+
 type Phase = 'closed' | 'open' | 'closing';
 
 interface GetInTouchModalContextType {
@@ -81,47 +86,31 @@ export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setStatus('submitting');
     setErrorMessage('');
+    setStatus('submitting');
 
     const form = e.currentTarget;
     const formData = new FormData(form);
 
     try {
-      const response = await fetch('/', {
+      // direct browser call: Web3Forms' Cloudflare blocks server-side fetches, real browsers pass
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString(),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          ...Object.fromEntries(formData),
+        }),
       });
 
-      if (response.ok || response.status === 200 || response.status === 303) {
-        setStatus('success');
-        form.reset();
-        setTimeout(() => {
-          closeModal();
-        }, 2200);
-      } else {
-        if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
-          console.warn('Simulated Netlify form submission in local environment');
-          setStatus('success');
-          form.reset();
-          setTimeout(() => {
-            closeModal();
-          }, 2200);
-          return;
-        }
-        throw new Error(`Status ${response.status}`);
-      }
+      const json = await response.json().catch(() => null);
+      if (!json?.success) throw new Error(json?.message || `Status ${response.status}`);
+
+      setStatus('success');
+      form.reset();
+      setTimeout(closeModal, 2200);
     } catch (err) {
       console.error('Form submission error:', err);
-      if (typeof window !== 'undefined' && window.location.hostname === 'localhost') {
-        setStatus('success');
-        form.reset();
-        setTimeout(() => {
-          closeModal();
-        }, 2200);
-        return;
-      }
       setStatus('error');
       setErrorMessage('Terjadi kendala saat mengirim pesan. Silakan coba lagi atau kirim langsung ke sutanarliejohan@gmail.com.');
     }
@@ -184,17 +173,10 @@ export function GetInTouchModalProvider({ children }: { children: ReactNode }) {
                   <form
                     name="contact"
                     method="POST"
-                    data-netlify="true"
-                    netlify-honeypot="bot-field"
                     onSubmit={handleSubmit}
                     className="flex flex-col gap-4 text-white"
                   >
-                    <input type="hidden" name="form-name" value="contact" />
-                    <p className="hidden">
-                      <label>
-                        Don’t fill this out if you are human: <input name="bot-field" />
-                      </label>
-                    </p>
+                    <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
                     <div>
                       <label className="block text-sm mb-1 text-white/80">Your Name*</label>
                       <input
